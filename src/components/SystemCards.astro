@@ -1,0 +1,15 @@
+---
+import { href, basePath } from '../lib/routes.mjs';
+const { lang } = Astro.props;
+const cards = [
+  { id:'mechanics', image:'05', de:'Mechanik & Kamerakopf', en:'Mechanics & camera head', textDE:'Konstruktion, Abmessungen, Stückliste und Fotos des Aufbaus.', textEN:'Construction, dimensions, parts list and photographs of the build.' },
+  { id:'electronics', image:'14', de:'Elektronik & PanoBoard', en:'Electronics & PanoBoard', textDE:'Platinenfotos, Schaltplan, Layout und die verschiedenen Board-Versionen.', textEN:'Electronics photographs, schematic, PCB layout and board revisions.' },
+  { id:'software', image:'15', de:'Software & Steuerung', en:'Software & control', textDE:'Mit Android oder Windows planen, Fortschritt sichern und unterbrochene Serien fortsetzen.', textEN:'Plan with Android or Windows, save progress and continue interrupted sequences.' },
+];
+---
+<section class="system-cards" aria-label={lang === 'de' ? 'Aufbau und Technik entdecken' : 'Explore construction and technology'}>
+  {cards.map(card => <a class="system-card" href={href({kind:'project',id:card.id},lang)}>
+    <img src={basePath(card.id === 'software' ? 'images/articles/software/android-app.png' : `images/articles/hardware/${card.image}.webp`)} alt="" width="900" height="600" loading="lazy"/>
+    <div><h2>{card[lang]}</h2><p>{lang === 'de' ? card.textDE : card.textEN}</p><span class="text-link">{lang === 'de' ? 'Bilder & Beschreibung' : 'Images & description'} ↗</span></div>
+  </a>)}
+</section>

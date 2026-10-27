@@ -1,0 +1,6 @@
+---
+import { href } from '../lib/routes.mjs';
+const {lang,page} = Astro.props;
+const entries = [{kind:'photography',de:'Überblick',en:'Overview'},{kind:'landscapes',de:'Landschaft & Reisen',en:'Landscapes & travel'},{kind:'astronomy',de:'Astronomie',en:'Astronomy'},{kind:'aerial',de:'Drohnenfotografie',en:'Aerial photography'}];
+---
+<nav class="project-navigation photo-navigation" aria-label={lang==='de'?'Fotografie-Bereiche':'Photography collections'}>{entries.map(entry=><a href={href({kind:entry.kind},lang)} aria-current={page.kind===entry.kind?'page':undefined}>{entry[lang]}</a>)}</nav>

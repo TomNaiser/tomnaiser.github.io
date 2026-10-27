@@ -1,0 +1,8 @@
+---
+import { projectSections } from '../lib/project-navigation.mjs';
+import { href } from '../lib/routes.mjs';
+const { lang, page } = Astro.props;
+---
+<nav class="project-navigation" aria-label={lang === 'de' ? 'Bereiche des Panoramasystems' : 'Panorama system sections'}>
+  {projectSections.map(section => <a href={href({kind:'project',id:section.id},lang)} aria-current={(page.kind === 'projects' && section.id === 'panorama-system') || page.id === section.id ? 'page' : undefined}>{section[lang]}</a>)}
+</nav>

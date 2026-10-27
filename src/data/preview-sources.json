@@ -1,0 +1,315 @@
+[
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/HochriesPanorama/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/HochriesPanorama/HochriesPanorama.tiles/preview.jpg",
+    "file": "/images/panoramas/HochriesPanorama.jpg",
+    "bytes": 25895,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Hochries-Panorama1/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Hochries-Panorama1/Hochries-Panorama1.tiles/preview.jpg",
+    "file": "/images/panoramas/Hochries-Panorama1.jpg",
+    "bytes": 36060,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Hochries_auf_halber_Hoehe/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Hochries_auf_halber_Hoehe/Hochries_auf_halber_Hoehe.tiles/preview.jpg",
+    "file": "/images/panoramas/Hochries_auf_halber_Hoehe.jpg",
+    "bytes": 21868,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Goldberg090619_f400/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Goldberg090619_f400/Goldberg_f400.tiles/preview.jpg",
+    "file": "/images/panoramas/Goldberg090619_f400.jpg",
+    "bytes": 23279,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge270619/index.html",
+    "status": "missing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge010819/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge010819/Fichtelgebirge010819.tiles/preview.jpg",
+    "file": "/images/panoramas/Fichtelgebirge010819.jpg",
+    "bytes": 15708,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/NenntmannsreuthJuli2020/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/NenntmannsreuthJuli2020/NenntmannsreuthJuli2020.tiles/preview.jpg",
+    "file": "/images/panoramas/NenntmannsreuthJuli2020.jpg",
+    "bytes": 16388,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth011023/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth011023/Nenntmannsreuth011023.tiles/preview.jpg",
+    "file": "/images/panoramas/Nenntmannsreuth011023.jpg",
+    "bytes": 21233,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge171123/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge171123/Fichtelgebirge171123.tiles/preview.jpg",
+    "file": "/images/panoramas/Fichtelgebirge171123.jpg",
+    "bytes": 17953,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge090626mitDampflokV3/index.html",
+    "status": "missing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge181025/index.html",
+    "status": "missing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge271224V2/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge271224V2/Fichtelgebirge271224V2.tiles/preview.jpg",
+    "file": "/images/panoramas/Fichtelgebirge271224V2.jpg",
+    "bytes": 15652,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/UeberBadBerneck010819/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/UeberBadBerneck010819/UeberBadBerneck010819.tiles/preview.jpg",
+    "file": "/images/panoramas/UeberBadBerneck010819.jpg",
+    "bytes": 33431,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Maintal_030722/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Maintal_030722/Maintal_030722.tiles/preview.jpg",
+    "file": "/images/panoramas/Maintal_030722.jpg",
+    "bytes": 21536,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Zottaschen191025V3/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Zottaschen191025V3/Zottaschen191025V1.tiles/preview.jpg",
+    "file": "/images/panoramas/Zottaschen191025V3.jpg",
+    "bytes": 24413,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Schneeberg050619_f135/index.html",
+    "status": "missing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/PresseckerKnockF200ProcessedV4/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/PresseckerKnockF200ProcessedV4/PresseckerKnockF200ProcessedV4.tiles/preview.jpg",
+    "file": "/images/panoramas/PresseckerKnockF200ProcessedV4.jpg",
+    "bytes": 11028,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Germering180619/index.html",
+    "status": "missing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Tegelberg_dehazed/index.html",
+    "status": "missing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919/Buechelstein400mm_B.tiles/preview.jpg",
+    "file": "/images/panoramas/Buechelstein400mm290919.jpg",
+    "bytes": 22327,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919_dehazed/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919_dehazed/Buechelstein_entnebelt_D_PanoramaV2.tiles/preview.jpg",
+    "file": "/images/panoramas/Buechelstein400mm290919_dehazed.jpg",
+    "bytes": 33907,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Kreuzholzhausen_f400/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Kreuzholzhausen_f400/Kreuzholzhausen_f400.tiles/preview.jpg",
+    "file": "/images/panoramas/Kreuzholzhausen_f400.jpg",
+    "bytes": 16073,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Olyberg_Sued_f200/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Olyberg_Sued_f200/Olyberg_Sued_f200.tiles/preview.jpg",
+    "file": "/images/panoramas/Olyberg_Sued_f200.jpg",
+    "bytes": 15437,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/OlympiabergNordwest/index.html",
+    "status": "missing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Fischteichf135/index.html",
+    "status": "missing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth_Hof360/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth_Hof360/Nenntmannsreuth_Hof360.tiles/preview.jpg",
+    "file": "/images/panoramas/Nenntmannsreuth_Hof360.jpg",
+    "bytes": 53581,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuthf400/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuthf400/Nenntmannsreuthf400.tiles/preview.jpg",
+    "file": "/images/panoramas/Nenntmannsreuthf400.jpg",
+    "bytes": 34841,
+    "status": "saved"
+  },
+  {
+    "viewer": "http://gigapan.com/gigapans/208257",
+    "status": "external-provider"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/DiessenAussichtsturm_v2/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/DiessenAussichtsturm_v2/DiessenAussichtsturm_v2.tiles/preview.jpg",
+    "file": "/images/panoramas/DiessenAussichtsturm_v2.jpg",
+    "bytes": 10228,
+    "status": "saved"
+  },
+  {
+    "viewer": "http://gigapan.com/gigapans/208416",
+    "status": "external-provider"
+  },
+  {
+    "viewer": "http://gigapan.com/gigapans/207566",
+    "status": "external-provider"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Raisting360v4/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Raisting360v4/Raisting360v4.tiles/preview.jpg",
+    "file": "/images/panoramas/Raisting360v4.jpg",
+    "bytes": 17440,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Jaudesberg2021/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Jaudesberg2021/JaudesbergV5mod.tiles/preview.jpg",
+    "file": "/images/panoramas/Jaudesberg2021.jpg",
+    "bytes": 20833,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron050921/index.html",
+    "status": "missing",
+    "error": "Remote end closed connection without response"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron170923/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron170923/Himmelkron170923.tiles/preview.jpg",
+    "file": "/images/panoramas/Himmelkron170923.jpg",
+    "bytes": 37925,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Goessenreuth110824/index.html",
+    "status": "missing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/BindlacherBerg130821/index.html",
+    "status": "missing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth040923b/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth040923b/Bayreuth040923b.tiles/preview.jpg",
+    "file": "/images/panoramas/Bayreuth040923b.jpg",
+    "bytes": 31198,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/BayreuthVomSophienberg190921/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/BayreuthVomSophienberg190921/SophienbergPanorama.tiles/preview.jpg",
+    "file": "/images/panoramas/BayreuthVomSophienberg190921.jpg",
+    "bytes": 17594,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Massenhausen250921ProcessedPTGUI11/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Massenhausen250921ProcessedPTGUI11/Massenhausen250921ProcessedPTGUI11.tiles/preview.jpg",
+    "file": "/images/panoramas/Massenhausen250921ProcessedPTGUI11.jpg",
+    "bytes": 30756,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/TuerkenfeldOktober21_f200/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/TuerkenfeldOktober21_f200/TuerkenfeldOktober21_f200.tiles/preview.jpg",
+    "file": "/images/panoramas/TuerkenfeldOktober21_f200.jpg",
+    "bytes": 13382,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Froettmanning16bit060222/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Froettmanning16bit060222/Froettmanning16bit060222.tiles/preview.jpg",
+    "file": "/images/panoramas/Froettmanning16bit060222.jpg",
+    "bytes": 19963,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickSued/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickSued/FroettmaningerBergBlickSued.tiles/preview.jpg",
+    "file": "/images/panoramas/FroettmaningerBergBlickSued.jpg",
+    "bytes": 25362,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickNord/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickNord/FroettmaningerBergBlickNord.tiles/preview.jpg",
+    "file": "/images/panoramas/FroettmaningerBergBlickNord.jpg",
+    "bytes": 14609,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth160422/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth160422/Bayreuth160422.tiles/preview.jpg",
+    "file": "/images/panoramas/Bayreuth160422.jpg",
+    "bytes": 10715,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Hochstaufenv20/index.html",
+    "status": "missing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Hoernle070924/index.html",
+    "status": "missing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Alling290924/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Alling290924/Alling290924.tiles/preview.jpg",
+    "file": "/images/panoramas/Alling290924.jpg",
+    "bytes": 10268,
+    "status": "saved"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/BambergVonDerGiechburg2018/index.html",
+    "status": "missing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "viewer": "https://d1cq0fc6qm76ez.cloudfront.net/Giechburg061024/index.html",
+    "source": "https://d1cq0fc6qm76ez.cloudfront.net/Giechburg061024/Giechburg061024.tiles/preview.jpg",
+    "file": "/images/panoramas/Giechburg061024.jpg",
+    "bytes": 21671,
+    "status": "saved"
+  }
+]

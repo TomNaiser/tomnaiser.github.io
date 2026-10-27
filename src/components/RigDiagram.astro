@@ -1,0 +1,21 @@
+---
+const { lang } = Astro.props;
+---
+<div class="rig-diagram">
+  <svg viewBox="0 0 560 410" role="img" aria-label={lang === 'de' ? 'Funktionsskizze eines motorisierten Panorama-Kamerakopfs' : 'Conceptual diagram of a motorized panorama camera head'}>
+    <defs><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M 28 0 L 0 0 0 28" fill="none" stroke="currentColor" stroke-width=".5" opacity=".15"/></pattern></defs>
+    <rect width="560" height="410" fill="url(#grid)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M190 95v190h180V95M181 286h198v20H181zM268 306v40h24v-40M230 347h100M280 347l-55 48M280 347l55 48"/>
+      <path d="M201 196h158M280 193v-27M213 114h105v68H213zM233 114l8-15h42l8 15M318 130h76v39h-76M394 126h12v47h-12"/>
+      <circle cx="222" cy="132" r="3"/><path d="M238 138h52v29h-52z"/>
+      <circle cx="190" cy="196" r="14"/><circle cx="370" cy="196" r="14"/>
+      <path d="M145 235a110 110 0 0 1 0-80M140 161l5-9 7 8M202 326q78 47 156 0M351 322l10 2-4 9" stroke-dasharray="5 5"/>
+      <path d="M410 142h60M373 210h97M302 303h168M119 85h56M119 78v14M480 78v14M119 85h361" opacity=".4" stroke-width="1"/>
+    </g>
+    <g fill="currentColor" font-family="monospace" font-size="10" letter-spacing="1.3">
+      <text x="423" y="132">CAMERA</text><text x="423" y="200">TILT</text><text x="423" y="293">PAN</text><text x="126" y="57">PAN / TILT SYSTEM</text>
+      <text x="25" y="387">{lang === 'de' ? 'FUNKTIONSPRINZIP' : 'CONCEPTUAL DIAGRAM'}</text>
+    </g>
+  </svg>
+</div>

@@ -1,0 +1,23 @@
+---
+import { groupImage, groupItems, yearsLabel, dateLabel } from '../data/catalog.mjs';
+import { href, basePath, ui, panoramaOpenHref } from '../lib/routes.mjs';
+const { group, lang, index = 0 } = Astro.props;
+const items = groupItems(group.id);
+const latest = items.at(-1);
+const image = latest.image || groupImage(group);
+const count = items.length;
+const open = panoramaOpenHref(latest,lang);
+const external = latest.url.includes('gigapan.com');
+const series = count > 1 ? href({kind:'series',id:group.id},lang) : open;
+---
+<article class="group-card">
+  <a class:list={['card-image', { 'no-preview': !image }]} href={open} target={external ? '_blank' : undefined} rel={external ? 'noopener noreferrer' : undefined} aria-label={`${lang === 'de' ? 'Panorama öffnen' : 'Open panorama'}: ${group.title[lang]}, ${dateLabel(latest.date,lang)}`}>
+    {image ? <img src={basePath(image)} alt={`${group.title[lang]} – ${group.direction[lang]}, ${dateLabel(latest.date,lang)}`} width="1200" height="400" loading="lazy" /> : <span class="missing-preview"><span class="crosshair">+</span>{ui[lang].missing}</span>}
+    <span class="image-number">{String(index + 1).padStart(2, '0')}</span>
+    <span class="card-arrow" aria-hidden="true">↗</span>
+  </a>
+  <div class="card-meta"><span>{yearsLabel(group)}</span><span>{count} {lang === 'de' ? (count === 1 ? 'Aufnahme' : 'Aufnahmen') : (count === 1 ? 'image' : 'images')}</span></div>
+  <h3><a href={series} target={external && count === 1 ? '_blank' : undefined} rel={external && count === 1 ? 'noopener noreferrer' : undefined}>{group.title[lang]}</a></h3>
+  <p>{group.direction[lang]}</p>
+  <div class="card-actions"><a href={open} target={external ? '_blank' : undefined} rel={external ? 'noopener noreferrer' : undefined}>{external ? (lang === 'de' ? 'Auf Gigapan öffnen' : 'Open on Gigapan') : (lang === 'de' ? 'Panorama öffnen' : 'Open panorama')} ↗</a>{count > 1 && <a href={series}>{lang === 'de' ? `Alle ${count} Aufnahmen` : `All ${count} images`} →</a>}</div>
+</article>

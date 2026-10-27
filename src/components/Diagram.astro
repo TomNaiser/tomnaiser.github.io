@@ -1,0 +1,14 @@
+---
+import { diagrams } from '../data/diagrams.mjs';
+import dimensions from '../data/diagram-dimensions.json';
+import { basePath } from '../lib/routes.mjs';
+const { id, lang } = Astro.props;
+const diagram = diagrams[id];
+const [width,height] = dimensions[`${id}-${lang}-dark`];
+---
+<figure id={`diagram-${id}`} class:list={['system-diagram',`diagram-${id}`]}>
+  <div class="diagram-heading"><span class="eyebrow">{lang === 'de' ? 'ZUSAMMENHÄNGE AUF EINEN BLICK' : 'THE CONNECTIONS AT A GLANCE'}</span><h2>{diagram.title[lang]}</h2></div>
+  <p class="diagram-mobile-hint">{lang === 'de' ? 'Diagramm seitlich verschieben oder über „Groß öffnen“ ansehen.' : 'Scroll the diagram sideways or choose “Open full size”.'}</p>
+  <div class="diagram-scroll" tabindex="0" role="group" aria-label={diagram.title[lang]}><img class="diagram-dark" src={basePath(`images/diagrams/${id}-${lang}-dark.svg`)} width={Math.ceil(width)} height={Math.ceil(height)} alt={diagram.title[lang]} loading="lazy"/><img class="diagram-light" src={basePath(`images/diagrams/${id}-${lang}-light.svg`)} width={Math.ceil(width)} height={Math.ceil(height)} alt={diagram.title[lang]} loading="lazy"/></div>
+  <figcaption>{diagram.caption[lang]} <a class="diagram-dark" href={basePath(`images/diagrams/${id}-${lang}-dark.svg`)} target="_blank" rel="noopener noreferrer">{lang === 'de' ? 'Groß öffnen' : 'Open full size'} ↗</a><a class="diagram-light" href={basePath(`images/diagrams/${id}-${lang}-light.svg`)} target="_blank" rel="noopener noreferrer">{lang === 'de' ? 'Groß öffnen' : 'Open full size'} ↗</a></figcaption>
+</figure>

@@ -1,0 +1,17 @@
+---
+import { href, ui } from '../lib/routes.mjs';
+import { groups, panoramas, groupItems } from '../data/catalog.mjs';
+const { lang, page, title } = Astro.props;
+const trail = [{label:ui[lang].home,page:{kind:'home'}}];
+if (['gallery','gigapan','theme','region','series','panorama'].includes(page.kind) && page.kind !== 'gallery') trail.push({label:ui[lang].gallery,page:{kind:'gallery'}});
+if (page.kind === 'panorama') {
+  const item = panoramas.find(item=>item.id===page.id);
+  const parent = groups.find(group=>group.id===item.groupId);
+  const index = groupItems(parent.id).findIndex(p=>p.id===item.id);
+  trail.push({label:parent.title[lang],page:{kind:'series',id:parent.id,page:Math.floor(index/9)+1}});
+}
+if (page.kind === 'project') trail.push({label:ui[lang].projects,page:{kind:'projects'}});
+if (['astronomy','landscapes','aerial'].includes(page.kind)) trail.push({label:ui[lang].photography,page:{kind:'photography'}});
+if (page.kind === 'science') trail.push({label:ui[lang].about,page:{kind:'about'}});
+---
+<nav class="breadcrumbs wrap" aria-label={lang === 'de' ? 'Seitenpfad' : 'Breadcrumbs'}><ol>{trail.map(item=><li><a href={href(item.page,lang)}>{item.label}</a><span aria-hidden="true">/</span></li>)}<li aria-current="page">{title}</li></ol></nav>

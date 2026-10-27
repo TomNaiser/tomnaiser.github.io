@@ -1,0 +1,30 @@
+/* The entire site's appearance can be adjusted here. */
+:root {
+  color-scheme: dark;
+  --bg: #11191d;
+  --surface: #172226;
+  --surface-alt: #1d2b2e;
+  --ink: #edf0e8;
+  --muted: #a3b1b1;
+  --accent: #d0ec93;
+  --accent-ink: #18231b;
+  --line: #344347;
+
+  --font: Manrope, sans-serif;
+  --mono: Consolas, 'Courier New', monospace;
+  --max: 1280px;
+  --radius: 3px;
+  --gutter: clamp(22px, 5vw, 80px);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f5f5ef;
+  --surface: #e9ede5;
+  --surface-alt: #dfe7df;
+  --ink: #1b2d31;
+  --muted: #536467;
+  --accent: #285c43;
+  --accent-ink: #ffffff;
+  --line: #cad2c9;
+}

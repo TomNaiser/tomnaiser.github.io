@@ -1,0 +1,54 @@
+---
+import collection from '../data/gigapan-collection.json';
+const { lang } = Astro.props;
+const t = (de,en) => lang === 'de' ? de : en;
+const items = [...collection.items].sort((a,b) => (b.date || '').localeCompare(a.date || '') || b.id-a.id);
+---
+<section class="gigapan-browser" data-gigapan-browser data-lang={lang} data-count-label={t('Panoramen','panoramas')}>
+  <div class="gigapan-controls">
+    <label>{t('Titel, Ort oder Stichwort','Title, place or keyword')}<input type="search" data-gigapan-search placeholder={t('z. B. München, Fichtelgebirge …','e.g. Munich, Fichtel Mountains …')}/></label>
+    <label>{t('Sortieren nach','Sort by')}<select data-gigapan-sort><option value="date-desc">{t('Neueste zuerst','Newest first')}</option><option value="date-asc">{t('Älteste zuerst','Oldest first')}</option><option value="title">{t('Titel A–Z','Title A–Z')}</option><option value="size">{t('Größte Auflösung','Highest resolution')}</option></select></label>
+  </div>
+  <div class="gigapan-results" aria-live="polite" data-gigapan-count>{items.length} {t('Panoramen','panoramas')}</div>
+  <ol class="gigapan-list" data-gigapan-list>
+    {items.map(item => <li data-gigapan-item data-title={item.title} data-date={item.date || ''} data-size={item.gigapixels} data-search={`${item.title} ${item.description} ${item.tags}`}>
+      <div class="gigapan-row"><div><a class="gigapan-title" href={item.url} target="_blank" rel="noopener noreferrer">{item.title} <span aria-hidden="true">↗</span></a><p class="gigapan-meta"><span>{item.date || t('Datum nicht angegeben','No date provided')}</span><span>{item.gigapixels.toLocaleString(lang,{maximumFractionDigits:2})} Gpx</span><span>{item.width.toLocaleString(lang)} × {item.height.toLocaleString(lang)} px</span></p></div><a class="text-link" href={item.url} target="_blank" rel="noopener noreferrer">{t('Auf Gigapan öffnen','Open on Gigapan')} ↗</a></div>
+      {item.description && <details class="gigapan-caption"><summary>{t('Originalbeschreibung','Original caption')}</summary><p>{item.description}</p></details>}
+    </li>)}
+  </ol>
+  <nav class="gigapan-pagination" data-gigapan-pagination hidden aria-label={t('Seiten der Gigapan-Liste','Gigapan list pages')}><button class="button secondary" data-gigapan-previous>{t('Zurück','Previous')}</button><span data-gigapan-page></span><button class="button secondary" data-gigapan-next>{t('Weiter','Next')}</button></nav>
+  <noscript><p>{t('Ohne JavaScript werden alle Einträge angezeigt. Die Browser-Suche hilft beim Finden.','Without JavaScript, all entries are shown. Use your browser’s Find command to locate a panorama.')}</p></noscript>
+</section>
+<script>
+  const root = document.querySelector<HTMLElement>('[data-gigapan-browser]');
+  if (root) {
+    const list = root.querySelector<HTMLOListElement>('[data-gigapan-list]');
+    const entries = [...root.querySelectorAll<HTMLElement>('[data-gigapan-item]')];
+    const search = root.querySelector<HTMLInputElement>('[data-gigapan-search]');
+    const sort = root.querySelector<HTMLSelectElement>('[data-gigapan-sort]');
+    const previous = root.querySelector<HTMLButtonElement>('[data-gigapan-previous]');
+    const next = root.querySelector<HTMLButtonElement>('[data-gigapan-next]');
+    let page = 0;
+    const pageSize = 20;
+    const collator = new Intl.Collator(root.dataset.lang,{numeric:true,sensitivity:'base'});
+    const normalize = (value:string) => value.normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase();
+    function render(reset = false) {
+      if (reset) page = 0;
+      const terms = normalize(search.value).trim().split(/\s+/).filter(Boolean);
+      const matching = entries.filter(entry => terms.every(term => normalize(entry.dataset.search).includes(term)));
+      matching.sort((a,b) => sort.value === 'title' ? collator.compare(a.dataset.title,b.dataset.title) : sort.value === 'size' ? Number(b.dataset.size)-Number(a.dataset.size) : sort.value === 'date-asc' ? (a.dataset.date || '9999').localeCompare(b.dataset.date || '9999') : (b.dataset.date || '').localeCompare(a.dataset.date || ''));
+      const totalPages = Math.max(1,Math.ceil(matching.length/pageSize));
+      page = Math.min(page,totalPages-1);
+      entries.forEach(entry => { entry.hidden = true; });
+      matching.forEach((entry,index) => { list.append(entry); entry.hidden = index < page*pageSize || index >= (page+1)*pageSize; });
+      root.querySelector('[data-gigapan-count]').textContent = `${matching.length} ${root.dataset.countLabel}`;
+      root.querySelector('[data-gigapan-page]').textContent = `${page+1} / ${totalPages}`;
+      previous.disabled = page === 0; next.disabled = page === totalPages-1;
+      root.querySelector<HTMLElement>('[data-gigapan-pagination]').hidden = matching.length <= pageSize;
+    }
+    search.addEventListener('input',()=>render(true)); sort.addEventListener('change',()=>render(true));
+    previous.addEventListener('click',()=>{page--;render();root.scrollIntoView({block:'start'});});
+    next.addEventListener('click',()=>{page++;render();root.scrollIntoView({block:'start'});});
+    render();
+  }
+</script>

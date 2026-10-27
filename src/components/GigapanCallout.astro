@@ -1,0 +1,10 @@
+---
+import collection from '../data/gigapan-collection.json';
+import { href } from '../lib/routes.mjs';
+const { lang } = Astro.props;
+const t = (de,en) => lang === 'de' ? de : en;
+---
+<aside class="gigapan-callout">
+  <div><span class="eyebrow">{t('MEIN GIGAPAN-ARCHIV','MY GIGAPAN ARCHIVE')}</span><h2>{collection.items.length} {t('Panoramen auf Gigapan.','panoramas on Gigapan.')}</h2><p>{t('Durchsuche das Archiv nach Orten und Motiven, sortiere die Liste und öffne jede Aufnahme direkt bei Gigapan. Einige Bilder findest du auch in dieser Galerie.','Search the archive by place or subject, sort the list and open any image directly on Gigapan. Some images also appear in this gallery.')}</p></div>
+  <a class="button primary" href={href({kind:'gigapan'},lang)}>{t('Zur Gigapan-Sammlung','Browse the Gigapan collection')} <span>→</span></a>
+</aside>

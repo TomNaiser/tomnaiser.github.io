@@ -1,0 +1,11 @@
+---
+import { href, ui } from '../lib/routes.mjs';
+const { page, lang, count } = Astro.props;
+const total = Math.ceil(count / 9);
+const current = page.page || 1;
+---
+{total > 1 && <nav class="pagination" aria-label={lang === 'de' ? 'Seitennavigation' : 'Pagination'}>
+  {current > 1 && <a href={href({ ...page, page: current - 1 }, lang)}>← {ui[lang].previous}</a>}
+  <span>{lang === 'de' ? 'Seite' : 'Page'} {current} / {total}</span>
+  {current < total && <a href={href({ ...page, page: current + 1 }, lang)}>{ui[lang].next} →</a>}
+</nav>}

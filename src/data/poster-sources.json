@@ -1,0 +1,1175 @@
+[
+  {
+    "id": "Hochries-Panorama1",
+    "file": "/images/posters/Hochries-Panorama1.webp",
+    "sourceLevelWidth": 14336,
+    "cropColumns": [
+      2,
+      5
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries-Panorama1/Hochries-Panorama1.tiles/l1/001/l1_001_002.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries-Panorama1/Hochries-Panorama1.tiles/l1/001/l1_001_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries-Panorama1/Hochries-Panorama1.tiles/l1/001/l1_001_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries-Panorama1/Hochries-Panorama1.tiles/l1/001/l1_001_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries-Panorama1/Hochries-Panorama1.tiles/l1/002/l1_002_002.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries-Panorama1/Hochries-Panorama1.tiles/l1/002/l1_002_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries-Panorama1/Hochries-Panorama1.tiles/l1/002/l1_002_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries-Panorama1/Hochries-Panorama1.tiles/l1/002/l1_002_005.jpg"
+    ],
+    "size": [
+      2200,
+      627
+    ]
+  },
+  {
+    "id": "Nenntmannsreuth011023",
+    "file": "/images/posters/Nenntmannsreuth011023.webp",
+    "sourceLevelWidth": 31744,
+    "cropColumns": [
+      7,
+      10
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth011023/Nenntmannsreuth011023.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth011023/Nenntmannsreuth011023.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth011023/Nenntmannsreuth011023.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth011023/Nenntmannsreuth011023.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth011023/Nenntmannsreuth011023.tiles/l1/002/l1_002_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth011023/Nenntmannsreuth011023.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth011023/Nenntmannsreuth011023.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth011023/Nenntmannsreuth011023.tiles/l1/002/l1_002_010.jpg"
+    ],
+    "size": [
+      2200,
+      861
+    ]
+  },
+  {
+    "id": "Froettmanning16bit060222",
+    "file": "/images/posters/Froettmanning16bit060222.webp",
+    "sourceLevelWidth": 24704,
+    "cropColumns": [
+      5,
+      8
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Froettmanning16bit060222/Froettmanning16bit060222.tiles/l1/01/l1_01_05.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Froettmanning16bit060222/Froettmanning16bit060222.tiles/l1/01/l1_01_06.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Froettmanning16bit060222/Froettmanning16bit060222.tiles/l1/01/l1_01_07.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Froettmanning16bit060222/Froettmanning16bit060222.tiles/l1/01/l1_01_08.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Froettmanning16bit060222/Froettmanning16bit060222.tiles/l1/02/l1_02_05.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Froettmanning16bit060222/Froettmanning16bit060222.tiles/l1/02/l1_02_06.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Froettmanning16bit060222/Froettmanning16bit060222.tiles/l1/02/l1_02_07.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Froettmanning16bit060222/Froettmanning16bit060222.tiles/l1/02/l1_02_08.jpg"
+    ],
+    "size": [
+      2200,
+      741
+    ]
+  },
+  {
+    "id": "Himmelkron170923",
+    "file": "/images/posters/Himmelkron170923.webp",
+    "sourceLevelWidth": 14336,
+    "cropColumns": [
+      2,
+      5
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron170923/Himmelkron170923.tiles/l1/001/l1_001_002.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron170923/Himmelkron170923.tiles/l1/001/l1_001_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron170923/Himmelkron170923.tiles/l1/001/l1_001_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron170923/Himmelkron170923.tiles/l1/001/l1_001_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron170923/Himmelkron170923.tiles/l1/002/l1_002_002.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron170923/Himmelkron170923.tiles/l1/002/l1_002_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron170923/Himmelkron170923.tiles/l1/002/l1_002_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron170923/Himmelkron170923.tiles/l1/002/l1_002_005.jpg"
+    ],
+    "size": [
+      2200,
+      559
+    ]
+  },
+  {
+    "id": "HochriesPanorama",
+    "file": "/images/posters/HochriesPanorama.webp",
+    "sourceLevelWidth": 25600,
+    "cropColumns": [
+      5,
+      8
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/HochriesPanorama/HochriesPanorama.tiles/l1/001/l1_001_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/HochriesPanorama/HochriesPanorama.tiles/l1/001/l1_001_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/HochriesPanorama/HochriesPanorama.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/HochriesPanorama/HochriesPanorama.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/HochriesPanorama/HochriesPanorama.tiles/l1/002/l1_002_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/HochriesPanorama/HochriesPanorama.tiles/l1/002/l1_002_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/HochriesPanorama/HochriesPanorama.tiles/l1/002/l1_002_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/HochriesPanorama/HochriesPanorama.tiles/l1/002/l1_002_008.jpg"
+    ],
+    "size": [
+      2200,
+      787
+    ]
+  },
+  {
+    "id": "Hochries_auf_halber_Hoehe",
+    "file": "/images/posters/Hochries_auf_halber_Hoehe.webp",
+    "sourceLevelWidth": 34816,
+    "cropColumns": [
+      7,
+      10
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries_auf_halber_Hoehe/Hochries_auf_halber_Hoehe.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries_auf_halber_Hoehe/Hochries_auf_halber_Hoehe.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries_auf_halber_Hoehe/Hochries_auf_halber_Hoehe.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries_auf_halber_Hoehe/Hochries_auf_halber_Hoehe.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries_auf_halber_Hoehe/Hochries_auf_halber_Hoehe.tiles/l1/002/l1_002_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries_auf_halber_Hoehe/Hochries_auf_halber_Hoehe.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries_auf_halber_Hoehe/Hochries_auf_halber_Hoehe.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochries_auf_halber_Hoehe/Hochries_auf_halber_Hoehe.tiles/l1/002/l1_002_010.jpg"
+    ],
+    "size": [
+      2037,
+      1000
+    ]
+  },
+  {
+    "id": "Goldberg090619_f400",
+    "file": "/images/posters/Goldberg090619_f400.webp",
+    "sourceLevelWidth": 8256,
+    "cropColumns": [
+      7,
+      10
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goldberg090619_f400/Goldberg_f400.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goldberg090619_f400/Goldberg_f400.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goldberg090619_f400/Goldberg_f400.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goldberg090619_f400/Goldberg_f400.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goldberg090619_f400/Goldberg_f400.tiles/l1/002/l1_002_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goldberg090619_f400/Goldberg_f400.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goldberg090619_f400/Goldberg_f400.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goldberg090619_f400/Goldberg_f400.tiles/l1/002/l1_002_010.jpg"
+    ],
+    "size": [
+      2048,
+      948
+    ]
+  },
+  {
+    "id": "Fichtelgebirge270619",
+    "file": "/images/posters/Fichtelgebirge270619.webp",
+    "sourceLevelWidth": 9728,
+    "cropColumns": [
+      8,
+      11
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge270619/Fichtelgebirge270619.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge270619/Fichtelgebirge270619.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge270619/Fichtelgebirge270619.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge270619/Fichtelgebirge270619.tiles/l1/001/l1_001_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge270619/Fichtelgebirge270619.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge270619/Fichtelgebirge270619.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge270619/Fichtelgebirge270619.tiles/l1/002/l1_002_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge270619/Fichtelgebirge270619.tiles/l1/002/l1_002_011.jpg"
+    ],
+    "size": [
+      2048,
+      720
+    ]
+  },
+  {
+    "id": "Fichtelgebirge010819",
+    "file": "/images/posters/Fichtelgebirge010819.webp",
+    "sourceLevelWidth": 9344,
+    "cropColumns": [
+      8,
+      11
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge010819/Fichtelgebirge010819.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge010819/Fichtelgebirge010819.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge010819/Fichtelgebirge010819.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge010819/Fichtelgebirge010819.tiles/l1/001/l1_001_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge010819/Fichtelgebirge010819.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge010819/Fichtelgebirge010819.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge010819/Fichtelgebirge010819.tiles/l1/002/l1_002_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge010819/Fichtelgebirge010819.tiles/l1/002/l1_002_011.jpg"
+    ],
+    "size": [
+      2048,
+      614
+    ]
+  },
+  {
+    "id": "NenntmannsreuthJuli2020",
+    "file": "/images/posters/NenntmannsreuthJuli2020.webp",
+    "sourceLevelWidth": 9344,
+    "cropColumns": [
+      8,
+      11
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/NenntmannsreuthJuli2020/NenntmannsreuthJuli2020.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/NenntmannsreuthJuli2020/NenntmannsreuthJuli2020.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/NenntmannsreuthJuli2020/NenntmannsreuthJuli2020.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/NenntmannsreuthJuli2020/NenntmannsreuthJuli2020.tiles/l1/001/l1_001_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/NenntmannsreuthJuli2020/NenntmannsreuthJuli2020.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/NenntmannsreuthJuli2020/NenntmannsreuthJuli2020.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/NenntmannsreuthJuli2020/NenntmannsreuthJuli2020.tiles/l1/002/l1_002_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/NenntmannsreuthJuli2020/NenntmannsreuthJuli2020.tiles/l1/002/l1_002_011.jpg"
+    ],
+    "size": [
+      2048,
+      564
+    ]
+  },
+  {
+    "id": "Fichtelgebirge171123",
+    "file": "/images/posters/Fichtelgebirge171123.webp",
+    "sourceLevelWidth": 35840,
+    "cropColumns": [
+      8,
+      11
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge171123/Fichtelgebirge171123.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge171123/Fichtelgebirge171123.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge171123/Fichtelgebirge171123.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge171123/Fichtelgebirge171123.tiles/l1/001/l1_001_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge171123/Fichtelgebirge171123.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge171123/Fichtelgebirge171123.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge171123/Fichtelgebirge171123.tiles/l1/002/l1_002_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge171123/Fichtelgebirge171123.tiles/l1/002/l1_002_011.jpg"
+    ],
+    "size": [
+      2200,
+      632
+    ]
+  },
+  {
+    "id": "Fichtelgebirge090626mitDampflokV3",
+    "file": "/images/posters/Fichtelgebirge090626mitDampflokV3.webp",
+    "sourceLevelWidth": 35840,
+    "cropColumns": [
+      8,
+      11
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge090626mitDampflokV3/Fichtelgebirge090626mitDampflokV3.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge090626mitDampflokV3/Fichtelgebirge090626mitDampflokV3.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge090626mitDampflokV3/Fichtelgebirge090626mitDampflokV3.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge090626mitDampflokV3/Fichtelgebirge090626mitDampflokV3.tiles/l1/001/l1_001_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge090626mitDampflokV3/Fichtelgebirge090626mitDampflokV3.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge090626mitDampflokV3/Fichtelgebirge090626mitDampflokV3.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge090626mitDampflokV3/Fichtelgebirge090626mitDampflokV3.tiles/l1/002/l1_002_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge090626mitDampflokV3/Fichtelgebirge090626mitDampflokV3.tiles/l1/002/l1_002_011.jpg"
+    ],
+    "size": [
+      2200,
+      784
+    ]
+  },
+  {
+    "id": "Fichtelgebirge181025",
+    "file": "/images/posters/Fichtelgebirge181025.webp",
+    "sourceLevelWidth": 47104,
+    "cropColumns": [
+      10,
+      13
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge181025/Fichtelgebirge181025.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge181025/Fichtelgebirge181025.tiles/l1/001/l1_001_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge181025/Fichtelgebirge181025.tiles/l1/001/l1_001_012.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge181025/Fichtelgebirge181025.tiles/l1/001/l1_001_013.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge181025/Fichtelgebirge181025.tiles/l1/002/l1_002_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge181025/Fichtelgebirge181025.tiles/l1/002/l1_002_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge181025/Fichtelgebirge181025.tiles/l1/002/l1_002_012.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge181025/Fichtelgebirge181025.tiles/l1/002/l1_002_013.jpg"
+    ],
+    "size": [
+      2200,
+      722
+    ]
+  },
+  {
+    "id": "Fichtelgebirge271224V2",
+    "file": "/images/posters/Fichtelgebirge271224V2.webp",
+    "sourceLevelWidth": 34816,
+    "cropColumns": [
+      7,
+      10
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge271224V2/Fichtelgebirge271224V2.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge271224V2/Fichtelgebirge271224V2.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge271224V2/Fichtelgebirge271224V2.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge271224V2/Fichtelgebirge271224V2.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge271224V2/Fichtelgebirge271224V2.tiles/l1/002/l1_002_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge271224V2/Fichtelgebirge271224V2.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge271224V2/Fichtelgebirge271224V2.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge271224V2/Fichtelgebirge271224V2.tiles/l1/002/l1_002_010.jpg"
+    ],
+    "size": [
+      2200,
+      771
+    ]
+  },
+  {
+    "id": "UeberBadBerneck010819",
+    "file": "/images/posters/UeberBadBerneck010819.webp",
+    "sourceLevelWidth": 4096,
+    "cropColumns": [
+      3,
+      6
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/UeberBadBerneck010819/UeberBadBerneck010819.tiles/l1/001/l1_001_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/UeberBadBerneck010819/UeberBadBerneck010819.tiles/l1/001/l1_001_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/UeberBadBerneck010819/UeberBadBerneck010819.tiles/l1/001/l1_001_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/UeberBadBerneck010819/UeberBadBerneck010819.tiles/l1/001/l1_001_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/UeberBadBerneck010819/UeberBadBerneck010819.tiles/l1/002/l1_002_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/UeberBadBerneck010819/UeberBadBerneck010819.tiles/l1/002/l1_002_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/UeberBadBerneck010819/UeberBadBerneck010819.tiles/l1/002/l1_002_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/UeberBadBerneck010819/UeberBadBerneck010819.tiles/l1/002/l1_002_006.jpg"
+    ],
+    "size": [
+      2048,
+      588
+    ]
+  },
+  {
+    "id": "Maintal_030722",
+    "file": "/images/posters/Maintal_030722.webp",
+    "sourceLevelWidth": 28672,
+    "cropColumns": [
+      6,
+      9
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Maintal_030722/Maintal_030722.tiles/l1/001/l1_001_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Maintal_030722/Maintal_030722.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Maintal_030722/Maintal_030722.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Maintal_030722/Maintal_030722.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Maintal_030722/Maintal_030722.tiles/l1/002/l1_002_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Maintal_030722/Maintal_030722.tiles/l1/002/l1_002_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Maintal_030722/Maintal_030722.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Maintal_030722/Maintal_030722.tiles/l1/002/l1_002_009.jpg"
+    ],
+    "size": [
+      2200,
+      794
+    ]
+  },
+  {
+    "id": "Zottaschen191025V3",
+    "file": "/images/posters/Zottaschen191025V3.webp",
+    "sourceLevelWidth": 18432,
+    "cropColumns": [
+      3,
+      6
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Zottaschen191025V3/Zottaschen191025V1.tiles/l1/001/l1_001_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Zottaschen191025V3/Zottaschen191025V1.tiles/l1/001/l1_001_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Zottaschen191025V3/Zottaschen191025V1.tiles/l1/001/l1_001_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Zottaschen191025V3/Zottaschen191025V1.tiles/l1/001/l1_001_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Zottaschen191025V3/Zottaschen191025V1.tiles/l1/002/l1_002_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Zottaschen191025V3/Zottaschen191025V1.tiles/l1/002/l1_002_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Zottaschen191025V3/Zottaschen191025V1.tiles/l1/002/l1_002_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Zottaschen191025V3/Zottaschen191025V1.tiles/l1/002/l1_002_006.jpg"
+    ],
+    "size": [
+      2200,
+      657
+    ]
+  },
+  {
+    "id": "Schneeberg050619_f135",
+    "file": "/images/posters/Schneeberg050619_f135.webp",
+    "sourceLevelWidth": 3072,
+    "cropColumns": [
+      2,
+      5
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Schneeberg050619_f135/DSC02600_Panorama.tiles/l1/001/l1_001_002.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Schneeberg050619_f135/DSC02600_Panorama.tiles/l1/001/l1_001_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Schneeberg050619_f135/DSC02600_Panorama.tiles/l1/001/l1_001_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Schneeberg050619_f135/DSC02600_Panorama.tiles/l1/001/l1_001_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Schneeberg050619_f135/DSC02600_Panorama.tiles/l1/002/l1_002_002.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Schneeberg050619_f135/DSC02600_Panorama.tiles/l1/002/l1_002_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Schneeberg050619_f135/DSC02600_Panorama.tiles/l1/002/l1_002_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Schneeberg050619_f135/DSC02600_Panorama.tiles/l1/002/l1_002_005.jpg"
+    ],
+    "size": [
+      2048,
+      842
+    ]
+  },
+  {
+    "id": "PresseckerKnockF200ProcessedV4",
+    "file": "/images/posters/PresseckerKnockF200ProcessedV4.webp",
+    "sourceLevelWidth": 72704,
+    "cropColumns": [
+      17,
+      20
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/PresseckerKnockF200ProcessedV4/PresseckerKnockF200ProcessedV4.tiles/l1/001/l1_001_017.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/PresseckerKnockF200ProcessedV4/PresseckerKnockF200ProcessedV4.tiles/l1/001/l1_001_018.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/PresseckerKnockF200ProcessedV4/PresseckerKnockF200ProcessedV4.tiles/l1/001/l1_001_019.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/PresseckerKnockF200ProcessedV4/PresseckerKnockF200ProcessedV4.tiles/l1/001/l1_001_020.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/PresseckerKnockF200ProcessedV4/PresseckerKnockF200ProcessedV4.tiles/l1/002/l1_002_017.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/PresseckerKnockF200ProcessedV4/PresseckerKnockF200ProcessedV4.tiles/l1/002/l1_002_018.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/PresseckerKnockF200ProcessedV4/PresseckerKnockF200ProcessedV4.tiles/l1/002/l1_002_019.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/PresseckerKnockF200ProcessedV4/PresseckerKnockF200ProcessedV4.tiles/l1/002/l1_002_020.jpg"
+    ],
+    "size": [
+      2200,
+      983
+    ]
+  },
+  {
+    "id": "Germering180619",
+    "file": "/images/posters/Germering180619.webp",
+    "sourceLevelWidth": 6656,
+    "cropColumns": [
+      5,
+      8
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Germering180619/Germering180619.tiles/l1/001/l1_001_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Germering180619/Germering180619.tiles/l1/001/l1_001_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Germering180619/Germering180619.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Germering180619/Germering180619.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Germering180619/Germering180619.tiles/l1/002/l1_002_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Germering180619/Germering180619.tiles/l1/002/l1_002_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Germering180619/Germering180619.tiles/l1/002/l1_002_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Germering180619/Germering180619.tiles/l1/002/l1_002_008.jpg"
+    ],
+    "size": [
+      2048,
+      774
+    ]
+  },
+  {
+    "id": "Tegelberg_dehazed",
+    "file": "/images/posters/Tegelberg_dehazed.webp",
+    "sourceLevelWidth": 4672,
+    "cropColumns": [
+      4,
+      7
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Tegelberg_dehazed/Tegelberg_dehazed.tiles/l1/001/l1_001_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Tegelberg_dehazed/Tegelberg_dehazed.tiles/l1/001/l1_001_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Tegelberg_dehazed/Tegelberg_dehazed.tiles/l1/001/l1_001_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Tegelberg_dehazed/Tegelberg_dehazed.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Tegelberg_dehazed/Tegelberg_dehazed.tiles/l1/002/l1_002_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Tegelberg_dehazed/Tegelberg_dehazed.tiles/l1/002/l1_002_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Tegelberg_dehazed/Tegelberg_dehazed.tiles/l1/002/l1_002_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Tegelberg_dehazed/Tegelberg_dehazed.tiles/l1/002/l1_002_007.jpg"
+    ],
+    "size": [
+      2048,
+      668
+    ]
+  },
+  {
+    "id": "Buechelstein400mm290919",
+    "file": "/images/posters/Buechelstein400mm290919.webp",
+    "sourceLevelWidth": 7168,
+    "cropColumns": [
+      6,
+      9
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919/Buechelstein400mm_B.tiles/l1/001/l1_001_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919/Buechelstein400mm_B.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919/Buechelstein400mm_B.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919/Buechelstein400mm_B.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919/Buechelstein400mm_B.tiles/l1/002/l1_002_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919/Buechelstein400mm_B.tiles/l1/002/l1_002_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919/Buechelstein400mm_B.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919/Buechelstein400mm_B.tiles/l1/002/l1_002_009.jpg"
+    ],
+    "size": [
+      2048,
+      908
+    ]
+  },
+  {
+    "id": "Buechelstein400mm290919_dehazed",
+    "file": "/images/posters/Buechelstein400mm290919_dehazed.webp",
+    "sourceLevelWidth": 3328,
+    "cropColumns": [
+      2,
+      5
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919_dehazed/Buechelstein_entnebelt_D_PanoramaV2.tiles/l1/001/l1_001_002.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919_dehazed/Buechelstein_entnebelt_D_PanoramaV2.tiles/l1/001/l1_001_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919_dehazed/Buechelstein_entnebelt_D_PanoramaV2.tiles/l1/001/l1_001_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919_dehazed/Buechelstein_entnebelt_D_PanoramaV2.tiles/l1/001/l1_001_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919_dehazed/Buechelstein_entnebelt_D_PanoramaV2.tiles/l1/002/l1_002_002.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919_dehazed/Buechelstein_entnebelt_D_PanoramaV2.tiles/l1/002/l1_002_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919_dehazed/Buechelstein_entnebelt_D_PanoramaV2.tiles/l1/002/l1_002_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Buechelstein400mm290919_dehazed/Buechelstein_entnebelt_D_PanoramaV2.tiles/l1/002/l1_002_005.jpg"
+    ],
+    "size": [
+      2048,
+      530
+    ]
+  },
+  {
+    "id": "Kreuzholzhausen_f400",
+    "file": "/images/posters/Kreuzholzhausen_f400.webp",
+    "sourceLevelWidth": 6912,
+    "cropColumns": [
+      6,
+      9
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Kreuzholzhausen_f400/Kreuzholzhausen_f400.tiles/l1/001/l1_001_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Kreuzholzhausen_f400/Kreuzholzhausen_f400.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Kreuzholzhausen_f400/Kreuzholzhausen_f400.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Kreuzholzhausen_f400/Kreuzholzhausen_f400.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Kreuzholzhausen_f400/Kreuzholzhausen_f400.tiles/l1/002/l1_002_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Kreuzholzhausen_f400/Kreuzholzhausen_f400.tiles/l1/002/l1_002_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Kreuzholzhausen_f400/Kreuzholzhausen_f400.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Kreuzholzhausen_f400/Kreuzholzhausen_f400.tiles/l1/002/l1_002_009.jpg"
+    ],
+    "size": [
+      2048,
+      664
+    ]
+  },
+  {
+    "id": "Olyberg_Sued_f200",
+    "file": "/images/posters/Olyberg_Sued_f200.webp",
+    "sourceLevelWidth": 13056,
+    "cropColumns": [
+      12,
+      15
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Olyberg_Sued_f200/Olyberg_Sued_f200.tiles/l1/001/l1_001_012.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Olyberg_Sued_f200/Olyberg_Sued_f200.tiles/l1/001/l1_001_013.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Olyberg_Sued_f200/Olyberg_Sued_f200.tiles/l1/001/l1_001_014.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Olyberg_Sued_f200/Olyberg_Sued_f200.tiles/l1/001/l1_001_015.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Olyberg_Sued_f200/Olyberg_Sued_f200.tiles/l1/002/l1_002_012.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Olyberg_Sued_f200/Olyberg_Sued_f200.tiles/l1/002/l1_002_013.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Olyberg_Sued_f200/Olyberg_Sued_f200.tiles/l1/002/l1_002_014.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Olyberg_Sued_f200/Olyberg_Sued_f200.tiles/l1/002/l1_002_015.jpg"
+    ],
+    "size": [
+      2044,
+      1000
+    ]
+  },
+  {
+    "id": "OlympiabergNordwest",
+    "file": "/images/posters/OlympiabergNordwest.webp",
+    "sourceLevelWidth": 9344,
+    "cropColumns": [
+      8,
+      11
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/OlympiabergNordwest/OlympiabergNordwest.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/OlympiabergNordwest/OlympiabergNordwest.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/OlympiabergNordwest/OlympiabergNordwest.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/OlympiabergNordwest/OlympiabergNordwest.tiles/l1/001/l1_001_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/OlympiabergNordwest/OlympiabergNordwest.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/OlympiabergNordwest/OlympiabergNordwest.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/OlympiabergNordwest/OlympiabergNordwest.tiles/l1/002/l1_002_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/OlympiabergNordwest/OlympiabergNordwest.tiles/l1/002/l1_002_011.jpg"
+    ],
+    "size": [
+      2048,
+      838
+    ]
+  },
+  {
+    "id": "Fischteichf135",
+    "file": "/images/posters/Fischteichf135.webp",
+    "sourceLevelWidth": 1664,
+    "cropColumns": [
+      1,
+      4
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fischteichf135/Fischteichf135.tiles/l1/001/l1_001_001.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fischteichf135/Fischteichf135.tiles/l1/001/l1_001_002.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fischteichf135/Fischteichf135.tiles/l1/001/l1_001_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fischteichf135/Fischteichf135.tiles/l1/001/l1_001_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fischteichf135/Fischteichf135.tiles/l1/002/l1_002_001.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fischteichf135/Fischteichf135.tiles/l1/002/l1_002_002.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fischteichf135/Fischteichf135.tiles/l1/002/l1_002_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Fischteichf135/Fischteichf135.tiles/l1/002/l1_002_004.jpg"
+    ],
+    "size": [
+      1664,
+      634
+    ]
+  },
+  {
+    "id": "Nenntmannsreuth_Hof360",
+    "file": "/images/posters/Nenntmannsreuth_Hof360.webp",
+    "sourceLevelWidth": 3136,
+    "cropColumns": [
+      2,
+      5
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth_Hof360/Nenntmannsreuth_Hof360.tiles/l1/001/l1_001_002.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth_Hof360/Nenntmannsreuth_Hof360.tiles/l1/001/l1_001_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth_Hof360/Nenntmannsreuth_Hof360.tiles/l1/001/l1_001_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth_Hof360/Nenntmannsreuth_Hof360.tiles/l1/001/l1_001_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth_Hof360/Nenntmannsreuth_Hof360.tiles/l1/002/l1_002_002.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth_Hof360/Nenntmannsreuth_Hof360.tiles/l1/002/l1_002_003.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth_Hof360/Nenntmannsreuth_Hof360.tiles/l1/002/l1_002_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuth_Hof360/Nenntmannsreuth_Hof360.tiles/l1/002/l1_002_005.jpg"
+    ],
+    "size": [
+      2048,
+      724
+    ]
+  },
+  {
+    "id": "Nenntmannsreuthf400",
+    "file": "/images/posters/Nenntmannsreuthf400.webp",
+    "sourceLevelWidth": 4864,
+    "cropColumns": [
+      4,
+      7
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuthf400/Nenntmannsreuthf400.tiles/l1/001/l1_001_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuthf400/Nenntmannsreuthf400.tiles/l1/001/l1_001_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuthf400/Nenntmannsreuthf400.tiles/l1/001/l1_001_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuthf400/Nenntmannsreuthf400.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuthf400/Nenntmannsreuthf400.tiles/l1/002/l1_002_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuthf400/Nenntmannsreuthf400.tiles/l1/002/l1_002_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuthf400/Nenntmannsreuthf400.tiles/l1/002/l1_002_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Nenntmannsreuthf400/Nenntmannsreuthf400.tiles/l1/002/l1_002_007.jpg"
+    ],
+    "size": [
+      2048,
+      738
+    ]
+  },
+  {
+    "id": "DiessenAussichtsturm_v2",
+    "file": "/images/posters/DiessenAussichtsturm_v2.webp",
+    "sourceLevelWidth": 18688,
+    "cropColumns": [
+      17,
+      20
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/DiessenAussichtsturm_v2/DiessenAussichtsturm_v2.tiles/l1/001/l1_001_017.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/DiessenAussichtsturm_v2/DiessenAussichtsturm_v2.tiles/l1/001/l1_001_018.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/DiessenAussichtsturm_v2/DiessenAussichtsturm_v2.tiles/l1/001/l1_001_019.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/DiessenAussichtsturm_v2/DiessenAussichtsturm_v2.tiles/l1/001/l1_001_020.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/DiessenAussichtsturm_v2/DiessenAussichtsturm_v2.tiles/l1/002/l1_002_017.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/DiessenAussichtsturm_v2/DiessenAussichtsturm_v2.tiles/l1/002/l1_002_018.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/DiessenAussichtsturm_v2/DiessenAussichtsturm_v2.tiles/l1/002/l1_002_019.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/DiessenAussichtsturm_v2/DiessenAussichtsturm_v2.tiles/l1/002/l1_002_020.jpg"
+    ],
+    "size": [
+      2048,
+      828
+    ]
+  },
+  {
+    "id": "Raisting360v4",
+    "file": "/images/posters/Raisting360v4.webp",
+    "sourceLevelWidth": 8832,
+    "cropColumns": [
+      8,
+      11
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Raisting360v4/Raisting360v4.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Raisting360v4/Raisting360v4.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Raisting360v4/Raisting360v4.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Raisting360v4/Raisting360v4.tiles/l1/001/l1_001_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Raisting360v4/Raisting360v4.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Raisting360v4/Raisting360v4.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Raisting360v4/Raisting360v4.tiles/l1/002/l1_002_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Raisting360v4/Raisting360v4.tiles/l1/002/l1_002_011.jpg"
+    ],
+    "size": [
+      2048,
+      694
+    ]
+  },
+  {
+    "id": "Jaudesberg2021",
+    "file": "/images/posters/Jaudesberg2021.webp",
+    "sourceLevelWidth": 37376,
+    "cropColumns": [
+      8,
+      11
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Jaudesberg2021/JaudesbergV5mod.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Jaudesberg2021/JaudesbergV5mod.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Jaudesberg2021/JaudesbergV5mod.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Jaudesberg2021/JaudesbergV5mod.tiles/l1/001/l1_001_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Jaudesberg2021/JaudesbergV5mod.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Jaudesberg2021/JaudesbergV5mod.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Jaudesberg2021/JaudesbergV5mod.tiles/l1/002/l1_002_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Jaudesberg2021/JaudesbergV5mod.tiles/l1/002/l1_002_011.jpg"
+    ],
+    "size": [
+      2142,
+      1000
+    ]
+  },
+  {
+    "id": "Himmelkron050921",
+    "file": "/images/posters/Himmelkron050921.webp",
+    "sourceLevelWidth": 28672,
+    "cropColumns": [
+      6,
+      9
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron050921/Himmelkron050921.tiles/l1/001/l1_001_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron050921/Himmelkron050921.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron050921/Himmelkron050921.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron050921/Himmelkron050921.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron050921/Himmelkron050921.tiles/l1/002/l1_002_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron050921/Himmelkron050921.tiles/l1/002/l1_002_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron050921/Himmelkron050921.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Himmelkron050921/Himmelkron050921.tiles/l1/002/l1_002_009.jpg"
+    ],
+    "size": [
+      2200,
+      851
+    ]
+  },
+  {
+    "id": "Goessenreuth110824",
+    "file": "/images/posters/Goessenreuth110824.webp",
+    "sourceLevelWidth": 33280,
+    "cropColumns": [
+      7,
+      10
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goessenreuth110824/Goessenreuth110824.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goessenreuth110824/Goessenreuth110824.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goessenreuth110824/Goessenreuth110824.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goessenreuth110824/Goessenreuth110824.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goessenreuth110824/Goessenreuth110824.tiles/l1/002/l1_002_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goessenreuth110824/Goessenreuth110824.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goessenreuth110824/Goessenreuth110824.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Goessenreuth110824/Goessenreuth110824.tiles/l1/002/l1_002_010.jpg"
+    ],
+    "size": [
+      2200,
+      690
+    ]
+  },
+  {
+    "id": "BindlacherBerg130821",
+    "file": "/images/posters/BindlacherBerg130821.webp",
+    "sourceLevelWidth": 15360,
+    "cropColumns": [
+      3,
+      6
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/BindlacherBerg130821/BindlacherBerg130821.tiles/l1/01/l1_01_03.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BindlacherBerg130821/BindlacherBerg130821.tiles/l1/01/l1_01_04.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BindlacherBerg130821/BindlacherBerg130821.tiles/l1/01/l1_01_05.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BindlacherBerg130821/BindlacherBerg130821.tiles/l1/01/l1_01_06.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BindlacherBerg130821/BindlacherBerg130821.tiles/l1/02/l1_02_03.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BindlacherBerg130821/BindlacherBerg130821.tiles/l1/02/l1_02_04.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BindlacherBerg130821/BindlacherBerg130821.tiles/l1/02/l1_02_05.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BindlacherBerg130821/BindlacherBerg130821.tiles/l1/02/l1_02_06.jpg"
+    ],
+    "size": [
+      2200,
+      705
+    ]
+  },
+  {
+    "id": "Bayreuth040923b",
+    "file": "/images/posters/Bayreuth040923b.webp",
+    "sourceLevelWidth": 23040,
+    "cropColumns": [
+      5,
+      8
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth040923b/Bayreuth040923b.tiles/l1/01/l1_01_05.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth040923b/Bayreuth040923b.tiles/l1/01/l1_01_06.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth040923b/Bayreuth040923b.tiles/l1/01/l1_01_07.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth040923b/Bayreuth040923b.tiles/l1/01/l1_01_08.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth040923b/Bayreuth040923b.tiles/l1/02/l1_02_05.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth040923b/Bayreuth040923b.tiles/l1/02/l1_02_06.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth040923b/Bayreuth040923b.tiles/l1/02/l1_02_07.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth040923b/Bayreuth040923b.tiles/l1/02/l1_02_08.jpg"
+    ],
+    "size": [
+      2200,
+      812
+    ]
+  },
+  {
+    "id": "BayreuthVomSophienberg190921",
+    "file": "/images/posters/BayreuthVomSophienberg190921.webp",
+    "sourceLevelWidth": 28672,
+    "cropColumns": [
+      6,
+      9
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/BayreuthVomSophienberg190921/SophienbergPanorama.tiles/l1/001/l1_001_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BayreuthVomSophienberg190921/SophienbergPanorama.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BayreuthVomSophienberg190921/SophienbergPanorama.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BayreuthVomSophienberg190921/SophienbergPanorama.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BayreuthVomSophienberg190921/SophienbergPanorama.tiles/l1/002/l1_002_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BayreuthVomSophienberg190921/SophienbergPanorama.tiles/l1/002/l1_002_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BayreuthVomSophienberg190921/SophienbergPanorama.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BayreuthVomSophienberg190921/SophienbergPanorama.tiles/l1/002/l1_002_009.jpg"
+    ],
+    "size": [
+      2200,
+      846
+    ]
+  },
+  {
+    "id": "Massenhausen250921ProcessedPTGUI11",
+    "file": "/images/posters/Massenhausen250921ProcessedPTGUI11.webp",
+    "sourceLevelWidth": 1536,
+    "cropColumns": [
+      1,
+      3
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Massenhausen250921ProcessedPTGUI11/Massenhausen250921ProcessedPTGUI11.tiles/l1/001/l1_001_001.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Massenhausen250921ProcessedPTGUI11/Massenhausen250921ProcessedPTGUI11.tiles/l1/001/l1_001_002.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Massenhausen250921ProcessedPTGUI11/Massenhausen250921ProcessedPTGUI11.tiles/l1/001/l1_001_003.jpg"
+    ],
+    "size": [
+      1536,
+      276
+    ]
+  },
+  {
+    "id": "TuerkenfeldOktober21_f200",
+    "file": "/images/posters/TuerkenfeldOktober21_f200.webp",
+    "sourceLevelWidth": 39936,
+    "cropColumns": [
+      9,
+      12
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/TuerkenfeldOktober21_f200/TuerkenfeldOktober21_f200.tiles/l1/01/l1_01_09.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/TuerkenfeldOktober21_f200/TuerkenfeldOktober21_f200.tiles/l1/01/l1_01_10.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/TuerkenfeldOktober21_f200/TuerkenfeldOktober21_f200.tiles/l1/01/l1_01_11.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/TuerkenfeldOktober21_f200/TuerkenfeldOktober21_f200.tiles/l1/01/l1_01_12.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/TuerkenfeldOktober21_f200/TuerkenfeldOktober21_f200.tiles/l1/02/l1_02_09.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/TuerkenfeldOktober21_f200/TuerkenfeldOktober21_f200.tiles/l1/02/l1_02_10.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/TuerkenfeldOktober21_f200/TuerkenfeldOktober21_f200.tiles/l1/02/l1_02_11.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/TuerkenfeldOktober21_f200/TuerkenfeldOktober21_f200.tiles/l1/02/l1_02_12.jpg"
+    ],
+    "size": [
+      2200,
+      766
+    ]
+  },
+  {
+    "id": "FroettmaningerBergBlickSued",
+    "file": "/images/posters/FroettmaningerBergBlickSued.webp",
+    "sourceLevelWidth": 24576,
+    "cropColumns": [
+      5,
+      8
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickSued/FroettmaningerBergBlickSued.tiles/l1/01/l1_01_05.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickSued/FroettmaningerBergBlickSued.tiles/l1/01/l1_01_06.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickSued/FroettmaningerBergBlickSued.tiles/l1/01/l1_01_07.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickSued/FroettmaningerBergBlickSued.tiles/l1/01/l1_01_08.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickSued/FroettmaningerBergBlickSued.tiles/l1/02/l1_02_05.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickSued/FroettmaningerBergBlickSued.tiles/l1/02/l1_02_06.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickSued/FroettmaningerBergBlickSued.tiles/l1/02/l1_02_07.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickSued/FroettmaningerBergBlickSued.tiles/l1/02/l1_02_08.jpg"
+    ],
+    "size": [
+      2200,
+      755
+    ]
+  },
+  {
+    "id": "FroettmaningerBergBlickNord",
+    "file": "/images/posters/FroettmaningerBergBlickNord.webp",
+    "sourceLevelWidth": 31744,
+    "cropColumns": [
+      7,
+      10
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickNord/FroettmaningerBergBlickNord.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickNord/FroettmaningerBergBlickNord.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickNord/FroettmaningerBergBlickNord.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickNord/FroettmaningerBergBlickNord.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickNord/FroettmaningerBergBlickNord.tiles/l1/002/l1_002_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickNord/FroettmaningerBergBlickNord.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickNord/FroettmaningerBergBlickNord.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/FroettmaningerBergBlickNord/FroettmaningerBergBlickNord.tiles/l1/002/l1_002_010.jpg"
+    ],
+    "size": [
+      2200,
+      560
+    ]
+  },
+  {
+    "id": "Bayreuth160422",
+    "file": "/images/posters/Bayreuth160422.webp",
+    "sourceLevelWidth": 37376,
+    "cropColumns": [
+      8,
+      11
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth160422/Bayreuth160422.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth160422/Bayreuth160422.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth160422/Bayreuth160422.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth160422/Bayreuth160422.tiles/l1/001/l1_001_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth160422/Bayreuth160422.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth160422/Bayreuth160422.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth160422/Bayreuth160422.tiles/l1/002/l1_002_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Bayreuth160422/Bayreuth160422.tiles/l1/002/l1_002_011.jpg"
+    ],
+    "size": [
+      2200,
+      632
+    ]
+  },
+  {
+    "id": "Hochstaufenv20",
+    "file": "/images/posters/Hochstaufenv20.webp",
+    "sourceLevelWidth": 45184,
+    "cropColumns": [
+      10,
+      13
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochstaufenv20/Hochstaufenv20.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochstaufenv20/Hochstaufenv20.tiles/l1/001/l1_001_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochstaufenv20/Hochstaufenv20.tiles/l1/001/l1_001_012.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochstaufenv20/Hochstaufenv20.tiles/l1/001/l1_001_013.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochstaufenv20/Hochstaufenv20.tiles/l1/002/l1_002_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochstaufenv20/Hochstaufenv20.tiles/l1/002/l1_002_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochstaufenv20/Hochstaufenv20.tiles/l1/002/l1_002_012.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hochstaufenv20/Hochstaufenv20.tiles/l1/002/l1_002_013.jpg"
+    ],
+    "size": [
+      2200,
+      948
+    ]
+  },
+  {
+    "id": "Hoernle070924",
+    "file": "/images/posters/Hoernle070924.webp",
+    "sourceLevelWidth": 20992,
+    "cropColumns": [
+      4,
+      7
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hoernle070924/Hoernle070924.tiles/l1/001/l1_001_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hoernle070924/Hoernle070924.tiles/l1/001/l1_001_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hoernle070924/Hoernle070924.tiles/l1/001/l1_001_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hoernle070924/Hoernle070924.tiles/l1/001/l1_001_007.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hoernle070924/Hoernle070924.tiles/l1/002/l1_002_004.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hoernle070924/Hoernle070924.tiles/l1/002/l1_002_005.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hoernle070924/Hoernle070924.tiles/l1/002/l1_002_006.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Hoernle070924/Hoernle070924.tiles/l1/002/l1_002_007.jpg"
+    ],
+    "size": [
+      2200,
+      553
+    ]
+  },
+  {
+    "id": "Alling290924",
+    "file": "/images/posters/Alling290924.webp",
+    "sourceLevelWidth": 53504,
+    "cropColumns": [
+      12,
+      15
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Alling290924/Alling290924.tiles/l1/001/l1_001_012.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Alling290924/Alling290924.tiles/l1/001/l1_001_013.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Alling290924/Alling290924.tiles/l1/001/l1_001_014.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Alling290924/Alling290924.tiles/l1/001/l1_001_015.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Alling290924/Alling290924.tiles/l1/002/l1_002_012.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Alling290924/Alling290924.tiles/l1/002/l1_002_013.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Alling290924/Alling290924.tiles/l1/002/l1_002_014.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Alling290924/Alling290924.tiles/l1/002/l1_002_015.jpg"
+    ],
+    "size": [
+      2152,
+      1000
+    ]
+  },
+  {
+    "id": "BambergVonDerGiechburg2018",
+    "file": "/images/posters/BambergVonDerGiechburg2018.webp",
+    "sourceLevelWidth": 39936,
+    "cropColumns": [
+      9,
+      12
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/BambergVonDerGiechburg2018/BambergVonDerGiechburg2018.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BambergVonDerGiechburg2018/BambergVonDerGiechburg2018.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BambergVonDerGiechburg2018/BambergVonDerGiechburg2018.tiles/l1/001/l1_001_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BambergVonDerGiechburg2018/BambergVonDerGiechburg2018.tiles/l1/001/l1_001_012.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BambergVonDerGiechburg2018/BambergVonDerGiechburg2018.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BambergVonDerGiechburg2018/BambergVonDerGiechburg2018.tiles/l1/002/l1_002_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BambergVonDerGiechburg2018/BambergVonDerGiechburg2018.tiles/l1/002/l1_002_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/BambergVonDerGiechburg2018/BambergVonDerGiechburg2018.tiles/l1/002/l1_002_012.jpg"
+    ],
+    "size": [
+      2200,
+      827
+    ]
+  },
+  {
+    "id": "Giechburg061024",
+    "file": "/images/posters/Giechburg061024.webp",
+    "sourceLevelWidth": 36864,
+    "cropColumns": [
+      8,
+      11
+    ],
+    "sources": [
+      "https://d1cq0fc6qm76ez.cloudfront.net/Giechburg061024/Giechburg061024.tiles/l1/001/l1_001_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Giechburg061024/Giechburg061024.tiles/l1/001/l1_001_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Giechburg061024/Giechburg061024.tiles/l1/001/l1_001_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Giechburg061024/Giechburg061024.tiles/l1/001/l1_001_011.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Giechburg061024/Giechburg061024.tiles/l1/002/l1_002_008.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Giechburg061024/Giechburg061024.tiles/l1/002/l1_002_009.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Giechburg061024/Giechburg061024.tiles/l1/002/l1_002_010.jpg",
+      "https://d1cq0fc6qm76ez.cloudfront.net/Giechburg061024/Giechburg061024.tiles/l1/002/l1_002_011.jpg"
+    ],
+    "size": [
+      2200,
+      989
+    ]
+  },
+  {
+    "id": "gigapan-208257",
+    "file": "/images/posters/gigapan-208257.webp",
+    "sourceLevel": 14,
+    "sources": [
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r00/111/r001110.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r00/111/r001111.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r01/000/r010000.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r01/000/r010001.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r01/001/r010010.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r01/001/r010011.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r01/010/r010100.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r01/010/r010101.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r00/111/r001112.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r00/111/r001113.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r01/000/r010002.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r01/000/r010003.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r01/001/r010012.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r01/001/r010013.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r01/010/r010102.jpg",
+      "http://tile208.gigapan.org/gigapans0/208257/tiles/r01/010/r010103.jpg"
+    ],
+    "size": [
+      2048,
+      438
+    ]
+  },
+  {
+    "id": "gigapan-208416",
+    "file": "/images/posters/gigapan-208416.webp",
+    "sourceLevel": 12,
+    "sources": [
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r00/r0011.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r01/r0100.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r01/r0101.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r01/r0110.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r01/r0111.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r10/r1000.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r10/r1001.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r10/r1010.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r00/r0013.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r01/r0102.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r01/r0103.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r01/r0112.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r01/r0113.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r10/r1002.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r10/r1003.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r10/r1012.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r00/r0031.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r01/r0120.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r01/r0121.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r01/r0130.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r01/r0131.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r10/r1020.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r10/r1021.jpg",
+      "http://tile208.gigapan.org/gigapans0/208416/tiles/r10/r1030.jpg"
+    ],
+    "size": [
+      2048,
+      551
+    ]
+  },
+  {
+    "id": "gigapan-207566",
+    "file": "/images/posters/gigapan-207566.webp",
+    "sourceLevel": 12,
+    "sources": [
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r01/r0100.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r01/r0101.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r01/r0110.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r01/r0111.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r10/r1000.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r10/r1001.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r10/r1010.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r10/r1011.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r01/r0102.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r01/r0103.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r01/r0112.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r01/r0113.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r10/r1002.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r10/r1003.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r10/r1012.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r10/r1013.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r01/r0120.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r01/r0121.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r01/r0130.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r01/r0131.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r10/r1020.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r10/r1021.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r10/r1030.jpg",
+      "http://tile207.gigapan.org/gigapans0/207566/tiles/r10/r1031.jpg"
+    ],
+    "size": [
+      2048,
+      575
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+---
+import { href } from '../lib/routes.mjs';
+const isPublished = import.meta.env.PUBLIC_SITE_LIVE === 'true';
+const target = href({ kind: 'home' }, 'de');
+---
+<!doctype html><html lang="de"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width"/><meta http-equiv="refresh" content={`0;url=${target}`}/><meta name="robots" content={isPublished ? 'index,follow' : 'noindex,nofollow'}/><title>Tom's Pixel Labs</title></head><body><a href={target}>Deutsch</a> · <a href={href({kind:'home'},'en')}>English</a></body></html>

@@ -1,0 +1,24 @@
+{
+  "name": "toms-pixel-labs-local-prototype",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro build",
+    "build:pages": "astro build && node scripts/check-content.mjs && node scripts/check-navigation.mjs && node scripts/check-pages-release.mjs",
+    "preview": "astro preview --host 127.0.0.1",
+    "check:content": "node scripts/check-content.mjs",
+    "check:issues": "node scripts/check-reported-issues.mjs",
+    "check:viewer": "node scripts/check-viewer-controls.mjs",
+    "check:navigation": "node scripts/check-navigation.mjs",
+    "check:editorial": "node scripts/check-editorial-update.mjs"
+  },
+  "dependencies": {
+    "astro": "^6.0.0"
+  },
+  "devDependencies": {
+    "mermaid": "^12.2.0"
+  }
+}

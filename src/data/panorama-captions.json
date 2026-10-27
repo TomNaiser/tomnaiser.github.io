@@ -1,0 +1,46 @@
+{
+  "HochriesPanorama": {
+    "de": "Blick vom nördlichen Alpenrand: vom Nordhang des Hochries, etwa auf halber Höhe, nach Norden. Links liegen Rosenheim und München, ganz rechts der Chiemsee. November 2023.",
+    "en": "Looking north from the northern slope of Hochries, roughly halfway up the mountain. Rosenheim and Munich are on the left; Lake Chiemsee is at the far right. November 2023."
+  },
+  "Hochries_auf_halber_Hoehe": {
+    "de": "Blick vom Hochries oberhalb der Seitenalm über das bayerische Alpenvorland. September 2024.",
+    "en": "Looking across the Bavarian Alpine foothills from Hochries, above Seitenalm. September 2024."
+  },
+  "Froettmanning16bit060222": {
+    "de": "München vom Fröttmaninger Berg im Februar 2022. Ein aufziehender Wintersturm sorgt für hervorragende Fernsicht. Böiger Wind und wenig Licht erschweren jedoch hochauflösende Panoramaaufnahmen. Fotografiert mit einer Sony A7R II und einem 400-mm-Sigma-Teleobjektiv bei 1/400 s, f/11 und ISO 500. Die Einzelbilder waren zunächst deutlich verrauscht. Bei der Nachbearbeitung mit DxO PhotoLab verbesserte die KI-basierte DeepPRIME-Rauschunterdrückung die Bildqualität erheblich.",
+    "en": "Munich from Fröttmaninger Berg in February 2022. An approaching winter storm brings exceptional visibility, while gusty wind and low light make high-resolution panorama photography difficult. Captured with a Sony A7R II and a 400 mm Sigma telephoto lens at 1/400 s, f/11 and ISO 500. The individual images were initially quite noisy; processing in DxO PhotoLab with AI-based DeepPRIME noise reduction substantially improved their quality."
+  },
+  "Buechelstein400mm290919_dehazed": {
+    "de": "Ein weiterer Blick vom Büchelstein, etwas später und bei besseren Lichtverhältnissen aufgenommen als die andere Aufnahme desselben Morgens. Nun ist auch die Zugspitze in 220 km Entfernung deutlicher zu erkennen. Das Kraftwerk Isar bei Landshut liegt fast 70 km entfernt. Für mehr Kontrast wurden die Bilder mit dem Neutralhazer-Tool bearbeitet, das den Dunst teilweise reduziert. Dabei verschob sich allerdings die Farbabstimmung: Der Himmel wirkt stellenweise etwas grün- oder blaustichig.",
+    "en": "Another view from Büchelstein, captured a little later under better light than the other panorama from the same morning. The Zugspitze, 220 km away, is now more clearly visible. Isar Power Plant near Landshut is almost 70 km away. Processing with the Neutralhazer tool reduced atmospheric haze and increased contrast, but also shifted the colours: parts of the sky have a slight green or blue cast."
+  },
+  "Buechelstein400mm290919": {
+    "de": "Blick vom Vorderen Bayerischen Wald zu den Alpen. Links liegt Passau unter den Nebelfeldern; die Aussicht reicht bis fast nach Deggendorf, das jenseits des rechten Bildrandes liegt. München bleibt hinter den Hügeln des Voralpenlandes verborgen. Nur der Olympiaturm wird von der Morgensonne angestrahlt und ist deshalb deutlich zu erkennen. September 2019.",
+    "en": "Looking from the Bavarian Forest foothills towards the Alps. Passau lies beneath the fog on the left; the view extends almost to Deggendorf, beyond the right edge. Munich is hidden behind the foothills, but the Olympic Tower catches the morning sun and is clearly visible. September 2019."
+  },
+  "Fichtelgebirge090626mitDampflokV3": {
+    "de": "Blick von Nenntmannsreuth ins Fichtelgebirge, aufgenommen an Pfingsten 2025. Eine Dampflok aus dem Dampflokomotivmuseum in Neuenmarkt-Wirsberg fährt die historische Schiefe Ebene hinauf.",
+    "en": "The Fichtel Mountains from Nenntmannsreuth at Whitsun 2025. A steam locomotive from the museum in Neuenmarkt-Wirsberg climbs the historic Schiefe Ebene incline."
+  },
+  "Germering180619": {
+    "de": "Germering von Puchheim aus gesehen, Juni 2019. Eine Woche nach dem Hagelsturm mit bis zu 6 cm großen Hagelkörnern sind die Schäden noch zu erkennen.",
+    "en": "Germering seen from Puchheim in June 2019. A week after a storm with hailstones up to 6 cm across, the damage is still visible."
+  },
+  "Kreuzholzhausen_f400": {
+    "de": "Blick auf München und die Alpenkette von nahe Kreuzholzhausen, nordwestlich von München. Bemerkenswert sind die Luftspiegelungen im Bereich der Berge links sowie die zahlreichen Vogelschwärme auf ihrem Weg nach Südwesten. Oktober 2019.",
+    "en": "Munich and the Alpine skyline from near Kreuzholzhausen, northwest of Munich. Look for atmospheric mirages around the mountains on the left and the many flocks of birds heading southwest. October 2019."
+  },
+  "gigapan-208257": {
+    "de": "Stadtpanorama von Augsburg. Die interaktive Aufnahme ist auf Gigapan veröffentlicht.",
+    "en": "A panorama of Augsburg, published as an interactive image on Gigapan."
+  },
+  "gigapan-208416": {
+    "de": "Blick von der Neubürg auf Mistelgau, Bayreuth und das Fichtelgebirge. Die interaktive Aufnahme ist auf Gigapan veröffentlicht.",
+    "en": "Mistelgau, Bayreuth and the Fichtel Mountains seen from Neubürg. The interactive panorama is published on Gigapan."
+  },
+  "gigapan-207566": {
+    "de": "Blick vom Hirschberg in Richtung Raisting. Die interaktive Aufnahme ist auf Gigapan veröffentlicht.",
+    "en": "Looking from Hirschberg towards Raisting. The interactive panorama is published on Gigapan."
+  }
+}
