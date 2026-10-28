@@ -4,6 +4,7 @@ import hardwareMedia from '../data/hardware-media.json';
 import astronomyMedia from '../data/astronomy-media.json';
 import landscapeMedia from '../data/landscapes-media.json';
 import aerialMedia from '../data/aerial-media.json';
+import printingMedia from '../data/printing-media.json';
 import PhotoNavigation from './PhotoNavigation.astro';
 import ProjectNavigation from './ProjectNavigation.astro';
 import Diagram from './Diagram.astro';
@@ -11,7 +12,7 @@ const { lang, id } = Astro.props;
 const articles = import.meta.glob('../content/*/*.md', { eager: true });
 const document = articles[`../content/${lang}/${id}.md`];
 const headings = document.getHeadings().filter((heading) => heading.depth === 2);
-const media = [...hardwareMedia, ...astronomyMedia, ...landscapeMedia, ...aerialMedia];
+const media = [...hardwareMedia, ...astronomyMedia, ...landscapeMedia, ...aerialMedia, ...printingMedia];
 const photoArticle = ['astronomy','landscapes','aerial'].includes(id);
 const html = (await document.compiledContent())
   .replace(/src="\/images\//g, `src="${basePath('images/')}`)

@@ -12,6 +12,8 @@ Ein gutes Gigapixelpanorama beginnt mit sauber aufgenommenen Einzelbildern. Eine
 
 Die folgenden Abschnitte erklären diese Schritte in derselben Reihenfolge. Konkrete Aufnahmebeispiele und Zeitmessungen ergänzen den jeweiligen Arbeitsschritt; Kamera und Softwarestand stehen dabei, wenn sie für das Ergebnis wichtig sind.
 
+Wie viel sich in einem Panorama entdecken lässt, zeigt das [Herzogstand-Beispiel mit drei Ausschnitten bis zur Münchner Silhouette](../panoramasystem/#herzogstand-zoom).
+
 ## 01 · Stativ und Panoramakopf ausrichten
 
 Zuerst richte ich **Stativ und Panoramakopf mit der Libelle horizontal** aus. Anschließend prüfe ich die tatsächliche Lage der Kamera. Die schwere Kombination aus Kamera und Teleobjektiv belastet den Kopf; die Mechanik gibt geringfügig nach, sodass die Kamera trotz nivellierter Basis etwas schief hängen kann.

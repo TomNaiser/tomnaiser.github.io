@@ -12,6 +12,8 @@ A good gigapixel panorama starts with sound individual photographs. An unsuitabl
 
 The detailed sections follow this same order. Capture examples and processing measurements accompany the relevant step, with camera and software versions identified where they matter.
 
+The [Herzogstand example offers three crops, from the wider landscape to Munich’s skyline](../panorama-system/#herzogstand-zoom). It shows the detail a large panorama can contain.
+
 ## 01 · Level the tripod and panorama head
 
 I first align **the tripod and panorama head horizontally using the bubble level**, then check the camera itself. The heavy camera and telephoto lens load the head, and the mechanism flexes slightly. The camera can therefore hang at a small angle even when the base is level.

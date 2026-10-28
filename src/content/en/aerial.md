@@ -6,6 +6,8 @@ I captured this panorama in **winter 2010**, using a **GoPro HD Hero** on my hom
 
 ## My home-built MikroKopter
 
+The build is based on the [MikroKopter HexaKopter](https://wiki.mikrokopter.de/HexaKopter). The original wiki describes the system and provides technical documentation.
+
 <figure><img src="/images/articles/aerial/01.webp" alt="Home-built six-propeller hexacopter in the sky" loading="lazy"/><figcaption>My home-built MikroKopter hexacopter in flight, 2010.</figcaption></figure>
 
 The build combined photography with technical experimentation. The camera hung beneath the frame. A useful viewpoint was only part of the challenge: motor vibration could visibly distort the images.

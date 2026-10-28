@@ -1,8 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
+import collection from '../src/data/gigapan-collection.json' with { type: 'json' };
+import germanTitles from '../src/data/gigapan-titles-de.json' with { type: 'json' };
 
 const root = process.argv[2] || 'dist';
+assert.deepEqual(Object.keys(germanTitles).sort(), collection.items.map(item => String(item.id)).sort(), 'Every Gigapan entry must have a German title');
+assert.ok(Object.values(germanTitles).every(title => typeof title === 'string' && title.trim()), 'Empty German Gigapan title');
 const origin = new URL(process.env.SITE_URL).origin;
 const files = fs.readdirSync(root, { recursive: true }).filter(file => file.endsWith('.html'));
 for (const file of files) {

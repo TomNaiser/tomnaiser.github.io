@@ -80,3 +80,7 @@ The original notes mentioned ready-made ServoCity pan/tilt kits as a possibility
 - [PanoramaSoftware, Android and documentation](https://github.com/TomNaiser/PanoramaSoftware)
 
 Illustrations come from my existing project page. Historical builds and current development are identified separately.
+
+## Printed parts in the build
+
+Brackets, clamps, the tripod adapter and enclosures are part of the design. The photographs and parts list on this page show where they fit. My [3D printing page](../3d-printing/) describes how I started and the printers I have used.

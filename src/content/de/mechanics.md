@@ -86,3 +86,7 @@ In den ursprünglichen Notizen hatte ich fertige ServoCity-Pan-/Tilt-Kits als m�
 - [PanoramaSoftware: Android, Dokumentation und Systemüberblick](https://github.com/TomNaiser/PanoramaSoftware)
 
 Die Abbildungen stammen aus meiner bisherigen Projektseite. Aufbaugeschichte, historische Stückliste und aktuelle Entwicklung sind hier zeitlich getrennt, damit die technischen Details nachvollziehbar bleiben.
+
+## Gedruckte Teile im Aufbau
+
+Winkel, Klemmblöcke, Stativadapter und Gehäuse sind Teil der Konstruktion. Die Bilder und die Stückliste auf dieser Seite zeigen, wo sie eingesetzt werden. Wie ich mit dem 3D-Druck begonnen habe und welche Drucker ich verwendet habe, beschreibe ich unter [Erfahrungen mit 3D-Druck](../3d-printing/).

@@ -1,7 +1,9 @@
 ---
 import collection from '../data/gigapan-collection.json';
+import germanTitles from '../data/gigapan-titles-de.json';
 const { lang } = Astro.props;
 const t = (de,en) => lang === 'de' ? de : en;
+const displayTitle = item => lang === 'de' ? germanTitles[item.id] || item.title : item.title;
 const items = [...collection.items].sort((a,b) => (b.date || '').localeCompare(a.date || '') || b.id-a.id);
 ---
 <section class="gigapan-browser" data-gigapan-browser data-lang={lang} data-count-label={t('Panoramen','panoramas')}>
@@ -11,8 +13,8 @@ const items = [...collection.items].sort((a,b) => (b.date || '').localeCompare(a
   </div>
   <div class="gigapan-results" aria-live="polite" data-gigapan-count>{items.length} {t('Panoramen','panoramas')}</div>
   <ol class="gigapan-list" data-gigapan-list>
-    {items.map(item => <li data-gigapan-item data-title={item.title} data-date={item.date || ''} data-size={item.gigapixels} data-search={`${item.title} ${item.description} ${item.tags}`}>
-      <div class="gigapan-row"><div><a class="gigapan-title" href={item.url} target="_blank" rel="noopener noreferrer">{item.title} <span aria-hidden="true">↗</span></a><p class="gigapan-meta"><span>{item.date || t('Datum nicht angegeben','No date provided')}</span><span>{item.gigapixels.toLocaleString(lang,{maximumFractionDigits:2})} Gpx</span><span>{item.width.toLocaleString(lang)} × {item.height.toLocaleString(lang)} px</span></p></div><a class="text-link" href={item.url} target="_blank" rel="noopener noreferrer">{t('Auf Gigapan öffnen','Open on Gigapan')} ↗</a></div>
+    {items.map(item => <li data-gigapan-item data-title={displayTitle(item)} data-date={item.date || ''} data-size={item.gigapixels} data-search={`${displayTitle(item)} ${item.title} ${item.description} ${item.tags}`}>
+      <div class="gigapan-row"><div><a class="gigapan-title" href={item.url} target="_blank" rel="noopener noreferrer">{displayTitle(item)} <span aria-hidden="true">↗</span></a><p class="gigapan-meta"><span>{item.date || t('Datum nicht angegeben','No date provided')}</span><span>{item.gigapixels.toLocaleString(lang,{maximumFractionDigits:2})} Gpx</span><span>{item.width.toLocaleString(lang)} × {item.height.toLocaleString(lang)} px</span></p></div><a class="text-link" href={item.url} target="_blank" rel="noopener noreferrer">{t('Auf Gigapan öffnen','Open on Gigapan')} ↗</a></div>
       {item.description && <details class="gigapan-caption"><summary>{t('Originalbeschreibung','Original caption')}</summary><p>{item.description}</p></details>}
     </li>)}
   </ol>

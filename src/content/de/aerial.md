@@ -6,6 +6,8 @@ Dieses Panorama entstand im **Winter 2010** mit einer **GoPro HD Hero** an meine
 
 ## Mein selbst gebauter MikroKopter
 
+Der Aufbau basiert auf dem [MikroKopter-HexaKopter](https://wiki.mikrokopter.de/HexaKopter). Im ursprünglichen Wiki findest du die Beschreibung des Systems und technische Unterlagen.
+
 <figure><img src="/images/articles/aerial/01.webp" alt="Selbst gebauter Hexakopter mit sechs Propellern am Himmel" loading="lazy"/><figcaption>Mein selbst gebauter MikroKopter-Hexakopter im Flug, 2010.</figcaption></figure>
 
 Der Aufbau war zugleich Fotoprojekt und technisches Experiment. Die Kamera wurde unter dem Rahmen befestigt. Entscheidend für brauchbare Bilder war dabei nicht nur der Blickwinkel: Vibrationen der Motoren konnten die Aufnahmen deutlich verformen.
