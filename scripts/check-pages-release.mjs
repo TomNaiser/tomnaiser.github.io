@@ -17,6 +17,14 @@ for (const file of files) {
   if (file !== 'index.html') {
     const canonical = html.match(/<link\b[^>]*rel="canonical"[^>]*href="([^"]+)"/);
     assert.ok(canonical && new URL(canonical[1]).origin === origin, `${file}: incorrect canonical`);
+    const lang = file.replaceAll('\\', '/').split('/')[0];
+    const privacyRoute = lang === 'de' ? '/de/datenschutz/' : '/en/privacy/';
+    assert.ok(html.includes(`href="${privacyRoute}"`), `${file}: missing privacy notice`);
+    assert.ok(html.includes('data-statistics-consent data-enabled="true"'), `${file}: missing consent controls`);
+    assert.ok(!/<script\b[^>]*\bsrc=["'][^"']*(?:goatcounter|gc\.zgo\.at)/i.test(html), `${file}: statistics script loaded before consent`);
+    if (file.replaceAll('\\', '/').endsWith(`${privacyRoute.slice(1)}index.html`)) {
+      assert.ok(html.includes('data-count-page="false"'), `${file}: privacy notice must not be counted`);
+    }
   }
 }
 for (const name of ['Archive', 'Docs', '.local', 'node_modules', 'src', '.git']) {

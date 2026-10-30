@@ -1,0 +1,119 @@
+---
+import { href, basePath } from '../lib/routes.mjs';
+const { lang, page } = Astro.props;
+const t = (de, en) => lang === 'de' ? de : en;
+const enabled = import.meta.env.PUBLIC_SITE_LIVE === 'true' || import.meta.env.DEV;
+---
+<div data-statistics-consent data-enabled={String(enabled)} data-count-page={String(page.kind !== 'privacy')} data-counter-script={basePath('js/goatcounter-count.js')}>
+  <button type="button" class="statistics-settings" data-statistics-open aria-controls="statistics-panel" aria-expanded="false">{t('Datenschutzeinstellungen', 'Privacy settings')}</button>
+  <section id="statistics-panel" class="statistics-panel" role="region" aria-labelledby="statistics-heading" hidden>
+    <div class="statistics-copy">
+      <h2 id="statistics-heading" tabindex="-1">{enabled ? t('Darf ich Seitenaufrufe zählen?', 'May I count page views?') : t('Statistik ist ausgeschaltet.', 'Statistics are switched off.')}</h2>
+      <p>{enabled ? t('Mit GoatCounter sehe ich, welche Seiten gefragt sind und aus welchen Ländern Besucher kommen. Die Seite funktioniert auch ohne Statistik vollständig.', 'GoatCounter helps me see which pages are popular and which countries visitors come from. The website works fully without statistics.') : t('Diese Webseite sendet derzeit keine Statistikdaten an GoatCounter.', 'This website currently sends no statistics to GoatCounter.')}</p>
+      {enabled && <details><summary>{t('Was wird erfasst?', 'What is collected?')}</summary><p>{t('Übertragen werden der Seitenpfad und gegebenenfalls die Domain der verweisenden Webseite. IP-Adresse und Browserkennung werden bei der Verbindung technisch an den Dienst übermittelt; aus der IP-Adresse wird das Land ermittelt. Zur Besuchswiedererkennung kann GoatCounter Website, IP-Adresse und Browserkennung bis zu acht Stunden im Arbeitsspeicher verknüpfen. Individuelle Besuchsverläufe werden nicht gespeichert. Anbieter ist Martin Tournoij in Irland; laut Anbieter liegen die Server in Deutschland und Finnland. Die Statistik erfolgt auf Grundlage deiner Einwilligung. Du kannst sie hier jederzeit widerrufen. Deine Auswahl gilt für höchstens sechs Monate in diesem Browser.', 'The page path and, where available, the referring website’s domain are sent. The connection also transmits the IP address and browser header to the service; the country is derived from the IP address. To recognise repeat visits, GoatCounter may associate the website, IP address and browser header in memory for up to eight hours. Individual visit histories are not stored. The provider is Martin Tournoij in Ireland; according to the provider, servers are located in Germany and Finland. Statistics are based on your consent, which you can withdraw here at any time. Your choice is valid in this browser for up to six months.')}</p></details>}
+      <p class="statistics-status" data-statistics-status role="status"></p>
+      <a class="statistics-privacy" href={href({kind:'privacy'},lang)}>{t('Datenschutzerklärung lesen', 'Read the privacy notice')} →</a>
+    </div>
+    <div class="statistics-actions">
+      {enabled && <><button type="button" class="button secondary" data-statistics-deny>{t('Ohne Statistik fortfahren', 'Continue without statistics')}</button><button type="button" class="button secondary" data-statistics-allow>{t('Statistik erlauben', 'Allow statistics')}</button></>}
+      <button type="button" class="statistics-close" data-statistics-close>{t('Schließen', 'Close')}</button>
+    </div>
+  </section>
+</div>
+<script>
+  import { CONSENT_KEY, createStatisticsConsent, countConsentedPage, referringOrigin } from '../lib/statistics-consent.mjs';
+
+  const root = document.querySelector<HTMLElement>('[data-statistics-consent]');
+  if (root) {
+    const panel = root.querySelector<HTMLElement>('#statistics-panel')!;
+    const open = root.querySelector<HTMLButtonElement>('[data-statistics-open]')!;
+    const heading = root.querySelector<HTMLElement>('#statistics-heading')!;
+    const status = root.querySelector<HTMLElement>('[data-statistics-status]')!;
+    const isEnglish = document.documentElement.lang === 'en';
+    const uiEnabled = root.dataset.enabled === 'true';
+    const enabled = uiEnabled && window.location.hostname === 'tomnaiser.github.io';
+    // Access itself can throw when storage is disabled by the browser.
+    const storage = {
+      getItem: (key: string) => window.localStorage.getItem(key),
+      setItem: (key: string, value: string) => window.localStorage.setItem(key, value),
+    };
+    const consent = createStatisticsConsent({ storage, enabled });
+    let countPromise: Promise<unknown> | null = null;
+    let hasCounted = false;
+
+    function show(focus = true) {
+      panel.hidden = false;
+      open.setAttribute('aria-expanded', 'true');
+      if (focus) heading.focus();
+    }
+    function hide() {
+      panel.hidden = true;
+      open.setAttribute('aria-expanded', 'false');
+    }
+    function updateStatus() {
+      status.textContent = uiEnabled && consent.choice() === 'allow'
+        ? (isEnglish ? 'Statistics are allowed. Choose “Continue without statistics” to withdraw.' : 'Statistik ist erlaubt. Mit „Ohne Statistik fortfahren“ kannst du widerrufen.')
+        : '';
+    }
+    function loadCounter() {
+      if (countPromise) return countPromise;
+      countPromise = new Promise((resolve, reject) => {
+        const counterWindow = window as typeof window & { goatcounter?: Record<string, any> };
+        counterWindow.goatcounter = { no_onload: true, no_events: true };
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = root.dataset.counterScript!;
+        script.referrerPolicy = 'no-referrer';
+        script.dataset.goatcounter = 'https://toms-pixel-labs.goatcounter.com/count';
+        script.onload = () => resolve(counterWindow.goatcounter);
+        script.onerror = () => { script.remove(); countPromise = null; reject(new Error('Statistics unavailable')); };
+        document.head.appendChild(script);
+      });
+      return countPromise;
+    }
+    async function countPage() {
+      if (hasCounted || root.dataset.countPage !== 'true') return;
+      try {
+        await countConsentedPage({ consent, loadCounter, count: (counter: any) => {
+          if (hasCounted || counter.filter()) return;
+          hasCounted = true;
+          counter.count({ path: window.location.pathname, title: '',
+            referrer: referringOrigin(document.referrer, window.location.origin) });
+        } });
+      } catch { /* Blocking analytics must never affect the website. */ }
+    }
+    open.addEventListener('click', () => { updateStatus(); show(); });
+    root.querySelector('[data-statistics-close]')?.addEventListener('click', () => { hide(); open.focus(); });
+    root.querySelector('[data-statistics-deny]')?.addEventListener('click', () => {
+      consent.choose('deny'); hide(); open.focus();
+    });
+    root.querySelector('[data-statistics-allow]')?.addEventListener('click', () => {
+      consent.choose('allow'); hide(); open.focus(); void countPage();
+    });
+    panel.addEventListener('keydown', event => { if (event.key === 'Escape') { hide(); open.focus(); } });
+    window.addEventListener('storage', event => {
+      if (event.key === CONSENT_KEY || event.key === null) updateStatus();
+    });
+    if (uiEnabled && root.dataset.countPage === 'true') {
+      if (consent.choice() === null) show(false);
+      else void countPage();
+    }
+  }
+</script>
+<style>
+  .statistics-settings,.statistics-close{border:0;background:transparent;color:var(--muted);font:inherit;font-size:12px;padding:8px 0;text-decoration:underline;text-underline-offset:4px}
+  .statistics-settings:hover,.statistics-close:hover{color:var(--ink)}
+  .statistics-panel[hidden]{display:none}
+  .statistics-panel{position:fixed;z-index:90;inset:auto 24px 24px;max-width:1060px;margin-inline:auto;padding:24px 28px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 12px 70px #0006;max-height:75dvh;overflow:auto;line-height:1.65}
+  .statistics-panel h2{font-size:24px;letter-spacing:-.025em;margin-bottom:8px}
+  .statistics-panel p{font-size:13px;max-width:80ch}
+  .statistics-panel details{margin-top:12px;font-size:13px}
+  .statistics-panel details p{margin-top:8px}
+  .statistics-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:18px}
+  .statistics-actions .button{flex:1;max-width:280px;padding:12px 18px}
+  .statistics-close{margin-left:auto}
+  .statistics-status:empty{display:none}
+  .statistics-status{margin-top:12px}
+  .statistics-privacy{display:inline-block;font-size:12px;margin-top:10px;text-decoration:underline;text-underline-offset:4px}
+  @media(max-width:600px){.statistics-panel{inset:auto 12px 12px;padding:20px}.statistics-panel h2{font-size:21px}.statistics-actions{align-items:stretch}.statistics-actions .button{flex-basis:100%;max-width:none}.statistics-close{padding:8px}}
+</style>

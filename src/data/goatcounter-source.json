@@ -1,0 +1,12 @@
+{
+  "source": "https://gc.zgo.at/count.js",
+  "retrieved": "2026-10-30",
+  "originalSha256": "792b7abd26c1fb6ae62906833e09a301251e2641816e69e4f95aba518f3fe3f0",
+  "localSha256": "afcc2dbb7b08596fa2ac4182c04587f16a4ba37bfa05a7636247552cf6c16072",
+  "license": "ISC",
+  "changes": [
+    "Remove screen width from collected data",
+    "Remove URL query from collected data"
+  ],
+  "endpoint": "https://toms-pixel-labs.goatcounter.com/count"
+}

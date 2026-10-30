@@ -25,7 +25,10 @@ for (const [id,count] of Object.entries(required)) assert.equal(groupItems(id).l
 
 for (const file of files) {
   const html = fs.readFileSync(path.join(root,file),'utf8');
-  if (/Thomas Naiser/i.test(html)) failures.push(`${file}: full personal name in public artifact`);
+  // The controller must be identified in the privacy notice; keep the name off
+  // every other page, including navigation, metadata and promotional copy.
+  const privacyPage = ['de/datenschutz/index.html', 'en/privacy/index.html'].includes(file.replaceAll('\\', '/'));
+  if (/Thomas Naiser/i.test(html) && !privacyPage) failures.push(`${file}: full personal name outside privacy notice`);
   if (/<a\b[^>]*\bhref=["']mailto:/i.test(html) || /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i.test(html)) failures.push(`${file}: email address embedded as plain text in public artifact`);
   const url = new URL(prefix + '/' + file.replace(/index\.html$/,''), 'http://localhost');
   if (/<iframe\b/i.test(html)) failures.push(`${file}: external iframe is loaded before activation`);
@@ -50,4 +53,4 @@ for (const file of files) {
   }
 }
 if (failures.length) { console.error(failures.join('\n')); process.exitCode = 1; }
-else console.log(JSON.stringify({ htmlPages: files.length, panoramas: panoramas.length, viewpointGroups: groups.length, requiredSeries: required, localLinksAndAssets: 'passed', languagePairs: 'passed', noEagerIframes: 'passed', maxCardsPerPage: 'passed', noFullNameOrPlainEmail: 'passed' },null,2));
+else console.log(JSON.stringify({ htmlPages: files.length, panoramas: panoramas.length, viewpointGroups: groups.length, requiredSeries: required, localLinksAndAssets: 'passed', languagePairs: 'passed', noEagerIframes: 'passed', maxCardsPerPage: 'passed', nameOnlyInPrivacyNoticeAndNoPlainEmail: 'passed' },null,2));

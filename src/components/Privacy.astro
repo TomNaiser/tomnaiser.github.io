@@ -1,0 +1,10 @@
+---
+const { lang } = Astro.props;
+const documents = import.meta.glob('../content/*/privacy.md', { eager: true });
+const document = documents[`../content/${lang}/privacy.md`];
+const headings = document.getHeadings().filter(heading => heading.depth === 2);
+---
+<div class="article-layout detailed-article">
+  <aside class="article-aside"><span class="eyebrow">{lang === 'de' ? 'DATENSCHUTZ' : 'PRIVACY'}</span>{headings.map(heading => <a href={`#${heading.slug}`}>{heading.text}</a>)}</aside>
+  <article class="prose"><document.Content /></article>
+</div>
