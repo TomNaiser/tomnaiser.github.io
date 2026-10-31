@@ -1,21 +1,58 @@
 ---
 const { lang } = Astro.props;
+const t = (de, en) => lang === 'de' ? de : en;
 ---
 <div class="rig-diagram">
-  <svg viewBox="0 0 560 410" role="img" aria-label={lang === 'de' ? 'Funktionsskizze eines motorisierten Panorama-Kamerakopfs' : 'Conceptual diagram of a motorized panorama camera head'}>
-    <defs><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M 28 0 L 0 0 0 28" fill="none" stroke="currentColor" stroke-width=".5" opacity=".15"/></pattern></defs>
-    <rect width="560" height="410" fill="url(#grid)"/>
-    <g fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M190 95v190h180V95M181 286h198v20H181zM268 306v40h24v-40M230 347h100M280 347l-55 48M280 347l55 48"/>
-      <path d="M201 196h158M280 193v-27M213 114h105v68H213zM233 114l8-15h42l8 15M318 130h76v39h-76M394 126h12v47h-12"/>
-      <circle cx="222" cy="132" r="3"/><path d="M238 138h52v29h-52z"/>
-      <circle cx="190" cy="196" r="14"/><circle cx="370" cy="196" r="14"/>
-      <path d="M145 235a110 110 0 0 1 0-80M140 161l5-9 7 8M202 326q78 47 156 0M351 322l10 2-4 9" stroke-dasharray="5 5"/>
-      <path d="M410 142h60M373 210h97M302 303h168M119 85h56M119 78v14M480 78v14M119 85h361" opacity=".4" stroke-width="1"/>
+  <svg viewBox="0 0 640 450" role="img" aria-labelledby="rig-head-title rig-head-description">
+    <title id="rig-head-title">{t('Funktionsprinzip des Panoramakopfs, von vorn gesehen', 'Operating principle of the panorama head, viewed from the front')}</title>
+    <desc id="rig-head-description">{t('Das Objektiv zeigt zum Betrachter. Tilt neigt Kamera und Einstellschlitten um die waagerechte Achse quer zur Blickrichtung. Pan schwenkt den gesamten Kopf um die senkrechte Achse über dem festen Stativanschluss. Die Pfeile zeigen die möglichen Bewegungen.', 'The lens faces the viewer. Tilt rotates the camera and focusing rail about the horizontal axis across the viewing direction. Pan rotates the entire head about the vertical axis above the fixed tripod connection. Arrows indicate the possible movements.')}</desc>
+    <defs>
+      <pattern id="rig-head-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="currentColor" stroke-width=".5" opacity=".15"/></pattern>
+      <marker id="rig-head-arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1L6 4L1 7" fill="none" stroke="currentColor" stroke-width="1.2"/></marker>
+    </defs>
+    <rect width="640" height="450" fill="url(#rig-head-grid)"/>
+    <g fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="4 5" opacity=".45"><path d="M303 318A68 14 0 0 1 439 318"/></g>
+    <g class="head-outline" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round">
+      <rect x="342.6" y="349.8" width="56" height="29.1"/>
+      <rect x="330.3" y="332.9" width="80.6" height="16.9"/>
+      <rect x="330.3" y="330.7" width="80.6" height="2.2"/>
+      <rect x="197" y="317.3" width="252" height="13.4" rx="1"/>
+      <rect x="315.7" y="308.3" width="103.1" height="9"/>
+      <rect x="360.5" y="269.1" width="51.5" height="39.2"/>
+      <rect x="322.4" y="291.5" width="24.6" height="16.8"/>
+      <rect x="437.8" y="309.4" width="24.6" height="25.8"/>
+      <rect x="441.2" y="301.6" width="17.9" height="7.8"/>
+      <rect x="190.3" y="102.2" width="13.4" height="177"/>
+      <rect x="155.6" y="172.8" width="28" height="58.2"/>
+      <rect x="204.8" y="106.7" width="7.9" height="113.1"/>
+      <rect x="183.6" y="86.6" width="26.9" height="20.1"/>
+      <rect x="176.8" y="270.2" width="37" height="33.6"/>
+      <rect x="176.8" y="303.8" width="47.1" height="32.5"/>
+      <rect x="124.2" y="296" width="50.4" height="117.6"/>
+      <rect x="212.7" y="101.1" width="19" height="65" rx="1"/>
+      <rect x="231.7" y="104.5" width="10.1" height="58.4"/>
+      <rect x="241.8" y="126.9" width="11.2" height="13.4"/>
+      <rect x="253" y="111.2" width="16.8" height="44.8"/>
+      <rect x="329.2" y="64.2" width="20.1" height="9"/>
+      <rect x="269.8" y="73.1" width="80.6" height="121"/>
+      <circle cx="310.1" cy="133.6" r="35.8"/>
+      <circle cx="310.1" cy="133.6" r="28" stroke-width="1"/>
     </g>
-    <g fill="currentColor" font-family="monospace" font-size="10" letter-spacing="1.3">
-      <text x="423" y="132">CAMERA</text><text x="423" y="200">TILT</text><text x="423" y="293">PAN</text><text x="126" y="57">PAN / TILT SYSTEM</text>
-      <text x="25" y="387">{lang === 'de' ? 'FUNKTIONSPRINZIP' : 'CONCEPTUAL DIAGRAM'}</text>
+    <g fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="8 4 2 4" opacity=".45"><path d="M150 133.6H363M370.6 252V400"/></g>
+    <g fill="none" stroke="currentColor" stroke-width="1.6" marker-start="url(#rig-head-arrow)" marker-end="url(#rig-head-arrow)">
+      <path d="M389 91C411 110 411 158 389 177"/>
+      <path d="M303 318A68 14 0 0 0 439 318"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width=".8" opacity=".65"><path d="M359 86H417M407 134H437M439 318H472"/></g>
+    <g fill="currentColor" font-family="Consolas, 'Courier New', monospace" font-size="12" letter-spacing="1.3">
+      <text x="30" y="42">PAN / TILT SYSTEM</text>
+      <text x="427" y="90">CAMERA</text>
+      <text x="447" y="138">TILT</text>
+      <text x="482" y="322">PAN</text>
+      <text x="30" y="434">{t('FUNKTIONSPRINZIP', 'OPERATING PRINCIPLE')}</text>
     </g>
   </svg>
 </div>
+<style>
+  .head-outline { fill: var(--bg); }
+</style>

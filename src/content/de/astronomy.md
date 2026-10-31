@@ -1,6 +1,6 @@
 ## Planeten mit Webcam und Dobson
 
-Für meine frühen Planetenaufnahmen verwendete ich ein **10-Zoll-Dobson-Teleskop mit 3×-Barlowlinse** und eine unmodifizierte Philips ToUCam. Später kam eine Quickcam 9000 hinzu. Die Bilder zeigen, wie viel mit einer Webcam, passender Optik und sorgfältiger Nachführung möglich ist. Die Aufnahmen und Gerätebeschreibungen gehören zum damaligen Projektstand.
+Für meine frühen Planetenaufnahmen verwendete ich ein **10-Zoll-Dobson-Teleskop mit 3×-Barlowlinse** und eine unmodifizierte Philips ToUCam. Später kam eine Quickcam 9000 hinzu. Die Bilder auf dieser Seite stammen aus dieser Zeit.
 
 <figure><img src="/images/articles/astronomy/00.webp" alt="Jupiter mit Wolkenbändern" loading="lazy"/><figcaption>Jupiter, aufgenommen mit Webcam am Dobson.</figcaption></figure>
 <figure><img src="/images/articles/astronomy/01.webp" alt="Weitere Jupiteraufnahme" loading="lazy"/><figcaption>Eine weitere Ansicht des Jupiter.</figcaption></figure>
@@ -18,11 +18,11 @@ Die ISS-Serie entstand mit Philips ToUCam am 10-Zoll-Dobson. Ich führte das Tel
 <div class="video-callout"><div><span class="eyebrow">ISS / VIDEO</span><h3>Die Raumstation im bewegten Bild</h3><p>Mein Video „ISSvideo020608“ zeigt den Überflug vom 2. Juni 2008. Das Teleskop wird von Hand nachgeführt.</p></div><a class="button primary" href="https://www.youtube.com/watch?v=T7u88pwCMZ4" target="_blank" rel="noopener noreferrer">ISS-Video auf YouTube ansehen ↗</a></div>
 <figure><img src="/images/articles/astronomy/07.webp" alt="Fotomontage von Mond und Planeten im Größenvergleich" loading="lazy"/><figcaption>Fotomontage zum Vergleich der scheinbaren Größen von Mond und Planeten; keine gemeinsame Aufnahme.</figcaption></figure>
 
-Zum Projekt gehören außerdem drei ältere AVI-Videos: der Überflug der Discovery (STS-124) am **1. Juni 2008**, ein ISS-Überflug am **1. Juni 2008** sowie die ISS mit Discovery am **2. Juni 2008**. Die Originalvideos bleiben als separate externe Dateien erreichbar; die Bilder und Beschreibung sind hier lokal übernommen.
+Zum Projekt gehören außerdem drei ältere AVI-Videos: der Überflug der Discovery (STS-124) am **1. Juni 2008**, ein ISS-Überflug am **1. Juni 2008** sowie die ISS mit Discovery am **2. Juni 2008**. Die drei Originalvideos findest du am Ende dieser Seite.
 
 ## Deep Sky mit Watec 120N
 
-Für empfindliche Live-Aufnahmen von Galaxien und Sternhaufen kam die **Watec 120N, auch Stellacam II genannt**, am Dobson zum Einsatz. M82 und M3 zeigen die damaligen Live-Ergebnisse. Bei M51 lässt sich der Einfluss der Nachführung direkt vergleichen.
+Für Live-Aufnahmen von Galaxien und Sternhaufen nutzte ich die **Watec 120N, auch Stellacam II genannt**, am Dobson. Die Bilder von M82 und M3 zeigen das Ergebnis. Bei M51 lässt sich der Einfluss der Nachführung direkt vergleichen.
 
 <figure><img src="/images/articles/astronomy/08.webp" alt="Galaxie M82 im Livebild" loading="lazy"/><figcaption>M82, Livebild mit Watec 120N.</figcaption></figure>
 <figure><img src="/images/articles/astronomy/09.webp" alt="Kugelsternhaufen M3" loading="lazy"/><figcaption>M3, Livebild mit Watec 120N.</figcaption></figure>

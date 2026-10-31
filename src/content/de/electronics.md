@@ -19,9 +19,9 @@ Anfangs bestand die Steuerung aus einem Arduino Mega mit Motor-Shield, Spannungs
 | Logikpegel | 5 V | 5 V |
 | USB und serielle Verbindung | USB-UART nutzt D0/D1 mit | USB-C und Hardware-UART sind getrennt |
 
-Die getrennten seriellen Schnittstellen erleichtern insbesondere den gleichzeitigen Umgang mit USB-Diagnose und Bluetooth. Mehr Ressourcen schaffen Spielraum für die Firmware; die mechanische Aufnahmegeschwindigkeit hängt weiterhin auch von Bewegung, Ausschwingen und Kamera ab.
+Die getrennten seriellen Schnittstellen erleichtern insbesondere den gleichzeitigen Umgang mit USB-Diagnose und Bluetooth. Mit mehr Speicher und Rechenleistung lassen sich Regelung und Kommunikation erweitern. Wie schnell eine Bildserie läuft, hängt aber auch davon ab, wie lange der Kopf bewegt wird, die Kamera ausschwingt und ein Foto speichert.
 
-Der [geprüfte Software- und Motorprofilstand](../software/#geprüfter-stand-und-passende-anleitungen) ist auf der Softwareseite dokumentiert. Die aktuelle Pan-Korrektur verändert das im Controller gespeicherte Motorprofil und benötigt keine neue Platinenrevision. Die Messungen und die noch offenen Erprobungen sind dort direkt verlinkt.
+Der [geprüfte Software- und Motorprofilstand](../software/#geprüfter-stand-und-passende-anleitungen) ist auf der Softwareseite dokumentiert. Die aktuelle Pan-Korrektur verändert das im Controller gespeicherte Motorprofil und benötigt keine neue Platinenrevision. Dort findest du auch die Messergebnisse und die noch ausstehenden Praxistests.
 
 Der Arduino Nano R4 ist beim PanoBoard V5 **kein unveränderter Stecktausch**. Meine [Arduino-Nano-R4-Umrüstanleitung](https://github.com/TomNaiser/PanoBoard/blob/master/PanoBoard5KiCad/Nano-R4-Patch.md) beschreibt unter anderem fünf Widerstandsänderungen, die Pull-ups des Encoder-Busses, Versorgung und Firmware-Anpassungen. Die V5-KiCad-Dateien bilden weiterhin die ursprüngliche Bestückung ab. Für den Aufbau ist deshalb die Anleitung der tatsächlich verwendeten Revision maßgeblich.
 

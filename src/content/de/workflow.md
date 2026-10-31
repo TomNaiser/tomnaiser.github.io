@@ -10,9 +10,9 @@ Ein gutes Gigapixelpanorama beginnt mit sauber aufgenommenen Einzelbildern. Eine
 6. **Ergebnis fertigstellen:** Horizont, Übergänge, Schärfe und bewegte Objekte kontrollieren.
 7. **Für das Web vorbereiten:** krpano-Kacheln erzeugen, Dateizahl und Kachelgröße prüfen und veröffentlichen.
 
-Die folgenden Abschnitte erklären diese Schritte in derselben Reihenfolge. Konkrete Aufnahmebeispiele und Zeitmessungen ergänzen den jeweiligen Arbeitsschritt; Kamera und Softwarestand stehen dabei, wenn sie für das Ergebnis wichtig sind.
+Im Folgenden beschreibe ich die einzelnen Schritte und meine Erfahrungen mit Aufnahme und Verarbeitung.
 
-Wie viel sich in einem Panorama entdecken lässt, zeigt das [Herzogstand-Beispiel mit drei Ausschnitten bis zur Münchner Silhouette](../panoramasystem/#herzogstand-zoom).
+Wie viel sich in einem Panorama entdecken lässt, zeigt der [Blick vom Herzogstand nach München – mit Innenstadt und Allianz Arena im Zoom](../panoramasystem/#herzogstand-zoom).
 
 ## 01 · Stativ und Panoramakopf ausrichten
 
@@ -46,7 +46,7 @@ Ich verwende durchgehend **Silent Shutter, also den vollständig elektronischen 
 
 Das zeilenweise Auslesen kann bei Bewegung weiterhin Rolling-Shutter-Verzerrungen verursachen. Kurze Belichtungszeiten verhindern diesen Effekt nicht grundsätzlich; die Mechanik muss deshalb vor jeder Aufnahme zur Ruhe kommen. Unter flackerndem Kunstlicht können außerdem Helligkeitsbänder entstehen. Diese Einschränkungen beschreibt auch [Sony für Silent Shooting](https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1/articles/00122352).
 
-**Aufnahmebeispiel aus 2023:** Sony A7R II mit Minolta AF 100–400 mm F4.5–6.7 APO, 400 mm, f/11, 1/400 s und ISO 100–200; mit DeepPRIME waren auch ISO 500 brauchbar. Bei damaligen Versuchen hatte ich Helligkeitsverläufe beobachtet und Zeiten kürzer als ungefähr **1/600 s** vermieden. Das beschreibt diese Aufnahmen, keine allgemeine Grenze des Silent Shutters. Heute nutze ich die A7R V und bevorzuge unter passenden Bedingungen 1/1000 s oder kürzer.
+**Aufnahmebeispiel aus 2023:** Sony A7R II mit Minolta AF 100–400 mm F4.5–6.7 APO, 400 mm, f/11, 1/400 s und ISO 100–200; mit DeepPRIME waren auch ISO 500 brauchbar. Bei damaligen Versuchen hatte ich Helligkeitsverläufe beobachtet und Zeiten kürzer als ungefähr **1/600 s** vermieden. Diese Beobachtung gilt für die damaligen Aufnahmen. Heute nutze ich die A7R V und bevorzuge unter passenden Bedingungen 1/1000 s oder kürzer.
 
 ### Sensorstaub vor der Bildserie prüfen
 
@@ -62,7 +62,7 @@ Ich stimme Bildwinkel, Brennweite, Abdeckung und Überlappung aufeinander ab. Me
 
 Vorbeiziehende Wolken und ihre Schatten verändern die Helligkeit der Landschaft. Eine große Serie kurz vor Sonnenuntergang kann ebenfalls starke Helligkeitsverläufe bekommen. Das geeignete Aufnahmefenster ist deshalb genauso wichtig wie ein korrekt eingestelltes Raster.
 
-Nach jeder Bewegung muss die Plattform zur Ruhe kommen, bevor die Kamera auslöst. Zusätzlich braucht die Kamera Zeit zum Speichern. In meinem früheren RAW-Aufbau begrenzte das die Geschwindigkeit auf etwa **2–3 Sekunden pro Bild**. Diese Zeit ist ein Erfahrungswert des damaligen Aufbaus, keine allgemeine Grenze des heutigen Systems.
+Nach jeder Bewegung muss die Plattform zur Ruhe kommen, bevor die Kamera auslöst. Zusätzlich braucht die Kamera Zeit zum Speichern. In meinem früheren RAW-Aufbau begrenzte das die Geschwindigkeit auf etwa **2–3 Sekunden pro Bild**.
 
 ### Den Aufnahmeplan prüfen und starten
 
@@ -74,7 +74,7 @@ Den Ablauf beschreibe ich im [Beispiel zur Wiederaufnahme](../software/#beispiel
 
 Die Steuerung zeichnet die gemessenen Kamerawinkel zu den Auslöseereignissen auf. Diese Daten helfen später bei der Anordnung in PTGui. Sie bestätigen jedoch nicht, dass die Kamera jede Datei gespeichert hat oder dass das Bild scharf ist. Vollständigkeit und Bildqualität werden anhand der tatsächlichen Kameradateien geprüft. Wird eine Spalte oder ein Band wiederholt, müssen die zusätzlichen Bilddateien beim Zusammenstellen des Projekts berücksichtigt werden.
 
-Früher habe ich lange mit den leichten Bridgekameras Lumix FZ28 und FZ200 gearbeitet. Sie bieten einen großen Zoombereich. Bei vergleichbarem Bildausschnitt und langer Brennweite kann Vollformat die benötigte Bildzahl und Aufnahmezeit reduzieren; zugleich steht in meinen Aufnahmen mehr Spielraum beim Rauschen zur Verfügung. Diese Wahl beeinflusst den gesamten Aufnahmeplan.
+Früher habe ich lange mit den leichten Bridgekameras Lumix FZ28 und FZ200 gearbeitet. Sie bieten einen großen Zoombereich. Bei vergleichbarem Bildausschnitt und langer Brennweite kann Vollformat die benötigte Bildzahl und Aufnahmezeit reduzieren; zugleich steht in meinen Aufnahmen mehr Spielraum beim Rauschen zur Verfügung. Das muss ich bei der Planung berücksichtigen.
 
 ## 04 · RAW-Dateien entwickeln
 
@@ -142,7 +142,7 @@ Deshalb zerlege ich das fertige Bild mit krpano in **kleine Bildkacheln und mehr
 
 Mit **MAKE PANO (MULTIRES)** erzeuge ich mehrere Auflösungsstufen. Der Viewer lädt später nur die für den aktuellen Bildausschnitt und Zoom nötigen Kacheln. Im früheren Vergleich erzeugte FLAT ungefähr **zehnmal mehr Dateien** als die gewählte MULTIRES-Verarbeitung.
 
-**Die Dateizahl ist für den Betrieb relevant:** Sie beeinflusst Upload-Aufwand, Übertragung vieler kleiner Dateien und die Prüfung, ob Dateigrenzen des gewählten Hosting-Angebots eingehalten werden. Vor dem Upload prüfe ich deshalb Kachelzahl und Speicherbedarf zusammen. Ein konkretes Anbieterlimit wird hier nicht pauschal unterstellt.
+**Warum ich die Dateien zähle:** Viele kleine Dateien machen den Upload aufwendiger. Manche Hosting-Angebote begrenzen außerdem die Dateizahl. Deshalb prüfe ich vor dem Hochladen sowohl die Anzahl der Kacheln als auch ihren Speicherbedarf.
 
 Meine damalige Ausgabe bestand leicht aus **rund 30.000 Dateien**. Kleine **512-Pixel-Kacheln mit etwa 64 kB** erzeugten viel Verwaltungsaufwand; ich beobachtete beim Upload teilweise nur ungefähr **30 kB/s**. Mit **2048-Pixel-Kacheln**, über `multires.config` / `tilesize` eingestellt, sank die Dateizahl und der Upload lief besser.
 

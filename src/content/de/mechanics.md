@@ -1,6 +1,6 @@
 ## Mechanik: leicht, stabil und einstellbar
 
-Ein langes Teleobjektiv macht kleine Positionierfehler und Schwingungen sichtbar. Der Kamerakopf muss deshalb nicht nur schwenken und neigen: Er soll die Kamera tragen, reproduzierbar positionieren und vor jeder Auslösung zur Ruhe kommen. Die Fotos dokumentieren überwiegend den Aufbau mit einer **Sony A7R II**; heute verwende ich eine **Sony A7R V**. Die Entwicklung von Mechanik, Elektronik und Software gehört für mich zusammen.
+Ein langes Teleobjektiv macht kleine Positionierfehler und Schwingungen sichtbar. Der Kamerakopf muss deshalb nicht nur schwenken und neigen: Er soll die Kamera tragen, reproduzierbar positionieren und vor jeder Auslösung zur Ruhe kommen. Auf den meisten Fotos sitzt noch die **Sony A7R II** am Kopf. Inzwischen fotografiere ich mit der **Sony A7R V**.
 
 <figure><img src="/images/articles/hardware/00.webp" alt="Motorisierter Panoramakopf mit Kamera und Teleobjektiv auf einem Stativ im Gelände" loading="lazy"/><figcaption>Der Kamerakopf im fotografischen Einsatz. Die älteren Fotos zeigen überwiegend die A7R II, nicht die heute verwendete A7R V. Kamera und Objektiv sitzen auf der verstellbaren Aufnahme.</figcaption></figure>
 
@@ -16,7 +16,7 @@ Die Konstruktion folgt dem mechanischen Grundgedanken von Phil Warners PanoDuino
 
 Für Pan und Tilt kommen zwei HiTec HS-785HB mit jeweils einem ServoCity Top-Mount Servo Gearbox mit **5:1-Untersetzung** zum Einsatz. Die Servomotoren sind modifiziert: Ihre interne Positionsregelung ist abgetrennt. Stattdessen treiben externe H-Brücken die Motoren an. Ein PID-Regler in der Arduino-Firmware verwendet die Messwerte der absoluten Winkelgeber, um die Achsen auf ihre Sollposition zu bringen.
 
-An beiden Achsen sitzt je ein **AS5048B mit 14 Bit Winkelauflösung**. Die Geber sind auf TSSOP-14-Trägerplatinen und über Adapter an den I²C-Bus angeschlossen. Die Auflösung des Sensors ist dabei keine pauschale Aussage über die erreichbare mechanische Genauigkeit: Spiel, Kamerabalance, Wind und das Ausschwingen des Aufbaus wirken sich ebenfalls auf das Ergebnis aus.
+An beiden Achsen sitzt je ein **AS5048B mit 14 Bit Winkelauflösung**. Die Geber sind auf TSSOP-14-Trägerplatinen und über Adapter an den I²C-Bus angeschlossen. Wie genau der Kopf die Kamera positioniert, hängt auch vom Getriebespiel, der Kamerabalance, Wind und Schwingungen ab.
 
 <figure><img src="/images/articles/hardware/06.webp" alt="Rückansicht der Konstruktion mit Einstellschlitten und Kameraausrichtung" loading="lazy"/><figcaption>Rückansicht mit verstellbarem Makroschlitten und Block zur Kameraausrichtung.</figcaption></figure>
 
@@ -54,11 +54,11 @@ Die ursprüngliche Stückliste beschreibt den abgebildeten mechanischen Aufbau. 
 
 <div class="video-callout"><div><span class="eyebrow">ENTWICKLUNGSGESCHICHTE / VIDEO</span><h3>Mein erster Pan-Tilt-Panoramakopf</h3><p>Das Video zeigt meinen ersten Pan-Tilt-Panoramakopf mit Servo-Triggerung.</p></div><a class="button primary" href="https://www.youtube.com/watch?v=dIgWIq7W5Yg" target="_blank" rel="noopener noreferrer">Ersten Panoramakopf auf YouTube ansehen ↗</a></div>
 
-Eine Orion-/Merlin-Montierung war stabiler und per Bluetooth steuerbar, auf Bergtouren jedoch schwer. Wegen der tief in der Firmware verankerten Geschwindigkeitsgrenzen kam ich auf ungefähr sieben Sekunden pro Bild. Ein direkt angetriebener Schrittmotor an der Pan-Achse benötigte viel Strom zum Halten; ohne Microstepping blieb die Positionierung grob. Motor- und Batteriegewicht führten zurück zu leichten, schnellen RC-Servos und untersetzten Getrieben. Phil Warners [PanoDuino](https://blog.arduino.cc/2010/03/15/282/) gab die mechanische Inspiration.
+Eine Orion-/Merlin-Montierung war stabiler und per Bluetooth steuerbar, auf Bergtouren jedoch schwer. Wegen der tief in der Firmware verankerten Geschwindigkeitsgrenzen kam ich auf ungefähr sieben Sekunden pro Bild. Ein direkt angetriebener Schrittmotor an der Pan-Achse benötigte viel Strom zum Halten; ohne Microstepping blieb die Positionierung grob. Wegen des Gewichts von Motor und Akku kehrte ich zu RC-Servos mit Untersetzungsgetrieben zurück. Phil Warners [PanoDuino](https://blog.arduino.cc/2010/03/15/282/) gab die mechanische Inspiration.
 
 ### PanoDuino Nummer 1
 
-Der Arduino Mega 2560 vermittelte zunächst zwischen Bluetooth, Pololu Micro Maestro und Kameraauslösung. Die Servo-Bewegungen wurden beschleunigt und abgebremst; ein **LSM303 direkt auf der Kameraplattform** erfasste Bewegung und Vibration über I²C. Erst nach dem Beruhigen wurde ausgelöst. In diesem historischen Aufbau erreichte ich etwa 40–45 Bilder pro Minute; das ist kein allgemeines Leistungsversprechen für den heutigen Kopf.
+Der Arduino Mega 2560 vermittelte zunächst zwischen Bluetooth, Pololu Micro Maestro und Kameraauslösung. Die Servo-Bewegungen wurden beschleunigt und abgebremst; ein **LSM303 direkt auf der Kameraplattform** erfasste Bewegung und Vibration über I²C. Erst nach dem Beruhigen wurde ausgelöst. Mit diesem damaligen Aufbau erreichte ich etwa 40–45 Bilder pro Minute.
 
 <figure><img src="/images/articles/hardware/16.webp" alt="Blockdiagramm der ersten Panoduino-Steuerung mit Mega und Pololu Maestro" loading="lazy"/><figcaption>Systemübersicht von PanoDuino Nummer 1. Diese Elektronik gehört zur frühen Version.</figcaption></figure>
 

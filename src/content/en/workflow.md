@@ -12,7 +12,7 @@ A good gigapixel panorama starts with sound individual photographs. An unsuitabl
 
 The detailed sections follow this same order. Capture examples and processing measurements accompany the relevant step, with camera and software versions identified where they matter.
 
-The [Herzogstand example offers three crops, from the wider landscape to Munich’s skyline](../panorama-system/#herzogstand-zoom). It shows the detail a large panorama can contain.
+The [view from Herzogstand towards Munich, with close-ups of the city centre and the Allianz Arena](../panorama-system/#herzogstand-zoom), shows how much detail a panorama can hold.
 
 ## 01 · Level the tripod and panorama head
 

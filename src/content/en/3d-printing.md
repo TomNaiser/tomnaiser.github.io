@@ -1,12 +1,12 @@
 ## From a kit to a workshop tool
 
-In 2010, I bought my first 3D printer as a kit: a **MakerBot Thing-O-Matic**. I liked the prospect of turning my own ideas into physical parts. It soon became useful for my panorama head. Printed clamps, brackets and enclosures can be shaped to fit the components already in the build.
+In 2010, I bought my first 3D printer: a **MakerBot Thing-O-Matic** kit. I wanted to draw a part on screen and then hold it in my hand. My panorama head gave me somewhere to start: clamps, brackets and enclosures made to fit my own setup.
 
 ## MakerBot Thing-O-Matic: starting in 2010
 
-The Thing-O-Matic was part of the early generation of printers for the maker’s workshop. Building it was part of the project: the mechanics, electronics and printing process all needed attention. I liked the machine, but keeping it up to date and running reliably took considerable care.
+Before the first print, I had to put the kit together. Its open wooden frame, exposed mechanism and electronics are all part of this early printer’s character. I no longer print with it: the Thing-O-Matic has joined my **3D printer museum**.
 
-<figure><img src="/images/articles/printing/thing-o-matic-workbench.webp" alt="MakerBot Thing-O-Matic with a plywood frame, filament spool and exposed mechanism on the workbench" loading="lazy"/><figcaption>My MakerBot Thing-O-Matic. I bought the kit in 2010; this photograph comes from my previous 3D printing page.</figcaption></figure>
+<figure><img src="/images/articles/printing/thing-o-matic-workbench.webp" alt="MakerBot Thing-O-Matic with a plywood frame, filament spool and exposed mechanism on the workbench" loading="lazy"/><figcaption>My first 3D printer: the MakerBot Thing-O-Matic from 2010. It is now in my 3D printer museum.</figcaption></figure>
 
 <figure><img src="/images/articles/printing/thing-o-matic-detail.webp" alt="Front view of the Thing-O-Matic showing the print head, build platform and electronics" loading="lazy"/><figcaption>A view inside the open frame, showing the print head, build platform and accessible mechanism.</figcaption></figure>
 
@@ -14,22 +14,20 @@ The [archived MakerBot wiki page for the Thing-O-Matic](https://makerbot.wikidot
 
 ## From the Ultimaker 2 to the Prusa i3 MK3
 
-I later used an **Ultimaker 2**. Compared with the early kit, it required much less attention to printing parameters. That let me focus on the part I wanted to design and print.
+An **Ultimaker 2** came next. I spent less time tinkering with print settings and more time on the parts I wanted to make.
 
-Today I use a **Prusa i3 MK3**. Its quieter motor drivers make it more pleasant to use. I particularly like that the printer can make many of its own plastic components. Replacement parts and modifications become part of the work I can do myself.
+These days I print on a **Prusa i3 MK3**. I appreciate its quieter motor drivers, and I like the idea that it can print many of its own plastic parts, whether I need a replacement or want to change something.
 
 ## Printed parts for the panorama head
 
 The black plastic parts of my early panorama head were printed in ABS on the Thing-O-Matic. They included brackets, end pieces, the electronics enclosure and the tripod adapter. They join the aluminium tubes and other components into a portable assembly.
 
-For me, the value is in getting the shape right. A mount has to fit the tube diameter, screws and available space. Designing a printed part lets me account for those requirements directly. Wall thickness, print orientation and loads around the screws all affect how it performs in the assembly.
+A bracket has to fit the tubes, screws and space around it. Drawing the part myself lets me work with exactly what is there. Wall thickness, print orientation and screw connections all matter if it is going to hold up in use.
 
 The [mechanics page shows the printed parts in the complete head](../mechanics/#printed-parts-in-the-build), along with construction images, dimensions and a parts list. The [electronics and PanoBoard page](../electronics/) covers the circuit board and connections.
 
 ## From an idea to a part that fits
 
-1. **Establish dimensions and connections:** where will the part sit, what will it carry, and which screws will join it to the build?
-2. **Design and print:** choose a geometry and print orientation suited to the job, then prepare the print file in the slicer.
-3. **Try it in the assembly:** check the fit, access and stability, and revise the design where needed.
+I start by measuring the head: where is there room, what does the part need to carry, and will I still be able to reach the screws? Then I draw it in CAD and prepare the print in the slicer.
 
-This is how 3D printing supports my [panorama system](../panorama-system/): I can try a part, modify it and make another version without fabricating a new metal assembly for every adjustment.
+Once it is printed, I try it on the [panorama head](../panorama-system/). If something does not fit, I change the drawing and print it again. That is where having a printer comes in handy for me.
