@@ -5,4 +5,4 @@ export const projectSections = [
   { id: 'software', de: 'Software & Steuerung', en: 'Software & control' },
   { id: 'workflow', de: 'Workflow', en: 'Workflow' },
 ];
-export const isSystemPage = (page) => page.kind === 'projects' || (page.kind === 'project' && projectSections.some((section) => section.id === page.id));
+export const isSystemPage = (page) => page.kind === 'projects' || (page.kind === 'project' && (page.id === 'capture-preparation' || projectSections.some((section) => section.id === page.id)));

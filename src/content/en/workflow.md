@@ -2,17 +2,22 @@
 
 A good gigapixel panorama starts with sound individual photographs. An unsuitable aperture, camera shake or exposure changes during the sequence often cannot be repaired satisfactorily afterwards. I therefore check the setup and camera before capturing hundreds of images.
 
-1. **Set up and level:** use the bubble level to align the tripod and panorama head horizontally.
-2. **Set and test the camera:** limit vignetting with the aperture, freeze movement with a short exposure, raise ISO as needed and lock exposure.
-3. **Plan and capture:** check overlap, coverage and timing; let the mechanism settle after every move.
-4. **Develop the RAW files:** denoise with DxO PhotoLab 9 and export consistently as 16-bit TIFF; correct vignetting later in PTGui Pro.
-5. **Stitch in PTGui:** import positions, use Align to Grid, and check control points and masks.
-6. **Finish the result:** inspect the horizon, transitions, sharpness and moving objects.
-7. **Prepare for the web:** create krpano tiles, check tile size and file count, then publish.
+1. **Plan the location and capture window:** consider the view, access with heavy equipment, weather, light and room for other visitors.
+2. **Choose the capture and setup:** plan a landscape section or spherical panorama, select a lens, balance the camera and level the head; check parallax when nearby objects matter.
+3. **Set and test the camera:** check the focus target and depth of field, choose aperture, shutter speed and ISO, and keep the settings consistent throughout the sequence.
+4. **Plan and capture:** check overlap, coverage and timing; let the mechanism settle after every move.
+5. **Develop the RAW files:** denoise with DxO PhotoLab 9 and export consistently as 16-bit TIFF; correct vignetting later in PTGui Pro.
+6. **Stitch in PTGui:** import positions, use Align to Grid, and check control points and masks.
+7. **Correct in PTGui:** level the horizon, reposition misplaced source images and use the Mask tool for moving objects or objects cut by image seams.
+8. **Prepare for the web:** create krpano tiles, check tile size and file count, then publish.
 
 The detailed sections follow this same order. Capture examples and processing measurements accompany the relevant step, with camera and software versions identified where they matter.
 
 The [view from Herzogstand towards Munich, with close-ups of the city centre and the Allianz Arena](../panorama-system/#herzogstand-zoom), shows how much detail a panorama can hold.
+
+## Preparation
+
+[Prepare the capture: location, lens and camera check](../capture-preparation/)
 
 ## 01 · Level the tripod and panorama head
 
@@ -22,6 +27,16 @@ I check the horizon across the planned pan range and the position of the middle 
 
 I balance the camera and lens and check that the tripod and mountings are secure. Slight flex, wind and settling still need to be taken into account. The [mechanics article](../mechanics/) shows the adjustable camera support.
 
+### Why balance the camera?
+
+A front-heavy camera and lens apply extra torque to the tilt axis. Positioning the assembly appropriately reduces the drive load and helps make movement repeatable. Check balance with the actual equipment across the required tilt range; a stable horizontal position alone is not enough.
+
+### When does the “nodal point” matter?
+
+For panorama capture this commonly used term refers to rotating approximately about the lens’s **entrance pupil**, so that nearby and distant objects do not shift relative to one another. This parallax is particularly relevant indoors and in spherical scenes containing nearby objects. **In my experience, the exact position is uncritical for distant landscapes as long as there are no nearby objects in the frame.**
+
+To test, align a nearby feature with a distant one and check their relative movement while panning. Consider both rotation axes for spherical capture. **Balancing and minimising parallax are different requirements** and may require a compromise on a particular head. [Hugin’s documentation explains panorama parallax.](https://hugin.sourceforge.io/docs/manual/Parallax.html)
+
 ## 02 · Set the camera and check test exposures
 
 ### Aperture: limit vignetting during capture
@@ -30,39 +45,53 @@ Even a modest brightness fall-off in every photograph can become a repeating pat
 
 For my 400 mm photographs, apertures around **f/10 to f/11 or smaller openings** have been useful. The exact setting depends on the lens. Earlier f/8 tests left objectionable patterns; even at f/13 my Sigma 100–400 mm retained a few percent corner fall-off. I check test photographs, corners and overlap before starting the full sequence.
 
+Stopping down also increases depth of field. Very small apertures can, however, reduce fine detail through diffraction. The setting therefore balances depth of field, optical performance and vignetting for the actual equipment. [Nikon explains this possible loss of resolution through diffraction.](https://onlinemanual.nikonimglib.com/faq/en/shooting_issues/images_not_sharp.html)
+
 ### Shutter speed and ISO: sharp images take priority
 
 My current preference at long focal lengths is **1/1000 s or faster** when wind and movement call for it. I would rather raise ISO: **DxO PhotoLab with DeepPRIME** can reduce the additional noise very effectively. It cannot restore an image blurred by camera movement.
 
 I set **exposure correctly before starting and do not change it during the sequence**. Aperture, shutter speed and ISO remain fixed. Automatic exposure changes between images would make later brightness matching harder. Test exposures therefore include important bright and dark parts of the scene.
 
-### Focus, then lock the setting
+### What should be in focus? Depth of field and foreground
 
-I first focus using **autofocus**, then switch to **manual focus**. This focus lock prevents the camera from refocusing during the sequence. I save the images as **RAW, typically with 10–14-bit depth**, retaining processing latitude and smooth gradients.
+Decide **which range of distances needs to be sharp** before starting. For a distant landscape, focus on a suitable distant feature and inspect a magnified test photograph. An infinity mark on the lens alone is not a reliable check.
+
+A sharp background does not guarantee a sharp foreground. Usable **depth of field** depends on focal length, aperture, focus distance and the required level of detail. Nearby grass, branches or railings may look distinctly blurred when exploring a gigapixel image. Decide before capture whether to accept that blur, exclude the foreground or adjust distance, aperture and focus planning. This is particularly important in spherical panoramas with nearby subjects.
+
+I first focus using **autofocus**, then switch to **manual focus**. This focus lock prevents the camera from refocusing during the sequence. I check the important distance range and, where relevant, the foreground before the full sequence. **Development offers only limited sharpening correction; there is little scope to rescue incorrectly set focus.** I save the images as **RAW**, retaining processing latitude and smooth gradients. The **Sony A7R V records 14-bit RAW data**; continuous shooting with the Compressed RAW file type uses 12 bits. [Sony documents the bit depth and this exception in the help guide.](https://helpguide.sony.net/ilc/2230/v1/en/print.pdf)
 
 ### Silent shutter for long image sequences
 
-I consistently use **silent shutter: a fully electronic exposure**, to avoid cycling the mechanical shutter for every photograph. This differs from electronic first-curtain shutter, which is unavailable with the fully electronic shutter according to [Sony’s A7R V help guide](https://helpguide.sony.net/ilc/2230/v1/en/contents/TP0002924537.html).
+I consistently use **silent shutter: a fully electronic exposure**, to avoid cycling the mechanical shutter for every photograph.
 
 Sequential sensor readout can still cause rolling-shutter distortion when the camera or subject moves. A short exposure does not eliminate that effect; the head must settle before each photograph. Flickering artificial light can also cause brightness bands. [Sony describes these silent-shooting limitations](https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1/articles/00122352).
 
 **A capture example from 2023:** Sony A7R II with Minolta AF 100–400 mm F4.5–6.7 APO at 400 mm, f/11, 1/400 s and ISO 100–200; DeepPRIME also made ISO 500 useful. In those experiments I observed brightness gradients and avoided exposures shorter than roughly **1/600 s**. That describes those photographs, not a general silent-shutter limit. I now use the A7R V and prefer 1/1000 s or faster where appropriate.
 
-### Check sensor dust before the sequence
-
-Dust spots are especially visible in a smooth sky and recur across the sequence. I change lenses infrequently to limit dust ingress, and check a test image before a large panorama.
-
-I have not been satisfied with the software corrections I tried, and a blower alone did not reliably remove stubborn dust. Suitable **sensor-cleaning swabs** worked very well for me once I finally tried them. Before wiping, I use a blower to dislodge loose, particularly hard particles so they are not dragged across the surface and cause scratches.
-
-This describes my experience, rather than a general cleaning procedure. Swabs, fluid and method must suit the camera. Anyone unsure of the risks or the model-specific instructions should use a service centre. [Sony describes in-camera cleaning and a suitable blower first, and recommends service if dust remains.](https://support.d-imaging.sony.co.jp/www/support/ilc/sensor/en.html)
-
 ## 03 · Plan the grid and capture the sequence
 
 Field of view, focal length, coverage and overlap must work together. I generally use **30–40% overlap**, aiding alignment and allowing problem image edges to be cropped during stitching. Overlap does not replace a suitable aperture.
 
-Moving clouds and their shadows alter scene brightness. Starting a large panorama shortly before sunset can also produce substantial gradients. Choosing the capture window matters as much as configuring the grid.
+Moving clouds and their shadows alter scene brightness. [The PTGui grid view below](#ptgui-align-to-grid) shows the strong brightness differences caused by fast-moving clouds in the Fichtelgebirge panorama. Starting a large panorama shortly before sunset can also produce substantial gradients. Choosing the capture window matters as much as configuring the grid.
 
 The platform must settle after each move before exposure. The camera also needs time to save files. In my earlier RAW setup, this limited acquisition to about **2–3 seconds per image**; this is a historical observation, not a universal limit of the current system.
+
+### Test settling time and overlap together
+
+**Settling time** is the wait after moving the head while mechanical oscillations die away. It depends on the load, movement, structure and wind. A short exposure and sufficient settling time have different jobs; neither automatically replaces the other. Test the wait with the actual camera and lens after representative movements.
+
+Overlap must work **horizontally and vertically**. Shared scene content supports alignment and leaves room for image edges, masks and seam placement. A small sequence, such as a 2 × 2 grid, reveals more than one test exposure: are frames sharp after movement, are focus and depth of field adequate, and do neighbours cover the scene without gaps?
+
+| Check before the full sequence | What matters |
+| --- | --- |
+| Capture type and lens | Coverage, detail resolution, image count and available movement range. |
+| Balance and rotation axes | Actual load, camera tilt and nearby/distant feature shift where relevant. |
+| Focus and depth of field | Important subject sharp; any blurred foreground deliberately accounted for. |
+| Aperture | Balance depth of field, edge quality and vignetting against diffraction. |
+| Shutter speed and ISO | Sharp frames in the actual conditions; consistent exposure throughout the sequence. |
+| Settling time | Camera sufficiently still after typical movements; allow for capture and saving. |
+| Image overlap | Enough shared area horizontally and vertically, without gaps. |
 
 ### Check the capture plan and start
 
@@ -82,23 +111,29 @@ A RAW file holds largely unprocessed sensor measurements. **Developing** turns t
 
 I use **[DxO PhotoLab 9](https://www.dxo.com/dxo-photolab/)**. DeepPRIME makes the higher ISO needed for short exposures useful while retaining fine detail. Alternatives include [Capture One](https://www.captureone.com/), Adobe Lightroom or Camera Raw, and the free RAW developers [darktable](https://www.darktable.org/) and [RawTherapee](https://rawtherapee.com/). Results depend on the camera, lens and profiles as well as the software.
 
+### Worked example: Fichtelgebirge
+
+My [Fichtelgebirge panorama](https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge011126/index.html) illustrates the process from RAW development to the finished panorama. Close-ups of the transmission tower on the Ochsenkopf show the development in DxO PhotoLab 9; the subsequent PTGui screenshots show how the individual photographs are aligned and stitched together.
+
+<figure><img data-full-size="/images/articles/workflow/dxo-before-deepprime.webp" src="/images/articles/workflow/dxo-before-deepprime-preview.webp" alt="Transmission tower comparison: RAW image on the left, DxO PhotoLab preview with ClearView and contrast enhancement on the right" width="1200" height="724" loading="lazy"/><figcaption>RAW development in DxO PhotoLab 9. Left: the RAW image. Right: the PhotoLab preview with ClearView, contrast enhancement and other development settings. Click to enlarge.</figcaption></figure>
+
+<figure><img data-full-size="/images/articles/workflow/dxo-with-deepprime.webp" src="/images/articles/workflow/dxo-with-deepprime-preview.webp" alt="Detail of the transmission tower on the Ochsenkopf from a fully developed TIFF image processed in DxO PhotoLab 9 with DeepPRIME XD3 noise reduction" width="621" height="1200" loading="lazy"/><figcaption>Detail view of a fully developed TIFF image processed in DxO PhotoLab 9 using DeepPRIME XD3 AI-powered noise reduction. The crop and magnification differ from the preceding illustration. Click to enlarge.</figcaption></figure>
+
 ### Corrections depend on the camera and lens
 
 RAW development is **camera- and lens-specific**. Sensor noise, colour response, distortion and edge sharpness vary. DxO measures camera/lens combinations and supplies matching [optics modules](https://userguides.dxo.com/photolab/en/overview/). Adapted or unsupported combinations need checking; an arbitrary profile cannot replace the correct one.
 
-I process the whole sequence with coordinated settings and a consistent white balance. **I leave vignetting correction disabled in RAW development and perform it later in PTGui Pro.** This sequence works well for my panoramas and avoids two programs independently correcting the same brightness fall-off. Other corrections, such as chromatic aberration, are applied during development when needed.
+I process the whole sequence with coordinated settings and a consistent white balance. Vignetting could already be corrected during development in DxO PhotoLab. **For my panoramas, however, I get better results by leaving vignetting correction entirely to PTGui Pro.** I therefore disable it in PhotoLab. This avoids two programs independently correcting the same brightness fall-off. Other corrections, such as chromatic aberration, are applied during development when needed.
 
 PTGui then receives consistently developed, denoised source images, helping alignment, blending and exposure matching. Development cannot repair camera shake or an unsuitable aperture.
+
+### Sharpening: only limited scope for correction
+
+A small sharpening adjustment can improve the impression of sharpness. **There is little scope to rescue incorrectly set focus during development.** The intended focus plane and adequate depth of field must already be present in the photographs. That is why focus is checked before the sequence.
 
 ### Test haze correction before batch processing
 
 **ClearView Plus** can reveal distant details but also create gradients within each image. In my tests these appeared as repeating sky patterns that ordinary DxO or PTGui correction did not fully remove. Around 40% overlap and edge cropping helped partially. I therefore test strong haze correction on a representative area first.
-
-### New options for dust spots
-
-Automatic tools are now available for existing photographs: Adobe documents [AI-powered dust removal in Lightroom Classic](https://helpx.adobe.com/lightroom-classic/desktop/process-and-develop-photos/distraction-removal-dust.html), and DxO offers [automatic dust detection and repair in PureRAW 6](https://www.dxo.com/en/news/automatic-dust-correction). These are manufacturer descriptions, not results I have confirmed for my panorama sequences or a blanket feature claim for PhotoLab 9.
-
-A test should include genuine fine details such as birds and distant structures. In such a test, I would check repairs in both the individual frames and the stitched result. They complement a clean sensor; my swab experience is described in the capture preparation section.
 
 ### Output and storage
 
@@ -112,15 +147,25 @@ I load the TIFF sequence and import **Papywizard position records** for an initi
 
 A poorly aligned head or a camera tilted by mechanical flex can create a wave-like horizon. Correcting it with vertical control points and horizon alignment is sometimes difficult. I therefore check the camera’s actual orientation as well as the bubble level. Moving clouds are also unreliable control-point references despite their visible texture.
 
-### Grid alignment and loose photographs
+<figure><img data-full-size="/images/articles/workflow/ptgui-before-alignment.webp" src="/images/articles/workflow/ptgui-before-alignment-preview.webp" alt="PTGui detail view with displaced buildings and trees before alignment" width="1200" height="728" loading="lazy"/><figcaption>Before alignment: displaced source images are clearly visible along buildings and trees. Click to enlarge.</figcaption></figure>
 
-I developed [**LooseTileAlignment.py**](https://github.com/TomNaiser/Gigapixel-Tools/blob/main/LooseTileAlignment.py) to arrange unconnected images using the regular capture grid and already connected neighbours. It supplements the workflow: with well-levelled capture, PTGui’s Align to Grid already handles much of the task. A tilted capture still requires checking even after grid repair.
+<figure id="ptgui-align-to-grid"><img data-full-size="/images/articles/workflow/ptgui-align-to-grid.webp" src="/images/articles/workflow/ptgui-align-to-grid-preview.webp" alt="PTGui overview of the Fichtelgebirge after Align to Grid with red source-image outlines and strong brightness differences caused by cloud shadows" width="1200" height="197" loading="lazy"/><figcaption>After Align to Grid: the source images follow the capture grid. Red outlines show their arrangement. Fast-moving clouds and their shadows caused strong brightness differences during capture. Click to enlarge.</figcaption></figure>
+
+PTGui then searches for **control points in the overlapping image areas**: matching scene details in neighbouring photographs. The following **optimisation step** uses these control points to align the images precisely with one another.
+
+### Check the grid arrangement
+
+After optimisation I check the arrangement of the source images across the entire panorama. Displaying their outlines helps identify offsets and deviations from the capture grid.
+
+<figure><img data-full-size="/images/articles/workflow/ptgui-optimized.webp" src="/images/articles/workflow/ptgui-optimized-preview.webp" alt="Optimised Fichtelgebirge panorama in PTGui with red source-image outlines and transparent edges" width="1200" height="185" loading="lazy"/><figcaption>Optimised panorama with source-image outlines displayed. Image positions can be inspected across the entire capture before checking the horizon and brightness gradients. Click to enlarge.</figcaption></figure>
 
 ### Horizon, exposure matching and masks
 
 In **PTGui Pro 12**, I typically used **four to eight vertical control points** or Straighten to level the horizon. Correct geometry also supports useful brightness matching. I inspect Exposure Fusion and Tone Mapping in the exposure/HDR settings; Keep current can preserve already useful exposure/vignetting values. Remaining individual exposure differences can be adjusted manually.
 
-I mask moving cars and people to avoid ghosts and double edges. The result is checked for control-point problems, masks, horizon and transitions. These steps still rely on usable source photographs; they do not repair fundamentally blurred images.
+Moving cars and people can produce ghosts or double edges. An object cut at a source-image edge or stitching seam can also often be corrected using the **Mask tool in PTGui Pro**: red excludes areas, while green marks wanted image content. Another photograph must contain suitable object or replacement information. [PTGui’s masking tutorial includes a person cut by a seam.](https://www.ptgui.com/examples/masktutorial.html)
+
+Masks cannot restore parts missing from every source photograph. A different final crop may be useful in that case. Masks select information that was actually captured.
 
 ### If residual vignetting remains
 
@@ -128,9 +173,15 @@ I perform the actual vignetting correction in **PTGui Pro**, checking exposure m
 
 Calibration can use a sequence of featureless sky images captured with **identical settings and focus**. Averaging them gives a two-dimensional brightness profile for the 16-bit TIFF sequence. My [**VignettingCorrection.py**](https://github.com/TomNaiser/Gigapixel-Tools/blob/main/VignettingCorrection.py) implements this approach. It worked in some cases and not others. It cannot reliably undo an unsuitable aperture choice after capture.
 
+<figure><img data-full-size="/images/articles/workflow/ptgui-horizon-vignetting.webp" src="/images/articles/workflow/ptgui-horizon-vignetting-preview.webp" alt="PTGui overview after horizon and vignetting correction without red source-image outlines" width="1200" height="161" loading="lazy"/><figcaption>After horizon and vignetting correction: overview without red source-image outlines. Chequered areas at the edges contain no image data and must be considered when choosing the final crop. Click to enlarge.</figcaption></figure>
+
 ## 06 · Inspect the finished panorama
 
+The result of the processing shown here can be explored interactively in the [panorama](https://d1cq0fc6qm76ez.cloudfront.net/Fichtelgebirge011126/index.html), with zooming down to the fine details.
+
 Before publishing I inspect the panorama at high magnification: transitions, ghosts, unexpected gaps, sharpness, horizon and brightness patterns. Moving objects and difficult blends need checking in context, beyond the individual control points.
+
+The practical corrections in the PTGui project are **levelling the horizon**, repositioning misplaced source images and masking problematic objects. A misplaced “tile” here means a source photograph in the stitching project; web tiles are created in the next step. Inspecting sharpness establishes whether capture succeeded; it does not refocus the photographs in PTGui.
 
 <!-- EDITORIAL: Upload the pixelation tool to the GitHub repository and add its exact link here. Do not expose a broken visitor link in the meantime. -->
 

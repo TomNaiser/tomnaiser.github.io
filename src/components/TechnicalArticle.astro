@@ -19,7 +19,8 @@ const html = (await document.compiledContent())
   .replace(/(<img\b[^>]*\bsrc="([^"]+)"[^>]*>)/g, (match, tag, src) => {
     const asset = media.find((item) => basePath(item.file) === src);
     const image = asset ? tag.replace('<img ', `<img width="${asset.size[0]}" height="${asset.size[1]}" `) : tag;
-    return `<a class="article-image-link" href="${src}" target="_blank" rel="noopener noreferrer">${image}</a>`;
+    const fullSize = tag.match(/\bdata-full-size="([^"]+)"/)?.[1];
+    return `<a class="article-image-link" href="${fullSize ? basePath(fullSize) : src}" target="_blank" rel="noopener noreferrer">${image}</a>`;
   });
 ---
 {id === 'workflow' && <Diagram id="workflow" lang={lang}/>}
@@ -31,4 +32,4 @@ const html = (await document.compiledContent())
 {id === 'mechanics' && <section id="entwicklung"><Diagram id="history" lang={lang}/></section>}
 {photoArticle && <section class="article-next"><h2>{lang === 'de' ? 'Weitere Fotografie entdecken' : 'Explore more photography'}</h2><PhotoNavigation lang={lang} page={{kind:id}}/></section>}
 {id === 'mechanics' && <aside class="article-moved"><div id={lang === 'de' ? 'panoboard-elektronik-mit-versionsgeschichte' : 'panoboard-and-its-revisions'}><a class="text-link" href={href({kind:'project',id:'electronics'},lang)}>{lang === 'de' ? 'Platinenbilder und Schaltpläne: zur eigenen Elektronikseite' : 'PCB images and schematics: visit the electronics page'} →</a></div><div id={lang === 'de' ? 'software-und-bedienung-gehören-dazu' : 'software-and-operation'}><a class="text-link" href={href({kind:'project',id:'software'},lang)}>{lang === 'de' ? 'Bedienoberfläche und Steuerung: zur Softwareseite' : 'User interface and control: visit the software page'} →</a></div></aside>}
-{['mechanics','electronics','software','workflow'].includes(id) && <section class="article-next"><h2>{lang === 'de' ? 'Weiter im Panoramasystem' : 'Continue exploring the system'}</h2><ProjectNavigation lang={lang} page={{kind:'project',id}}/></section>}
+{['mechanics','electronics','software','workflow','capture-preparation'].includes(id) && <section class="article-next"><h2>{lang === 'de' ? 'Weiter im Panoramasystem' : 'Continue exploring the system'}</h2><ProjectNavigation lang={lang} page={{kind:'project',id}}/></section>}

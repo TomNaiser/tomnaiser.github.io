@@ -16,7 +16,7 @@ export function route(page, lang) {
   if (page.kind === 'series') path = `${sections.gallery[lang]}/${lang === 'de' ? 'serien' : 'series'}/${page.id}`;
   if (page.kind === 'panorama') path = `${sections.gallery[lang]}/${lang === 'de' ? 'aufnahme' : 'image'}/${page.id}`;
   if (page.kind === 'project') {
-    const slug = { 'panorama-system': { de:'panoramasystem', en:'panorama-system' }, mechanics: { de:'mechanik', en:'mechanics' }, electronics: { de:'elektronik', en:'electronics' } };
+    const slug = { 'panorama-system': { de:'panoramasystem', en:'panorama-system' }, mechanics: { de:'mechanik', en:'mechanics' }, electronics: { de:'elektronik', en:'electronics' }, 'capture-preparation': { de:'aufnahmevorbereitung', en:'capture-preparation' } };
     path = `${sections.projects[lang]}/${slug[page.id]?.[lang] || page.id}`;
   }
   if (page.kind === 'astronomy') path = `${sections.photography[lang]}/${lang === 'de' ? 'astronomie' : 'astronomy'}`;
@@ -34,7 +34,7 @@ export const pages = [
   ...regions.flatMap((region) => pagesOf('region', region.id, groups.filter((g) => g.region === region.id).length)),
   ...groups.flatMap((group) => pagesOf('series', group.id, groupItems(group.id).length)),
   ...panoramas.map((panorama) => ({ kind: 'panorama', id: panorama.id })),
-  ...['panorama-system', 'mechanics', 'electronics', 'software', 'workflow', 'beehive-scale', '3d-printing'].map((id) => ({ kind: 'project', id })),
+  ...['panorama-system', 'mechanics', 'electronics', 'software', 'workflow', 'capture-preparation', 'beehive-scale', '3d-printing'].map((id) => ({ kind: 'project', id })),
 ];
 export const ui = {
   de: { privacy: 'Datenschutz', gallery: 'Panoramen', projects: 'Hardware & Software', workflow: 'Workflow', photography: 'Fotografie', about: 'Über mich', contact: 'Kontakt', home: 'Startseite', series: 'Bildserie ansehen', image: 'Panorama entdecken', all: 'Alle Panoramen', back: 'Zurück', previous: 'Zurück', next: 'Weiter', view: 'Aufnahmen', region: 'Region', topic: 'Thema', themeSwitch: 'Helle oder dunkle Darstellung umschalten', menu: 'Menü', missing: 'Vorschau noch nicht verfügbar', detail: 'Details entdecken', source: 'Ursprüngliche Website', prototype: 'Lokaler Prototyp · Oktober 2026' },
