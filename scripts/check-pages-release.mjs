@@ -9,6 +9,7 @@ assert.deepEqual(Object.keys(germanTitles).sort(), collection.items.map(item => 
 assert.ok(Object.values(germanTitles).every(title => typeof title === 'string' && title.trim()), 'Empty German Gigapan title');
 const origin = new URL(process.env.SITE_URL).origin;
 const files = fs.readdirSync(root, { recursive: true }).filter(file => file.endsWith('.html'));
+const canonicalUrls = new Set();
 for (const file of files) {
   const html = fs.readFileSync(path.join(root, file), 'utf8');
   assert.ok(!/https?:\/\/(localhost|127\.0\.0\.1)([:/]|\b)/i.test(html), `${file}: local address`);
@@ -17,6 +18,7 @@ for (const file of files) {
   if (file !== 'index.html') {
     const canonical = html.match(/<link\b[^>]*rel="canonical"[^>]*href="([^"]+)"/);
     assert.ok(canonical && new URL(canonical[1]).origin === origin, `${file}: incorrect canonical`);
+    canonicalUrls.add(canonical[1]);
     const lang = file.replaceAll('\\', '/').split('/')[0];
     const privacyRoute = lang === 'de' ? '/de/datenschutz/' : '/en/privacy/';
     assert.ok(html.includes(`href="${privacyRoute}"`), `${file}: missing privacy notice`);
@@ -31,4 +33,14 @@ for (const name of ['Archive', 'Docs', '.local', 'node_modules', 'src', '.git'])
   assert.ok(!fs.existsSync(path.join(root, name)), `${name}: private/build sources in published artifact`);
 }
 assert.ok(fs.readFileSync(path.join(root, 'index.html'), 'utf8').includes('url=/de/'), 'Root must open German home');
+const sitemap = fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8');
+const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
+assert.equal(sitemapUrls.length, canonicalUrls.size, 'Sitemap must list each canonical page exactly once');
+assert.deepEqual(new Set(sitemapUrls), canonicalUrls, 'Sitemap and generated canonical URLs must agree');
+assert.ok(sitemap.includes('xmlns:xhtml="http://www.w3.org/1999/xhtml"'), 'Sitemap needs the language-alternate namespace');
+assert.equal((sitemap.match(/hreflang="de"/g) || []).length, canonicalUrls.size, 'Each sitemap entry needs a German alternate');
+assert.equal((sitemap.match(/hreflang="en"/g) || []).length, canonicalUrls.size, 'Each sitemap entry needs an English alternate');
+const robots = fs.readFileSync(path.join(root, 'robots.txt'), 'utf8');
+assert.ok(robots.includes(`Sitemap: ${new URL(`${process.env.BASE_PATH || '/'}sitemap.xml`, process.env.SITE_URL).href}`), 'Robots must link to the production sitemap');
+assert.ok(!robots.includes('Disallow: /'), 'Published pages must be crawlable');
 console.log(`Pages release: ${files.length} pages, production URLs and publication contents passed.`);

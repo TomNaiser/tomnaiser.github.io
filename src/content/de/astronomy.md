@@ -11,7 +11,7 @@ Für meine frühen Planetenaufnahmen verwendete ich ein **10-Zoll-Dobson-Telesko
 
 ## Die ISS von Hand verfolgen
 
-Die ISS-Serie entstand mit Philips ToUCam am 10-Zoll-Dobson. Ich führte das Teleskop **von Hand über das Sucherfernrohr** nach. Die Raumstation in etwa 400 km Höhe zu verfolgen, veranschaulichte ich damals mit einer sehr schnell laufenden kleinen Ameise am anderen Ende eines Wohnzimmers: Trotz ihrer tatsächlichen Größe erscheint sie am Himmel winzig und bewegt sich schnell.
+Die ISS-Serie entstand mit Philips ToUCam am 10-Zoll-Dobson. Ich folgte der ISS **von Hand und orientierte mich dabei am Sucherfernrohr**. Die Raumstation in etwa 400 km Höhe zu verfolgen, veranschaulichte ich damals mit einer sehr schnell laufenden kleinen Ameise am anderen Ende eines Wohnzimmers: Trotz ihrer tatsächlichen Größe erscheint sie am Himmel winzig und bewegt sich schnell.
 
 <figure><img src="/images/articles/astronomy/06.webp" alt="Serie von ISS-Bildern mit unterschiedlich sichtbaren Solarpaneelen" loading="lazy"/><figcaption>Bildfolge eines Überflugs der Internationalen Raumstation.</figcaption></figure>
 
@@ -30,7 +30,7 @@ Für Live-Aufnahmen von Galaxien und Sternhaufen nutzte ich die **Watec 120N, au
 
 ## Selbst gebaute Äquatorialplattform
 
-Für meinen **Galaxy D10 Dobson** baute ich in weniger als einer Woche eine Äquatorialplattform nach Reiner Vogels **VNS-Prinzip (Virtual North Segment)**. Schon der noch nicht vollständig optimierte Aufbau funktionierte für die Nachführung von Planeten und für Video-Deep-Sky-Aufnahmen gut. Die Originalbeschreibung verweist auf [Reiner Vogels Plattformkonstruktion](https://www.reinervogel.net/index.html?/Plattform/Plattform.html).
+Für meinen **10-Zoll-Dobson des Typs Galaxy D10** baute ich in weniger als einer Woche eine Äquatorialplattform nach Reiner Vogels **VNS-Prinzip (Virtual North Segment)**. Schon der noch nicht vollständig optimierte Aufbau funktionierte für die Nachführung von Planeten und für Video-Deep-Sky-Aufnahmen gut. Die Originalbeschreibung verweist auf [Reiner Vogels Plattformkonstruktion](https://www.reinervogel.net/index.html?/Plattform/Plattform.html).
 
 <figure><img src="/images/articles/astronomy/11.webp" alt="Selbst gebaute hölzerne Äquatorialplattform mit Antrieb" loading="lazy"/><figcaption>Die selbst gebaute Nachführplattform für den Galaxy D10.</figcaption></figure>
 <figure><img src="/images/articles/astronomy/12.webp" alt="Nachgeführtes Rohbild der Whirlpool-Galaxie M51" loading="lazy"/><figcaption>M51 mit Nachführung, Watec-Rohbild: maximale Verstärkung, 256 integrierte Frames. Der Septemberhimmel war noch relativ hell; zahlreiche Hotpixel sind sichtbar.</figcaption></figure>
@@ -42,6 +42,6 @@ Für meinen **Galaxy D10 Dobson** baute ich in weniger als einer Woche eine Äqu
 
 Die Videos öffnen separat bei Google Drive; dort können die Freigabe- oder Anmeldeeinstellungen des Originals gelten.
 
-- [Discovery010608.avi](https://drive.google.com/file/d/0B8D9KAQ_CVnoTVpjUmtrQUZlREU/view)
-- [ISSvideo020608.avi](https://drive.google.com/file/d/0B8D9KAQ_CVnoVHpVX3dHd2FlN3M/view)
-- [ISS010608.avi](https://drive.google.com/file/d/0B8D9KAQ_CVnoejZXLTk2b1Bxc3c/view)
+- [Discovery (STS-124), 1. Juni 2008 – Discovery010608.avi](https://drive.google.com/file/d/0B8D9KAQ_CVnoTVpjUmtrQUZlREU/view)
+- [ISS-Überflug, 1. Juni 2008 – ISS010608.avi](https://drive.google.com/file/d/0B8D9KAQ_CVnoejZXLTk2b1Bxc3c/view)
+- [ISS mit Discovery, 2. Juni 2008 – ISSvideo020608.avi](https://drive.google.com/file/d/0B8D9KAQ_CVnoVHpVX3dHd2FlN3M/view)

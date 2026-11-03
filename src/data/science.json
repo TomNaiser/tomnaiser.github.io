@@ -1,11 +1,13 @@
 [
   {
     "links": [],
-    "text": "Diploma thesis at the University of Applied Sciences in Coburg, 1996. Einsatz eines Bildverarbeitungssystems bei der Montage mit dem Roboter"
+    "text": "Diploma thesis at the University of Applied Sciences in Coburg, 1996. Einsatz eines Bildverarbeitungssystems bei der Montage mit dem Roboter",
+    "textDe": "Maschinenbau-Diplomarbeit an der damaligen Fachhochschule Coburg, 1996. Einsatz eines Bildverarbeitungssystems bei der Montage mit dem Roboter."
   },
   {
     "links": [],
-    "text": "Diploma thesis at the University of Bayreuth/Max-Planck-Institut für Plasmaphysik in Garching, 2001, Optimierung der ASDEX-Upgrade Lithiumstrahl-Diagnostik.     Plasmadiagnostik mit KI-Algorithmen"
+    "text": "Diploma thesis at the University of Bayreuth/Max-Planck-Institut für Plasmaphysik in Garching, 2001, Optimierung der ASDEX-Upgrade Lithiumstrahl-Diagnostik.",
+    "textDe": "Physik-Diplomarbeit an der Universität Bayreuth und am Max-Planck-Institut für Plasmaphysik in Garching, 2001. Optimierung der ASDEX-Upgrade Lithiumstrahl-Diagnostik."
   },
   {
     "links": [
@@ -14,7 +16,8 @@
         "url": "https://epub.uni-bayreuth.de/600/"
       }
     ],
-    "text": "PhD thesis at the Department of Physics at the University of Bayreuth, 2008 "
+    "text": "PhD thesis at the Department of Physics at the University of Bayreuth, 2008",
+    "textDe": "Dissertation am Physikalischen Institut der Universität Bayreuth, 2008."
   },
   {
     "links": [
@@ -23,7 +26,7 @@
         "url": "http://scitation.aip.org/content/aip/journal/rsi/77/6/10.1063/1.2213152"
       }
     ],
-    "text": "T. Naiser, T. Mai, W. Michel, and A. Ott. Versatile maskless microscope projection photolithography system and its application in light-directed fabrication of DNA microarrays.  Review of Scientific Instruments, 77(6):063711, 2006    Link"
+    "text": "T. Naiser, T. Mai, W. Michel, and A. Ott. Versatile maskless microscope projection photolithography system and its application in light-directed fabrication of DNA microarrays. Review of Scientific Instruments, 77(6):063711, 2006"
   },
   {
     "links": [
@@ -32,7 +35,7 @@
         "url": "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1779962/"
       }
     ],
-    "text": "W. Michel, T. Mai, T. Naiser, and A. Ott. Optical study of DNA surface Hybridization reveals DNA surface density as a key parameter for microarray hybridization kinetics. Biophysical Journal, 92(3):999-1004, February 2007   Link"
+    "text": "W. Michel, T. Mai, T. Naiser, and A. Ott. Optical study of DNA surface Hybridization reveals DNA surface density as a key parameter for microarray hybridization kinetics. Biophysical Journal, 92(3):999-1004, February 2007"
   },
   {
     "links": [
@@ -41,7 +44,7 @@
         "url": "http://www.biomedcentral.com/content/pdf/1472-6750-8-48.pdf"
       }
     ],
-    "text": "T. Naiser, O.Ehler, J.Kayser, T. Mai, W. Michel and A. Ott. Impact of point-mutations on the hybridization affinity of surface-bound DNA/DNA and RNA/DNA oligonucleotide-duplexes: comparison of single base mismatches and base bulges. BMC Biotechnology 2008, 8:48 Link"
+    "text": "T. Naiser, O. Ehler, J. Kayser, T. Mai, W. Michel and A. Ott. Impact of point-mutations on the hybridization affinity of surface-bound DNA/DNA and RNA/DNA oligonucleotide-duplexes: comparison of single base mismatches and base bulges. BMC Biotechnology 2008, 8:48"
   },
   {
     "links": [
@@ -50,7 +53,7 @@
         "url": "http://arxiv.org/abs/q-bio/0608038"
       }
     ],
-    "text": "T. Naiser, T. Mai, W. Michel and A. Ott.  A versatile maskless microscope projection photolithography system and its application in light-directed fabrication of DNA microarrays. arXiv:q-bio/0608038 Link"
+    "text": "T. Naiser, T. Mai, W. Michel and A. Ott. A versatile maskless microscope projection photolithography system and its application in light-directed fabrication of DNA microarrays. arXiv:q-bio/0608038"
   },
   {
     "links": [
@@ -59,7 +62,7 @@
         "url": "http://arxiv.org/PS_cache/q-bio/pdf/0612/0612043v1.pdf"
       }
     ],
-    "text": "T. Naiser, O.Ehler, T. Mai, W. Michel and A. Ott. Hybridization to Surface-bound Oligonucleotide Probes: Influence of Point Defects.arXiv:q-bio/0612043v1 Link"
+    "text": "T. Naiser, O. Ehler, T. Mai, W. Michel and A. Ott. Hybridization to Surface-bound Oligonucleotide Probes: Influence of Point Defects. arXiv:q-bio/0612043v1"
   },
   {
     "links": [
@@ -68,7 +71,7 @@
         "url": "http://www.biomedcentral.com/1471-2105/9/509"
       }
     ],
-    "text": "T. Naiser, J.Kayser, T. Mai, W. Michel and A. Ott. Point defects and the stability of surface bound oligonucleotide duplexes – experiments and model. BMC Bioinformatics 2008, 9:509  Link"
+    "text": "T. Naiser, J. Kayser, T. Mai, W. Michel and A. Ott. Point defects and the stability of surface bound oligonucleotide duplexes – experiments and model. BMC Bioinformatics 2008, 9:509"
   },
   {
     "links": [
@@ -77,7 +80,7 @@
         "url": "http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.102.218301"
       }
     ],
-    "text": "T. Naiser, J.Kayser, T. Mai, W. Michel and A. Ott. DNA hybridization to surface bound probes: point defects in experiment and model. Phys. Rev. Lett.102,218301 May 2009 Link"
+    "text": "T. Naiser, J. Kayser, T. Mai, W. Michel and A. Ott. DNA hybridization to surface bound probes: point defects in experiment and model. Phys. Rev. Lett. 102, 218301 May 2009"
   },
   {
     "links": [],
@@ -85,7 +88,7 @@
   },
   {
     "links": [],
-    "text": " Einsatz neuronaler Netze bei Plasmaexperimenten. G. Pautasso, C. Tichmann, E. Wolfrum and T. Naiser.  Kolloquium, Universität Rostock 2001"
+    "text": "Einsatz neuronaler Netze bei Plasmaexperimenten. G. Pautasso, C. Tichmann, E. Wolfrum and T. Naiser. Kolloquium, Universität Rostock 2001"
   },
   {
     "links": [
@@ -94,15 +97,18 @@
         "url": "http://www.cfn.ist.utl.pt/EPS2001/fin/pdf/P1.109.pdf"
       }
     ],
-    "text": "Improved Edge Density Profile Measurements by the Li-Beam Diagnostic on ASDEX Upgrade. H.W. Müller, E. Wolfrum, R. Drube, J.C. Fuchs, A. Kallenbach, B. Kurzan, T. Naiser, J. Neuhauser, J. Schweinzer, ASDEX Upgrade Team. 28th EPS Conference on Controlled Fusion and Plasma Physics Funchal, 18-22 June 2001. European Physical Society, ECA Vol. 25A: 421-424.  Link"
+    "text": "Improved Edge Density Profile Measurements by the Li-Beam Diagnostic on ASDEX Upgrade. H.W. Müller, E. Wolfrum, R. Drube, J.C. Fuchs, A. Kallenbach, B. Kurzan, T. Naiser, J. Neuhauser, J. Schweinzer, ASDEX Upgrade Team. 28th EPS Conference on Controlled Fusion and Plasma Physics Funchal, 18-22 June 2001. European Physical Society, ECA Vol. 25A: 421-424.",
+    "textDe": "Improved Edge Density Profile Measurements by the Li-Beam Diagnostic on ASDEX Upgrade. H.W. Müller, E. Wolfrum, R. Drube, J.C. Fuchs, A. Kallenbach, B. Kurzan, T. Naiser, J. Neuhauser, J. Schweinzer, ASDEX Upgrade Team. 28th EPS Conference on Controlled Fusion and Plasma Physics Funchal, 18.–22. Juni 2001. European Physical Society, ECA Vol. 25A: 421-424."
   },
   {
     "links": [],
-    "text": "DNA Chips, Talk at Euroschool-PhysBio2, Non-equilibrium in Physics and Biology, Peyresq, September 2002"
+    "text": "DNA Chips, Talk at Euroschool-PhysBio2, Non-equilibrium in Physics and Biology, Peyresq, September 2002",
+    "textDe": "DNA Chips. Vortrag bei der Euroschool-PhysBio2, Non-equilibrium in Physics and Biology, Peyresq, September 2002"
   },
   {
     "links": [],
-    "text": "DNA Chips and DNA Microarrays - Tools to Watch the Genome at Work. Talk at the Biological Physics group-seminar at MPIPKS, Dresden, November 2004"
+    "text": "DNA Chips and DNA Microarrays - Tools to Watch the Genome at Work. Talk at the Biological Physics group-seminar at MPIPKS, Dresden, November 2004",
+    "textDe": "DNA Chips and DNA Microarrays - Tools to Watch the Genome at Work. Vortrag im Gruppenseminar Biological Physics am MPIPKS, Dresden, November 2004"
   },
   {
     "links": [],
@@ -114,15 +120,18 @@
   },
   {
     "links": [],
-    "text": "Light-directed in situ Synthesis of DNA Chips and Hybridization Experiments. Talk at Albert Libchabers group seminar, Rockefeller University, New York, March 2006"
+    "text": "Light-directed in situ Synthesis of DNA Chips and Hybridization Experiments. Talk at Albert Libchabers group seminar, Rockefeller University, New York, March 2006",
+    "textDe": "Light-directed in situ Synthesis of DNA Chips and Hybridization Experiments. Vortrag im Gruppenseminar von Albert Libchaber, Rockefeller University, New York, März 2006"
   },
   {
     "links": [],
-    "text": "Light-directed synthesis and characterization of DNA microarrays. T. Naiser, Oliver Ehler, Timo Mai, Wolfgang Michel, Albrecht Ott. 8th Minerva Winter School, Weizmann Institute of Science, Rehovot February 2006"
+    "text": "Light-directed synthesis and characterization of DNA microarrays. T. Naiser, Oliver Ehler, Timo Mai, Wolfgang Michel, Albrecht Ott. 8th Minerva Winter School, Weizmann Institute of Science, Rehovot February 2006",
+    "textDe": "Light-directed synthesis and characterization of DNA microarrays. T. Naiser, Oliver Ehler, Timo Mai, Wolfgang Michel, Albrecht Ott. 8th Minerva Winter School, Weizmann Institute of Science, Rehovot, Februar 2006"
   },
   {
     "links": [],
-    "text": "Hybridization and melting experiments on oligonucleotide microarrays. T. Naiser and Albrecht Ott. DPG-Frühjahrstagung, Dresden, March 2006"
+    "text": "Hybridization and melting experiments on oligonucleotide microarrays. T. Naiser and Albrecht Ott. DPG-Frühjahrstagung, Dresden, March 2006",
+    "textDe": "Hybridization and melting experiments on oligonucleotide microarrays. T. Naiser and Albrecht Ott. DPG-Frühjahrstagung, Dresden, März 2006"
   },
   {
     "links": [],
@@ -138,6 +147,7 @@
   },
   {
     "links": [],
-    "text": "DNA-Chips - Nanotech meets Biotech. Seminar talk at the Naturwissenschaftlich Medizinisches Institut (NMI) - Universität Tübingen, Reutlingen June 2008"
+    "text": "DNA-Chips - Nanotech meets Biotech. Seminar talk at the Naturwissenschaftlich Medizinisches Institut (NMI) - Universität Tübingen, Reutlingen June 2008",
+    "textDe": "DNA-Chips - Nanotech meets Biotech. Seminarvortrag am Naturwissenschaftlichen und Medizinischen Institut (NMI) an der Universität Tübingen, Reutlingen, Juni 2008"
   }
 ]

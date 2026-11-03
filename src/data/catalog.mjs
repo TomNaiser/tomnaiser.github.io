@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import source from './source-panoramas.json' with { type: 'json' };
 import previewSources from './preview-sources.json' with { type: 'json' };
 import captions from './panorama-captions.json' with { type: 'json' };
+import captureData from './panorama-capture-data.json' with { type: 'json' };
 
 const pair = (de, en) => ({ de, en });
 export const themes = [
@@ -11,15 +12,15 @@ export const themes = [
   { id: 'nature', slug: pair('natur-jahreszeiten', 'nature-seasons'), title: pair('Natur & Jahreszeiten', 'Nature & seasons'), description: pair('Ein Ausblick. Immer wieder ein anderes Bild.', 'One view. A different picture every time.'), image: 'Nenntmannsreuth011023' },
 ];
 export const regions = [
-  { id: 'franconia', title: pair('Franken & Fichtelgebirge', 'Franconia & Fichtel Mountains') },
-  { id: 'munich', title: pair('München & Umland', 'Munich & surrounding area') },
-  { id: 'alps', title: pair('Alpen & Voralpenland', 'Alps & Alpine foothills') },
-  { id: 'forest', title: pair('Bayerischer Wald', 'Bavarian Forest') },
-  { id: 'swabia', title: pair('Augsburg & Umgebung', 'Augsburg & surrounding area') },
+  { id: 'franconia', title: pair('Franken & Fichtelgebirge', 'Franconia & Fichtel Mountains'), description: pair('Von Bayreuth und dem Bamberger Land bis zu den Höhenzügen des Fichtelgebirges und des Frankenwalds.', 'From Bayreuth and the Bamberg countryside to the ridges of the Fichtel Mountains and Franconian Forest.') },
+  { id: 'munich', title: pair('München & Umland', 'Munich & surrounding area'), description: pair('Münchens Skyline, vertraute Ausblicke am Stadtrand und die Alpen am Horizont.', 'Munich’s skyline, familiar views from the outskirts and the Alps on the horizon.') },
+  { id: 'alps', title: pair('Alpen & Voralpenland', 'Alps & Alpine foothills'), description: pair('Gipfelblicke, Seen und weite Landschaften zwischen Alpen und Voralpenland.', 'Summit views, lakes and open landscapes across the Alps and their foothills.') },
+  { id: 'forest', title: pair('Bayerischer Wald', 'Bavarian Forest'), description: pair('Vom Büchelstein über die Täler des Vorderen Bayerischen Walds bis zu den fernen Alpen.', 'From Büchelstein across the Bavarian Forest foothills towards the distant Alps.') },
+  { id: 'swabia', title: pair('Augsburg & Umgebung', 'Augsburg & surrounding area'), description: pair('Augsburg im Panorama: ein Blick über die Stadt aus meiner Gigapan-Sammlung.', 'A panoramic view across Augsburg from my Gigapan collection.') },
 ];
 const group = (id, de, en, directionDE, directionEN, region, topicIds, cover, descriptionDE, descriptionEN) => ({ id, title: pair(de, en), direction: pair(directionDE, directionEN), region, themes: topicIds, cover, description: pair(descriptionDE, descriptionEN) });
 export const groups = [
-  group('nenntmannsreuth', 'Nenntmannsreuth', 'Nenntmannsreuth', 'Blick ins Fichtelgebirge', 'Looking towards the Fichtel Mountains', 'franconia', ['mountains', 'nature'], 'Nenntmannsreuth011023', 'Die Höhenzüge des Fichtelgebirges bei wechselndem Licht und im Lauf der Jahreszeiten. Acht Aufnahmen zeigen diesen Ausblick; ein 360°-Rundblick im Hof und eine weitere Herbstansicht ergänzen die Serie mit gekennzeichneter Blickrichtung.', 'The ridges of the Fichtel Mountains in changing light and through the seasons. Eight panoramas revisit this view; a 360° courtyard panorama and another autumn view complete the series with their directions labelled.'),
+  group('nenntmannsreuth', 'Nenntmannsreuth', 'Nenntmannsreuth', 'Blick ins Fichtelgebirge', 'Looking towards the Fichtel Mountains', 'franconia', ['mountains', 'nature'], 'Nenntmannsreuth011023', 'Die Höhenzüge des Fichtelgebirges bei wechselndem Licht und im Lauf der Jahreszeiten. Die Serie umfasst zehn Aufnahmen: acht Blicke auf die Höhenzüge, einen 360°-Rundblick im Hof und eine weitere Herbstansicht. Abweichende Blickrichtungen sind gekennzeichnet.', 'The ridges of the Fichtel Mountains in changing light and through the seasons. The series contains ten panoramas: eight views of the ridges, a 360° courtyard view and another autumn view. Different directions are labelled.'),
   group('himmelkron', 'Oberhalb Himmelkron', 'Above Himmelkron', 'Blick aufs Fichtelgebirge', 'Towards the Fichtel Mountains', 'franconia', ['mountains', 'nature'], 'Himmelkron170923', 'Zwei Septemberblicke, zwei Jahre auseinander. Die Aufnahmen westlich von Himmelkron bleiben hier als zusammengehörige Serie erhalten.', 'Two September views, two years apart. The panoramas west of Himmelkron stay together as one series.'),
   group('bindlacher-berg', 'Bindlacher Berg', 'Bindlacher Berg', 'Bayreuth im Blick', 'Overlooking Bayreuth', 'franconia', ['cities', 'nature'], 'Bayreuth040923b', 'Bayreuth und seine Umgebung vom Bindlacher Berg. Ein wiederkehrender Blick auf die Stadt und die Landschaft dahinter.', 'Bayreuth and its surroundings from Bindlacher Berg. A recurring view of the city and the landscape beyond.'),
   group('froettmaninger-berg', 'Fröttmaninger Berg', 'Fröttmaninger Berg', 'München & die Alpen', 'Munich & the Alps', 'munich', ['cities', 'mountains'], 'Froettmanning16bit060222', 'München, die Alpenkette und ein weiter Blick nach Norden. Die verschiedenen Blickrichtungen sind innerhalb dieses Standorts gekennzeichnet.', 'Munich, the Alpine skyline and a wide view to the north. The different directions are labelled within this viewpoint series.'),
@@ -89,14 +90,14 @@ export const panoramas = rows.map(([originalId, groupId, date, directionDE, dire
     Zottaschen191025V3: 'A view from Zottaschen above Bad Berneck in October 2025.',
   };
   const cleanCaption = (text) => text?.replace(/\s+/g, ' ').replace(/\s+([,.])/g,'$1').replace(/([.!?])(?=[A-ZÄÖÜ])/g,'$1 ').replace(/Hochriess/g,'Hochries').replace(/Jun e/g,'June').replace(/Jul y/g,'July').replace(/O c tober/g,'October').replace(/Sepember/g,'September').replace(/B ayreuth/g,'Bayreuth').replace(/Fis h/g,'Fish').replace(/beh ind/g,'behind').trim();
-  return { id, originalId, groupId, date, direction: directionDE ? pair(directionDE, directionEN) : null, description: pair(captions[originalId]?.de || cleanCaption(original.de), captions[originalId]?.en || cleanCaption(original.en || additions[originalId])), sourceDescription: pair(original.de, original.en), url: original.url, image: imageFor(originalId), title: parent.title };
+  return { id, originalId, groupId, date, capture: captureData[originalId], direction: directionDE ? pair(directionDE, directionEN) : null, description: pair(captions[originalId]?.de || cleanCaption(original.de), captions[originalId]?.en || cleanCaption(original.en || additions[originalId])), sourceDescription: pair(original.de, original.en), url: original.url, image: imageFor(originalId), title: parent.title };
 });
 export const groupItems = (id) => panoramas.filter((entry) => entry.groupId === id).sort((a, b) => (a.date || '9999').localeCompare(b.date || '9999'));
 export const isGigapanGroup = (group) => groupItems(group.id).every(item => item.url.includes('gigapan.com'));
 export const compareGroups = (lang) => (a,b) => Number(isGigapanGroup(a))-Number(isGigapanGroup(b)) || a.title[lang].localeCompare(b.title[lang],lang);
 export const groupImage = (g) => imageFor(g.cover) || groupItems(g.id).find((item) => item.image)?.image || null;
 export const dateLabel = (value, lang) => {
-  if (!value) return lang === 'de' ? 'Datum offen' : 'Date not recorded';
+  if (!value) return lang === 'de' ? 'Aufnahmedatum nicht dokumentiert' : 'Capture date not recorded';
   const options = value.length === 4 ? { year: 'numeric' } : value.length === 7 ? { year: 'numeric', month: 'long' } : { year: 'numeric', month: 'long', day: 'numeric' };
   return new Intl.DateTimeFormat(lang === 'de' ? 'de-DE' : 'en-GB', { ...options, timeZone: 'UTC' }).format(new Date(value.padEnd(10, '-01').slice(0, 10)));
 };

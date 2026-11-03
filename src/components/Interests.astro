@@ -1,0 +1,90 @@
+---
+import readingGroups from '../data/reading-list.json';
+import { mediaGroups } from '../data/interests.mjs';
+import { href } from '../lib/routes.mjs';
+const { lang } = Astro.props;
+const t = (de, en) => lang === 'de' ? de : en;
+const bookCount = readingGroups.reduce((sum, group) => sum + group.books.length, 0);
+---
+<div class="wrap interests-page">
+  <section class="page-intro compact">
+    <span class="eyebrow">{t('ÜBER MICH / WEITERDENKEN', 'ABOUT / EXPLORING IDEAS')}</span>
+    <h1>{t('Weitere Interessen.', 'Other interests.')}</h1>
+    <p>{t('Programmieren und Basteln, künstliche Intelligenz, Gesundheit und Wissenschaft. Hier sammle ich Themen, die mich neben der Fotografie beschäftigen – und was ich dazu lese, höre und anschaue.', 'Programming and making things, artificial intelligence, health and science. These are some of the subjects that interest me beyond photography, along with what I read, listen to and watch.')}</p>
+    <nav class="interest-jumps" aria-label={t('Auf dieser Seite', 'On this page')}>
+      <a href="#themen">{t('Meine Themen', 'My interests')} ↓</a>
+      <a href="#youtube">{t('Podcasts, Videos & Kurse', 'Podcasts, videos & courses')} ↓</a>
+      <a href="#buecher">{t('Bücher nach Themen', 'Books by topic')} ↓</a>
+    </nav>
+  </section>
+
+  <section id="themen" class="interest-topics" aria-label={t('Meine weiteren Interessen', 'My other interests')}>
+    <article><span class="eyebrow">01 / {t('WERKSTATT', 'WORKSHOP')}</span><h2>{t('Programmieren & Basteln', 'Programming & making')}</h2><p>{t('Mikrocontroller, Raspberry Pi, Kameras und 3D-Druck verbinden für mich Software mit greifbaren Dingen. Dazu kommen Home Automation und Sensorik: messen, steuern und eigene Lösungen ausprobieren.', 'Microcontrollers, Raspberry Pi, cameras and 3D printing connect software with tangible things. Home automation and sensors are part of that, too: measuring, controlling and trying out my own solutions.')}</p><div class="interest-tags"><span>{t('Mikrocontroller', 'Microcontrollers')}</span><span>Raspberry Pi</span><span>{t('Kameras', 'Cameras')}</span><span>{t('3D-Druck', '3D printing')}</span><span>Home Automation</span><span>{t('Sensorik', 'Sensors')}</span></div><a class="text-link" href={`${href({kind:'projects'},lang)}#werkstatt`}>{t('Einblicke in die Werkstatt', 'Explore my workshop projects')} ↗</a></article>
+    <article><span class="eyebrow">02 / {t('KI & WERKZEUGE', 'AI & TOOLS')}</span><h2>{t('Vom Vibe Coding zum Agentic Engineering', 'From vibe coding to agentic engineering')}</h2><p>{t('Mich interessiert, wie sich mit KI programmieren lässt und wie ein guter Arbeitsablauf dafür aussieht. Das neue Design dieser Webseite ist mit OpenAI Codex entstanden. Weitere Themen sind lokale LLMs, agentisches Coding und die Optimierung der Toolchain.', 'I’m interested in programming with AI and building a good workflow around it. This website’s new design was created with OpenAI Codex. My other interests include local LLMs, agentic coding and improving the toolchain.')}</p><div class="interest-tags"><span>OpenAI Codex</span><span>{t('Lokale LLMs', 'Local LLMs')}</span><span>Agentic Coding</span><span>Toolchain</span></div></article>
+    <article><span class="eyebrow">03 / {t('GESUNDHEIT', 'HEALTH')}</span><h2>Longevity & Biohacking</h2><p>{t('Wie hängen Ernährung, Bewegung, Schlaf und langfristige Gesundheit zusammen? Dazu lese ich Bücher und höre Gespräche und Vorträge. Mich interessieren sowohl die biologischen Zusammenhänge als auch die Frage, was sich im Alltag daraus machen lässt.', 'How do nutrition, exercise, sleep and long-term health fit together? I explore these questions through books, conversations and lectures, looking at both the underlying biology and its relevance to everyday life.')}</p><div class="interest-tags"><span>Longevity</span><span>Biohacking</span><span>{t('Ernährung', 'Nutrition')}</span><span>{t('Bewegung', 'Movement')}</span></div></article>
+  </section>
+
+  <section id="youtube" class="section media-section">
+    <div class="section-heading"><div><span class="eyebrow">{t('HÖREN, SCHAUEN & LERNEN', 'LISTEN, WATCH & LEARN')}</span><h2>{t('Podcasts, Videos & Kurse', 'Podcasts, videos & courses')}</h2><p>{t('Eine persönliche Sammlung auf YouTube – von langen Gesprächen bis zu Deep-Learning-Vorlesungen.', 'A personal YouTube collection, from long conversations to deep learning lectures.')}</p></div></div>
+    <div class="media-groups">{mediaGroups.map(group => <div class="media-group"><h3>{group.title[lang]}</h3><ul>{group.items.map(item => <li><a href={item.url} target="_blank" rel="noopener noreferrer"><span><small>{item.type[lang]}</small><strong>{item.title}</strong></span><span class="media-arrow" aria-hidden="true">↗</span></a></li>)}</ul></div>)}</div>
+  </section>
+
+  <section id="buecher" class="section reading-section" data-reading-list data-lang={lang}>
+    <div class="section-heading"><div><span class="eyebrow">{t('MEINE KINDLE-BIBLIOTHEK', 'MY KINDLE LIBRARY')}</span><h2>{t('Zuletzt gelesen', 'Recent reading')}</h2><p>{t('Bücher, die mich beschäftigen: nach Themen geordnet, mit den Originaltiteln meiner Kindle-Bibliothek.', 'Books that interest me, grouped by topic and retaining the original titles from my Kindle library.')}</p></div><span class="mono">{bookCount} {t('BÜCHER', 'BOOKS')} / {readingGroups.length} {t('THEMEN', 'TOPICS')}</span></div>
+    <p class="bibliography-note">{t('Autoren und Erscheinungsjahre beziehen sich auf die jeweils verlinkte Veröffentlichung. Wo sich die Ausgabe nicht eindeutig zuordnen lässt, bleiben Angaben offen.', 'Authors and publication years refer to the linked publication. Details remain open where the edition cannot be identified reliably.')}</p>
+    <div class="book-search" data-book-search-controls hidden><label for="book-search">{t('In der Buchliste suchen', 'Search the book list')}</label><input id="book-search" type="search" placeholder={t('Titel, Autor oder Stichwort …', 'Title, author or keyword …')} data-book-search/><p role="status" aria-live="polite" data-book-result-count></p></div>
+    <div class="book-groups">{readingGroups.map(group => <details class="book-group" data-book-group>
+      <summary><span>{group.title[lang]}</span><small data-book-group-count>{group.books.length} {t('Bücher', 'books')}</small></summary>
+      <ul class="book-list">{group.books.map(book => <li data-book-entry>
+        <strong>{book.title}</strong>
+        {book.subtitle && <p class="book-subtitle">{book.subtitle}</p>}
+        {(book.authors?.length || book.publicationYear) && <p class="book-bibliography">{book.authors?.join(', ')}{book.contributorRole === 'editor' && t(' (Hrsg.)', ' (ed.)')}{book.authors?.length && book.publicationYear ? ' · ' : ''}{book.publicationYear}{book.publisher && ` · ${book.publisher}`}</p>}
+        {(!book.authors?.length || !book.publicationYear) && <p class="book-subtitle">{book.authors?.length ? t('Erscheinungsjahr der Ausgabe offen', 'Edition publication year not confirmed') : t('Autor und Erscheinungsjahr noch nicht eindeutig zugeordnet', 'Author and publication year not yet identified reliably')}</p>}
+        {book.sourceUrl && <a class="book-source" href={book.sourceUrl} aria-label={`${t('Buchangaben zu', 'Book details for')} ${book.title}`} target="_blank" rel="noopener noreferrer">{t('Buchangaben', 'Book details')} ↗</a>}
+      </li>)}</ul>
+    </details>)}</div>
+    <p class="book-empty" data-book-empty hidden>{t('Keine Bücher zu diesem Suchbegriff gefunden.', 'No books match your search.')}</p>
+  </section>
+</div>
+
+<script>
+  const readingList = document.querySelector<HTMLElement>('[data-reading-list]');
+  if (readingList) {
+    const isGerman = readingList.dataset.lang === 'de';
+    const search = readingList.querySelector<HTMLInputElement>('[data-book-search]');
+    const groups = [...readingList.querySelectorAll<HTMLDetailsElement>('[data-book-group]')];
+    const normalize = (value: string) => value.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase();
+    const records = groups.map(group => ({group, entries: [...group.querySelectorAll<HTMLElement>('[data-book-entry]')].map(element => ({element, text: normalize([...element.querySelectorAll('strong,.book-subtitle,.book-bibliography')].map(node => node.textContent).join(' '))}))}));
+    readingList.querySelector<HTMLElement>('[data-book-search-controls]').hidden = false;
+    const render = () => {
+      const terms = normalize(search.value).trim().split(/\s+/).filter(Boolean);
+      let total = 0;
+      let topics = 0;
+      for (const {group, entries} of records) {
+        let count = 0;
+        const topic = normalize(group.querySelector('summary>span').textContent);
+        for (const {element, text} of entries) {
+          const matches = terms.every(term => `${topic} ${text}`.includes(term));
+          element.hidden = !matches;
+          count += Number(matches);
+        }
+        group.hidden = count === 0;
+        if (terms.length) group.open = count > 0;
+        else group.open = false;
+        group.querySelector('[data-book-group-count]').textContent = `${count} ${isGerman ? (count === 1 ? 'Buch' : 'Bücher') : (count === 1 ? 'book' : 'books')}`;
+        total += count;
+        topics += Number(count > 0);
+      }
+      readingList.querySelector('[data-book-result-count]').textContent = isGerman ? `${total} ${total === 1 ? 'Buch' : 'Bücher'} in ${topics} ${topics === 1 ? 'Thema' : 'Themen'}` : `${total} ${total === 1 ? 'book' : 'books'} in ${topics} ${topics === 1 ? 'topic' : 'topics'}`;
+      readingList.querySelector<HTMLElement>('[data-book-empty]').hidden = total > 0;
+    };
+    search.addEventListener('input', render);
+    render();
+  }
+</script>
+
+<style>
+  .interests-page{padding-bottom:30px}.interest-jumps{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:28px;font-size:13px}.interest-jumps a{padding-block:6px;border-bottom:1px solid var(--line)}.interest-jumps a:hover{color:var(--accent)}.interest-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:38px;padding-bottom:60px}.interest-topics article{border-top:1px solid var(--line);padding-top:25px;min-width:0}.interest-topics h2{font-size:clamp(25px,2.5vw,34px);line-height:1.2;margin-bottom:22px}.interest-topics p{font-size:14px}.interest-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.interest-tags span{font:10px/1.6 var(--mono);padding:5px 9px;border:1px solid var(--line);border-radius:var(--radius);color:var(--muted)}.interest-topics .text-link{margin-top:22px}.media-section{border-top:1px solid var(--line)}.media-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:38px}.media-group{min-width:0}.media-group h3{font-size:20px;line-height:1.35;margin-bottom:22px}.media-group ul{list-style:none;padding:0;margin:0}.media-group li{border-top:1px solid var(--line)}.media-group a{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}.media-group small{display:block;color:var(--muted);font:10px/1.5 var(--mono);margin-bottom:5px}.media-group strong{font-size:14px;line-height:1.5;font-weight:550}.media-group a:hover strong,.media-arrow{color:var(--accent)}.media-arrow{font-size:20px;flex-shrink:0}.reading-section{border-top:1px solid var(--line)}.reading-section .section-heading>.mono{color:var(--muted);white-space:nowrap;font-size:10px}.book-search{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 24px;align-items:end;margin:30px 0}.book-search label{grid-column:1/-1;font-size:12px}.book-search input{min-width:0;width:100%;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px;outline-offset:3px}.book-search input:focus-visible{outline:2px solid var(--accent)}.book-search p{font-size:12px;padding-bottom:12px}.book-group{border-top:1px solid var(--line)}.book-group:last-child{border-bottom:1px solid var(--line)}.book-group summary{display:flex;align-items:center;gap:22px;cursor:pointer;padding:22px 0;list-style:none;font-size:18px;font-weight:550;line-height:1.4}.book-group summary::-webkit-details-marker{display:none}.book-group summary>span{flex:1;min-width:0;overflow-wrap:anywhere}.book-group summary small{color:var(--muted);font:11px/1.5 var(--mono);white-space:nowrap}.book-group summary::after{content:'+';color:var(--accent);font:22px/1 var(--mono);width:18px;text-align:center;flex-shrink:0}.book-group[open] summary::after{content:'−'}.book-list{list-style:none;margin:0 0 30px;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:38px}.book-list li{min-width:0;border-top:1px solid var(--line);padding:20px 0}.book-list strong{display:block;font-size:15px;font-weight:550;line-height:1.5;overflow-wrap:anywhere}.book-subtitle{font-size:12px;margin-top:5px;line-height:1.7}.book-bibliography{font-size:12px;margin-top:10px;color:var(--ink)}.bibliography-note{font-size:12px;max-width:780px;margin-top:-10px}.book-source{display:inline-block;font-size:11px;margin-top:8px;color:var(--muted);border-bottom:1px solid var(--line)}.book-source:hover{color:var(--accent)}.book-empty{padding:25px 0}.interests-page [hidden]{display:none!important}
+  @media(max-width:900px){.interest-topics,.media-groups{grid-template-columns:1fr;gap:35px}.interest-topics{padding-bottom:40px}.interest-topics p{max-width:720px}.media-group ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px}.reading-section .section-heading{align-items:start;flex-direction:column;gap:18px}}
+  @media(max-width:600px){.interest-topics h2{font-size:27px}.interest-topics p{font-size:13px}.interest-jumps{gap:10px 18px;font-size:12px}.media-group ul,.book-list{grid-template-columns:1fr}.book-group summary{font-size:16px;gap:12px;padding:20px 0}.book-group summary small{font-size:10px}.book-search{grid-template-columns:1fr}.book-search p{padding-bottom:0}.reading-section .section-heading>.mono{display:block;margin-top:20px}}
+</style>

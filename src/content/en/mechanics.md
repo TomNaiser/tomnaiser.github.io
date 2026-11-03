@@ -48,7 +48,7 @@ This original parts list describes the illustrated build. The Mega controller be
 
 ## How the head evolved
 
-Panorama photography began for me in 2003. A 2008 RC-servo/C-Control platform captured at about four seconds per image but sometimes missed columns through mechanical instability. An Orion/Merlin mount was stable and Bluetooth-capable but heavy, with firmware limiting capture to roughly seven seconds per image. A direct-drive stepper needed substantial holding power and was coarse without microstepping. Weight led me back to light, fast geared servos. [Phil Warner’s PanoDuino](https://blog.arduino.cc/2010/03/15/282/) inspired the mechanics.
+Panorama photography began for me in 2003. A 2008 RC-servo/C-Control platform captured at about four seconds per image but sometimes missed columns through mechanical instability. An Orion/Merlin mount was stable and Bluetooth-capable but heavy, with firmware limiting capture to roughly seven seconds per image. A direct-drive stepper needed substantial holding power and was coarse without microstepping. Weight led me back to light, fast geared servos. [Phil Warner’s PanoDuino](https://www.diyphotography.net/panoduino-is-the-most-awesomest-360-diy-pano-head-yes-arduino-is-involved/) inspired the mechanics.
 
 <div class="video-callout"><div><span class="eyebrow">DEVELOPMENT HISTORY / VIDEO</span><h3>My first pan/tilt panorama head</h3><p>This video shows my first pan/tilt panorama head with servo triggering.</p></div><a class="button primary" href="https://www.youtube.com/watch?v=dIgWIq7W5Yg" target="_blank" rel="noopener noreferrer">Watch the first panorama head on YouTube ↗</a></div>
 

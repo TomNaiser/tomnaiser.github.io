@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import { panoramas, groupItems } from '../src/data/catalog.mjs';
 import { gigapanCollection } from '../src/data/site-links.mjs';
+import gigapanArchive from '../src/data/gigapan-collection.json' with { type: 'json' };
 
 const root = process.argv[2] || 'dist';
 const prefix = process.env.BASE_PATH?.replace(/\/$/,'') || '';
@@ -23,7 +24,7 @@ for (const lang of ['de','en']) {
   assert.ok(gallery.includes(`href="${prefix}/${gigapanRoute}/"`),'Local Gigapan directory must be linked from the gallery');
   const gigapan = read(gigapanRoute);
   assert.ok(gigapan.includes(gigapanCollection),'Public profile must remain linked from the directory');
-  assert.equal((gigapan.match(/data-gigapan-item /g)||[]).length,99,'All public Gigapan entries must be retained');
+  assert.equal((gigapan.match(/data-gigapan-item /g)||[]).length,gigapanArchive.items.length,'All public Gigapan entries must be retained');
   assert.ok(gigapan.includes('data-gigapan-search') && gigapan.includes('data-gigapan-sort'),'Gigapan search and sorting must be available');
   assert.ok(!gigapan.includes('<iframe'),'The directory must not load all panorama viewers');
   assert.ok(read(lang).includes(`href="${prefix}/${gigapanRoute}/"`),'Gigapan needs a visible homepage entry');

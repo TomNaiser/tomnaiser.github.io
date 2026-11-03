@@ -1,0 +1,14 @@
+---
+const { capture, lang } = Astro.props;
+const t = (de, en) => lang === 'de' ? de : en;
+const fields = capture ? [
+  [t('Kamera', 'Camera'), capture.camera],
+  [t('Objektiv', 'Lens'), capture.lens],
+  [t('Brennweite', 'Focal length'), capture.focalLength],
+  [t('Blende', 'Aperture'), capture.aperture],
+  [t('Belichtungszeit', 'Exposure time'), capture.exposure],
+  ['ISO', capture.iso],
+  [t('Einzelbilder', 'Source images'), capture.imageCount ? `${capture.approximateImageCount ? t('rund ', 'about ') : ''}${capture.imageCount.toLocaleString(lang)}` : undefined],
+].filter(([, value]) => value) : [];
+---
+{fields.length > 0 && <section class="capture-data"><h3>{t('Aufnahmedaten', 'Capture settings')}</h3><dl>{fields.map(([label, value]) => <><dt>{label}</dt><dd>{value}</dd></>)}</dl><p>{t('Angaben aus der Bildbeschreibung; nur dokumentierte Werte sind aufgeführt.', 'Taken from the image description; only documented values are listed.')}</p></section>}

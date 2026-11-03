@@ -12,11 +12,11 @@ In Petra in Jordanien treffen geschichteter Fels und in den Stein gehauene Fassa
 <div class="article-photo-pair"><figure><img src="/images/articles/landscapes/02.webp" alt="In den farbigen Sandstein von Petra gehauene Fassaden" loading="lazy"/><figcaption>Farbiger Sandstein in Petra.</figcaption></figure><figure><img src="/images/articles/landscapes/03.webp" alt="Hohe Felswand mit geschichteten Farbtönen in Petra" loading="lazy"/><figcaption>Felsformen und Farbschichten in Petra.</figcaption></figure></div>
 <figure><img src="/images/articles/landscapes/04.webp" alt="Panoramablick auf Felsgräber in Petra, Jordanien" loading="lazy"/><figcaption>Gräber in Petra, Jordanien.</figcaption></figure>
 
-## Palmen am See Genezareth
+## Unterwegs: Galiläa und Kronach
+
+Die Palmenhaine nahe dem See Genezareth und die Veste Rosenberg in Kronach zeigen zwei weitere Motive von meinen Reisen.
 
 <figure><img src="/images/articles/landscapes/05.webp" alt="Palmenhain mit dicht stehenden hohen Palmen" loading="lazy"/><figcaption>Palmenhaine nahe dem See Genezareth.</figcaption></figure>
-
-## Veste Rosenberg in Kronach
 
 <figure><img src="/images/articles/landscapes/06.webp" alt="Mauern, Türme und Gebäude der Veste Rosenberg in Kronach" loading="lazy"/><figcaption>Veste Rosenberg, Kronach.</figcaption></figure>
 

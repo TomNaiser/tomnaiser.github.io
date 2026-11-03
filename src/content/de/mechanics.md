@@ -2,9 +2,9 @@
 
 Ein langes Teleobjektiv macht kleine Positionierfehler und Schwingungen sichtbar. Der Kamerakopf muss deshalb nicht nur schwenken und neigen: Er soll die Kamera tragen, reproduzierbar positionieren und vor jeder Auslösung zur Ruhe kommen. Auf den meisten Fotos sitzt noch die **Sony A7R II** am Kopf. Inzwischen fotografiere ich mit der **Sony A7R V**.
 
-<figure><img src="/images/articles/hardware/00.webp" alt="Motorisierter Panoramakopf mit Kamera und Teleobjektiv auf einem Stativ im Gelände" loading="lazy"/><figcaption>Der Kamerakopf im fotografischen Einsatz. Die älteren Fotos zeigen überwiegend die A7R II, nicht die heute verwendete A7R V. Kamera und Objektiv sitzen auf der verstellbaren Aufnahme.</figcaption></figure>
+<figure><img src="/images/articles/hardware/00.webp" alt="Motorisierter Panoramakopf mit Kamera und Teleobjektiv auf einem Stativ im Gelände" loading="lazy"/><figcaption>Der Kamerakopf im fotografischen Einsatz. Kamera und Objektiv sitzen auf der verstellbaren Aufnahme.</figcaption></figure>
 
-Die Kameraauslösung erfolgt über das Kabelinterface des PanoBoard. Die A7R V lässt sich im gleichen Prinzip per Kabel auslösen; zusätzlich bietet sie Möglichkeiten zur drahtlosen Fernbedienung. Eine drahtlose Auslösung durch meine Panoramasteuerung ist hier nicht als bereits umgesetzt dokumentiert.
+Die Kameraauslösung erfolgt über das Kabelinterface des PanoBoard. Auch die A7R V lässt sich so auslösen.
 
 Wie sich der Kopf bewegt, zeigen die [beiden Videos zum Panoramasystem](../panoramasystem/#kopf-in-aktion).
 
@@ -14,7 +14,7 @@ Die Konstruktion folgt dem mechanischen Grundgedanken von Phil Warners PanoDuino
 
 ## Zwei Achsen und echte Positionsrückmeldung
 
-Für Pan und Tilt kommen zwei HiTec HS-785HB mit jeweils einem ServoCity Top-Mount Servo Gearbox mit **5:1-Untersetzung** zum Einsatz. Die Servomotoren sind modifiziert: Ihre interne Positionsregelung ist abgetrennt. Stattdessen treiben externe H-Brücken die Motoren an. Ein PID-Regler in der Arduino-Firmware verwendet die Messwerte der absoluten Winkelgeber, um die Achsen auf ihre Sollposition zu bringen.
+Für Pan und Tilt kommen zwei HiTec HS-785HB mit jeweils einem ServoCity Top-Mount Servo Gearbox mit **5:1-Untersetzung** zum Einsatz. Die Servomotoren sind modifiziert: Ihre interne Positionsregelung ist abgetrennt. Stattdessen treiben externe H-Brücken die Motoren an. Ein PID-Regler in der Arduino-Firmware verwendet die Messwerte der **absoluten Winkelgeber (Encoder)**, um die Achsen auf ihre Sollposition zu bringen.
 
 An beiden Achsen sitzt je ein **AS5048B mit 14 Bit Winkelauflösung**. Die Geber sind auf TSSOP-14-Trägerplatinen und über Adapter an den I²C-Bus angeschlossen. Wie genau der Kopf die Kamera positioniert, hängt auch vom Getriebespiel, der Kamerabalance, Wind und Schwingungen ab.
 
@@ -54,7 +54,7 @@ Die ursprüngliche Stückliste beschreibt den abgebildeten mechanischen Aufbau. 
 
 <div class="video-callout"><div><span class="eyebrow">ENTWICKLUNGSGESCHICHTE / VIDEO</span><h3>Mein erster Pan-Tilt-Panoramakopf</h3><p>Das Video zeigt meinen ersten Pan-Tilt-Panoramakopf mit Servo-Triggerung.</p></div><a class="button primary" href="https://www.youtube.com/watch?v=dIgWIq7W5Yg" target="_blank" rel="noopener noreferrer">Ersten Panoramakopf auf YouTube ansehen ↗</a></div>
 
-Eine Orion-/Merlin-Montierung war stabiler und per Bluetooth steuerbar, auf Bergtouren jedoch schwer. Wegen der tief in der Firmware verankerten Geschwindigkeitsgrenzen kam ich auf ungefähr sieben Sekunden pro Bild. Ein direkt angetriebener Schrittmotor an der Pan-Achse benötigte viel Strom zum Halten; ohne Microstepping blieb die Positionierung grob. Wegen des Gewichts von Motor und Akku kehrte ich zu RC-Servos mit Untersetzungsgetrieben zurück. Phil Warners [PanoDuino](https://blog.arduino.cc/2010/03/15/282/) gab die mechanische Inspiration.
+Eine Orion-/Merlin-Montierung war stabiler und per Bluetooth steuerbar, auf Bergtouren jedoch schwer. Wegen der tief in der Firmware verankerten Geschwindigkeitsgrenzen kam ich auf ungefähr sieben Sekunden pro Bild. Ein direkt angetriebener Schrittmotor an der Pan-Achse benötigte viel Strom zum Halten; ohne Microstepping blieb die Positionierung grob. Wegen des Gewichts von Motor und Akku kehrte ich zu RC-Servos mit Untersetzungsgetrieben zurück. Phil Warners [PanoDuino](https://www.diyphotography.net/panoduino-is-the-most-awesomest-360-diy-pano-head-yes-arduino-is-involved/) gab die mechanische Inspiration.
 
 ### PanoDuino Nummer 1
 
@@ -64,7 +64,7 @@ Der Arduino Mega 2560 vermittelte zunächst zwischen Bluetooth, Pololu Micro Mae
 
 Die Canon PowerShot G9 mit 2×-Telekonverter wurde über CHDK und den USB-Anschluss ausgelöst. Im manuellen Fokus auf unendlich genügte ein ungefähr 40 ms langer Impuls. Mit aktiviertem Safety Focus wurden zwei Impulse verwendet: einer zum Fokussieren und einer zum Auslösen. Später ergänzte die Lumix FZ200 das System mit 600 mm Kleinbildäquivalent bei f/2,8 und 12 Bildern/s im Serienmodus. Optokoppler ersetzten mechanische Kontakte der Fernauslösung.
 
-Zur damaligen Versorgung gehörten ein minigorilla-Akku mit 9.000 mAh und bis zu 3 A sowie ein UBEC für die 5-V-Servoversorgung. Das F2M03GXA-Bluetooth-Modul erschien am Rechner als serieller COM-Port. Der Mega war dafür leistungsfähiger als nötig, bot aber die praktischen Arduino-Shield-Anschlüsse. Die älteren Fotos zeigen teilweise noch einen schweren NiMH-Akku.
+Zur damaligen Versorgung gehörten ein minigorilla-Akku mit 9.000 mAh und bis zu 3 A sowie ein UBEC für die 5-V-Servoversorgung. Das F2M03GXA-Bluetooth-Modul erschien am Rechner als serieller COM-Port. Die älteren Fotos zeigen teilweise noch einen schweren NiMH-Akku.
 
 <figure><img src="/images/articles/hardware/17.webp" alt="Früher Panoramakopf mit Canon PowerShot G9" loading="lazy"/><figcaption>Früher Aufbau mit Canon PowerShot G9 und Telekonverter.</figcaption></figure>
 <figure><img src="/images/articles/hardware/18.webp" alt="Historischer Kamerakopf auf Stativ mit angeschlossenem Notebook" loading="lazy"/><figcaption>Die erste Plattform mit Notebook-Steuerung.</figcaption></figure>
@@ -74,9 +74,7 @@ Zur damaligen Versorgung gehörten ein minigorilla-Akku mit 9.000 mAh und bis zu
 <figure><img src="/images/articles/hardware/22.webp" alt="Kamera auf der ersten Panoduino-Plattform" loading="lazy"/><figcaption>Weitere Ansicht des historischen Aufbaus.</figcaption></figure>
 <figure><img src="/images/articles/hardware/23.webp" alt="Panoramakopf im Außeneinsatz mit Telekamera" loading="lazy"/><figcaption>Ein früher Außeneinsatz der Plattform.</figcaption></figure>
 
-### Alternative mechanische Basis
-
-In den ursprünglichen Notizen hatte ich fertige ServoCity-Pan-/Tilt-Kits als mögliche Basis genannt. Ich habe diese Alternative selbst weder gesehen noch getestet. Die Übernahme der Steuerung würde Anpassungen erfordern, etwa das Abtrennen der internen Servo-Regelung. Ob ein vereinfachter Aufbau ohne externe Encoder ausreichend wäre, war eine damalige Überlegung und kein getestetes Ergebnis.
+<details class="content-note"><summary>Damals erwogene Alternative: fertige Pan-/Tilt-Kits</summary><p>In den ursprünglichen Notizen hatte ich fertige ServoCity-Pan-/Tilt-Kits als mögliche Basis genannt. Ich habe diese Alternative selbst weder gesehen noch getestet. Die Übernahme der Steuerung würde Anpassungen erfordern, etwa das Abtrennen der internen Servo-Regelung. Ein vereinfachter Aufbau ohne externe Winkelgeber war eine damalige Überlegung, kein getestetes Ergebnis.</p></details>
 
 ## Quelldateien und Weiterarbeit
 

@@ -11,6 +11,7 @@ const items = [...collection.items].sort((a,b) => (b.date || '').localeCompare(a
     <label>{t('Titel, Ort oder Stichwort','Title, place or keyword')}<input type="search" data-gigapan-search placeholder={t('z. B. München, Fichtelgebirge …','e.g. Munich, Fichtel Mountains …')}/></label>
     <label>{t('Sortieren nach','Sort by')}<select data-gigapan-sort><option value="date-desc">{t('Neueste zuerst','Newest first')}</option><option value="date-asc">{t('Älteste zuerst','Oldest first')}</option><option value="title">{t('Titel A–Z','Title A–Z')}</option><option value="size">{t('Größte Auflösung','Highest resolution')}</option></select></label>
   </div>
+  <p class="archive-note">{t('Gpx steht für Gigapixel: eine Milliarde Bildpunkte. Die Originale bleiben als Archiv auf Gigapan erreichbar.','Gpx means gigapixels: one billion pixels. The originals remain available on Gigapan as an archive.')}</p>
   <div class="gigapan-results" aria-live="polite" data-gigapan-count>{items.length} {t('Panoramen','panoramas')}</div>
   <ol class="gigapan-list" data-gigapan-list>
     {items.map(item => <li data-gigapan-item data-title={displayTitle(item)} data-date={item.date || ''} data-size={item.gigapixels} data-search={`${displayTitle(item)} ${item.title} ${item.description} ${item.tags}`}>

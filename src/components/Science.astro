@@ -1,8 +1,9 @@
 ---
 import entries from '../data/science.json';
-import { basePath } from '../lib/routes.mjs';
+import { basePath, href } from '../lib/routes.mjs';
 const { lang } = Astro.props;
 const t = (de,en) => lang === 'de' ? de : en;
+const entryText = entry => lang === 'de' ? entry.textDe || entry.text : entry.text;
 const phd = 'Characterization of Oligonucleotide Microarray Hybridization: Microarray Fabrication by Light-Directed in situ Synthesis – Development of an Automated DNA Microarray Synthesizer, Characterization of Single Base Mismatch Discrimination and the Position-Dependent Influence of Point Defects on Oligonucleotide Duplex Binding Affinities.';
 const sourceUrl = (raw) => {
   const url = new URL(raw);
@@ -51,8 +52,11 @@ const sourceUrl = (raw) => {
 <p><em>{phd}</em></p>
 <p><a href="https://epub.uni-bayreuth.de/600/" target="_blank" rel="noopener noreferrer">{t('Dissertation im Hochschulrepositorium','Thesis in the university repository')} ↗</a></p>
 <h2 id="publications">{t('Publikationen & Preprints','Publications & preprints')}</h2><p>{t('Die bibliografischen Titel bleiben in ihrer Originalsprache. Zeitschriftenartikel und zugehörige Vorabveröffentlichungen sind beide aufgeführt.','Bibliographic titles retain their original language. Journal articles and their associated preprints are both included.')}</p>
-<ol class="bibliography">{entries.slice(3,10).map(entry=><li><p>{entry.text.replace(/\s+Link\s*$/,'')}</p>{entry.links.map(link=><a href={sourceUrl(link.url)} target="_blank" rel="noopener noreferrer">{t('Veröffentlichung öffnen','Open publication')} ↗</a>)}</li>)}</ol>
-<h2 id="talks">{t('Vorträge & Poster','Talks & posters')}</h2><ol class="bibliography">{entries.slice(10).map(entry=><li><p>{entry.text.replace(/\s+Link\s*$/,'')}</p>{entry.links.map(link=><a href={sourceUrl(link.url)} target="_blank" rel="noopener noreferrer">{t('Beitrag öffnen','Open contribution')} ↗</a>)}</li>)}</ol>
+<ol class="bibliography">{entries.slice(3,10).map(entry=><li><p>{entryText(entry)}</p>{entry.links.map(link=><a href={sourceUrl(link.url)} target="_blank" rel="noopener noreferrer">{t('Veröffentlichung öffnen','Open publication')} ↗</a>)}</li>)}</ol>
+<h2 id="talks">{t('Vorträge & Poster','Talks & posters')}</h2><p>{t('Auch die Titel der Vorträge und Poster bleiben in der Originalsprache; Angaben zu Anlass und Datum stehen auf Deutsch.','Talk and poster titles also retain their original language.')}</p><ol class="bibliography">{entries.slice(10).map(entry=><li><p>{entryText(entry)}</p>{entry.links.map(link=><a href={sourceUrl(link.url)} target="_blank" rel="noopener noreferrer">{t('Beitrag öffnen','Open contribution')} ↗</a>)}</li>)}</ol>
+<h2 id="bildverarbeitung-heute">{t('Was davon steckt in meinen Panoramen?','How does this connect to my panoramas?')}</h2>
+<p>{t('Bilder aufnehmen, Messwerte einordnen und einen Ablauf automatisieren: Diese Fragen verbinden meine wissenschaftlichen Arbeiten mit der Panoramafotografie. Heute greifen Kamerasteuerung, aufgezeichnete Winkel und Bildverarbeitung ineinander. Im Workflow zeige ich, wie daraus ein fertiges Panorama wird.','Capturing images, interpreting measurements and automating a process connect my scientific work with panorama photography. Today, camera control, recorded angles and image processing work together. My workflow shows how they become a finished panorama.')}</p>
+<p><a href={href({kind:'project',id:'workflow'},lang)}>{t('Zum fotografischen Workflow','Explore the photographic workflow')} ↗</a></p>
 </article></div>
 
 <style>

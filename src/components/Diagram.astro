@@ -5,10 +5,23 @@ import { basePath } from '../lib/routes.mjs';
 const { id, lang } = Astro.props;
 const diagram = diagrams[id];
 const [width,height] = dimensions[`${id}-${lang}-dark`];
+const labels = {
+  hardware: { de: 'SYSTEMÜBERSICHT', en: 'SYSTEM OVERVIEW' },
+  software: { de: 'STEUERUNG & DATENFLUSS', en: 'CONTROL & DATA FLOW' },
+  workflow: { de: 'DER PROZESS', en: 'THE PROCESS' },
+  history: { de: 'ENTWICKLUNGSGESCHICHTE', en: 'DEVELOPMENT HISTORY' },
+};
+const descriptions = {
+  hardware: { de: 'Android oder Windows sendet den Plan per Bluetooth an den Arduino Nano R4. Die Firmware liest die AS5048B-Winkelgeber, steuert die Motoren und löst die Kamera per Kabel aus. RAW-Fotos von der Kamera und Papywizard-XML aus der App kommen erst am Bearbeitungsrechner zusammen.', en: 'Android or Windows sends a plan to the Arduino Nano R4 over Bluetooth. Firmware reads the AS5048B encoders, drives the motors and triggers the camera by cable. Camera RAW files and Papywizard XML from the app meet on the processing computer.' },
+  software: { de: 'Jeweils eine App ist mit der Firmware verbunden. Android und Windows sichern ihre Aufnahmeläufe in getrennten lokalen SQLite-Archiven. Nach einer Unterbrechung entsteht daraus ein Restauftrag für die fehlenden Positionen. Dieser muss geladen, bestätigt und ausdrücklich gestartet werden. XML und CSV liefern die Positionsdaten für PTGui.', en: 'One app at a time connects to the firmware. Android and Windows save captures in separate local SQLite archives. After an interruption, a continuation job covers the missing positions. It must be loaded, confirmed and explicitly started. XML and CSV provide positions for PTGui.' },
+  workflow: { de: 'Zuerst Stativ und Kopf ausrichten, Kamera einstellen und Testbilder sowie Raster prüfen. Danach die Bildserie aufnehmen, RAW-Dateien in PhotoLab entwickeln und in PTGui zusammenfügen. Abschließend Übergänge, Masken und Horizont kontrollieren, krpano-Kacheln erzeugen und die veröffentlichte Ansicht auf AWS prüfen.', en: 'First level the tripod and head, set the camera and check test images and the grid. Capture the sequence, develop RAW files in PhotoLab and stitch in PTGui. Finally check transitions, masks and the horizon, generate krpano tiles and test the published view on AWS.' },
+  history: { de: 'Auf die ersten Panoramen von 2003 folgte 2008 die Automatisierung mit RC-Servos und C-Control. Versuche mit Orion/Merlin und Schrittmotoren führten zum PanoDuino mit Arduino Mega. Später kamen absolute Winkelgeber, PID-Regelung und 2019 PanoBoard V4 hinzu. Die heutige Entwicklung nutzt V5 mit Nano R4 sowie Apps für Android und Windows.', en: 'The first panoramas in 2003 were followed by RC-servo and C-Control automation in 2008. Orion/Merlin and stepper experiments led to PanoDuino with Arduino Mega. Absolute encoders, PID control and PanoBoard V4 followed. Current development uses V5 with Nano R4 and Android and Windows apps.' },
+};
 ---
 <figure id={`diagram-${id}`} class:list={['system-diagram',`diagram-${id}`]}>
-  <div class="diagram-heading"><span class="eyebrow">{lang === 'de' ? 'ZUSAMMENHÄNGE AUF EINEN BLICK' : 'THE CONNECTIONS AT A GLANCE'}</span><h2>{diagram.title[lang]}</h2></div>
+  <div class="diagram-heading"><span class="eyebrow">{labels[id][lang]}</span><h2>{diagram.title[lang]}</h2></div>
   <p class="diagram-mobile-hint">{lang === 'de' ? 'Diagramm seitlich verschieben oder über „Groß öffnen“ ansehen.' : 'Scroll the diagram sideways or choose “Open full size”.'}</p>
   <div class="diagram-scroll" tabindex="0" role="group" aria-label={diagram.title[lang]}><img class="diagram-dark" src={basePath(`images/diagrams/${id}-${lang}-dark.svg`)} width={Math.ceil(width)} height={Math.ceil(height)} alt={diagram.title[lang]} loading="lazy"/><img class="diagram-light" src={basePath(`images/diagrams/${id}-${lang}-light.svg`)} width={Math.ceil(width)} height={Math.ceil(height)} alt={diagram.title[lang]} loading="lazy"/></div>
   <figcaption>{diagram.caption[lang]} <a class="diagram-dark" href={basePath(`images/diagrams/${id}-${lang}-dark.svg`)} target="_blank" rel="noopener noreferrer">{lang === 'de' ? 'Groß öffnen' : 'Open full size'} ↗</a><a class="diagram-light" href={basePath(`images/diagrams/${id}-${lang}-light.svg`)} target="_blank" rel="noopener noreferrer">{lang === 'de' ? 'Groß öffnen' : 'Open full size'} ↗</a></figcaption>
+  <details class="diagram-description"><summary>{lang === 'de' ? 'Diagramm als Text lesen' : 'Read the diagram as text'}</summary><p>{descriptions[id][lang]}</p></details>
 </figure>

@@ -1,10 +1,14 @@
 ## PanoBoard: Elektronik mit Versionsgeschichte
 
+<aside class="content-note"><strong>Stand 2026:</strong> Die aktuelle Entwicklung nutzt PanoBoard V5 mit einer Nano-R4-Umrüstung. Die V5-KiCad-Dateien enthalten diese Änderungen noch nicht; dafür gilt die separate Umrüstanleitung. V6 mit BLE ist eine Überlegung für später, kein fertiger Aufbau.</aside>
+
 Anfangs bestand die Steuerung aus einem Arduino Mega mit Motor-Shield, Spannungswandlern, Bluetooth-Modul, Auslöseschaltungen und vielen Einzelverbindungen. Das PanoBoard führte die Funktionen auf einer eigenen Platine zusammen. Die damalige Nano-Version integrierte H-Brücken, ein SparkFun BlueSMiRF Gold und die Auslösung für Sony A7R II beziehungsweise Panasonic FZ200.
 
 <figure><img src="/images/articles/hardware/12.webp" alt="PanoBoard V4 Schaltplan vom April 2019" loading="lazy"/><figcaption>PanoBoard V4, April 2019: historischer Eagle-Schaltplan. Zum Vergrößern das Bild öffnen; für einen Nachbau die revisionsbezogenen Quelldateien verwenden.</figcaption></figure>
 <figure><img src="/images/articles/hardware/13.webp" alt="Leiterplattenlayout des PanoBoard V4" loading="lazy"/><figcaption>Leiterplattenlayout der Version V4.</figcaption></figure>
 <figure><img src="/images/articles/hardware/14.webp" alt="PanoBoard V3 im Controllergehäuse mit Bluetooth-Modul und Spannungswandler" loading="lazy"/><figcaption>Ältere Version V3 im Gehäuse mit Nano, BlueSMiRF Gold und einem Wandler von 12 V auf 7,5 V.</figcaption></figure>
+
+**Die Abbildungen zeigen ältere Revisionen V3 und V4.** Sie sind keine Bauvorlage für V5 mit Nano R4. Für den konkreten Aufbau sind die Quelldateien der verwendeten Revision und die [Nano-R4-Umrüstanleitung für V5](https://github.com/TomNaiser/PanoBoard/blob/master/PanoBoard5KiCad/Nano-R4-Patch.md) maßgeblich.
 
 ## Warum Arduino Nano R4?
 
@@ -17,7 +21,7 @@ Anfangs bestand die Steuerung aus einem Arduino Mega mit Motor-Shield, Spannungs
 | Arbeitsspeicher | 2 KB SRAM | 32 KB SRAM |
 | Programmspeicher | 32 KB Flash | 256 KB Flash |
 | Logikpegel | 5 V | 5 V |
-| USB und serielle Verbindung | USB-UART nutzt D0/D1 mit | USB-C und Hardware-UART sind getrennt |
+| USB und serielle Verbindung | USB-UART und serielle Schnittstelle teilen sich die Pins D0/D1 | USB-C und Hardware-UART sind getrennt |
 
 Die getrennten seriellen Schnittstellen erleichtern insbesondere den gleichzeitigen Umgang mit USB-Diagnose und Bluetooth. Mit mehr Speicher und Rechenleistung lassen sich Regelung und Kommunikation erweitern. Wie schnell eine Bildserie läuft, hängt aber auch davon ab, wie lange der Kopf bewegt wird, die Kamera ausschwingt und ein Foto speichert.
 

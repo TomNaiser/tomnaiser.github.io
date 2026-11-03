@@ -2,7 +2,7 @@
 
 Verantwortlich für diese persönliche Webseite ist Thomas Naiser, Tom’s Pixel Labs. Für Fragen zum Datenschutz und zur Ausübung deiner Rechte nutze bitte die [Kontaktseite](../kontakt/). Dort steht meine E-Mail-Adresse als anklickbares Bild.
 
-Stand: 30. Oktober 2026.
+Stand: 3. November 2026.
 
 ## Aufruf der Webseite
 
@@ -24,7 +24,7 @@ Zur Unterscheidung wiederholter Besuche kann GoatCounter Website, IP-Adresse und
 
 Weitere Angaben: [GoatCounter-Datenschutzerklärung](https://www.goatcounter.com/help/privacy) und [technische Erläuterung der Besuchszählung](https://www.goatcounter.com/help/sessions).
 
-Die Datenschutzerklärung selbst wird von unserer GoatCounter-Einbindung nicht gezählt.
+Die Datenschutzerklärung selbst wird von meiner GoatCounter-Einbindung nicht gezählt.
 
 ## Entscheidung ändern oder widerrufen
 

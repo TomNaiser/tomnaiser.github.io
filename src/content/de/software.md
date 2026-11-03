@@ -6,7 +6,7 @@ Ein Gigapixel-Panorama besteht aus Hunderten, manchmal Tausenden Einzelbildern. 
 - **Aufnehmen:** Fortschritt und Warnpunkte verfolgen, pausieren oder eine Spalte wiederholen.
 - **Weiterarbeiten:** Eine unterbrochene Serie fortsetzen und die Kamerapositionen für PTGui exportieren.
 
-Den Kopf kann ich per Bluetooth vom Android-Gerät oder vom Windows-Rechner aus bedienen; verbunden ist jeweils **ein Gerät**. Das Übertragen des Plans startet noch keine Aufnahme. Erst mit Start beginnt die Bildserie. Bewegung, Warten auf eine ruhige Kamera und Auslösen übernimmt die Firmware im Kopf. Wie daraus ein fertiges Panorama wird, beschreibe ich im [Workflow](../workflow/).
+Den Kopf kann ich per Bluetooth vom Android-Gerät oder vom Windows-Rechner aus bedienen. **Es kann immer nur ein Steuergerät gleichzeitig verbunden sein.** Das Übertragen des Plans startet noch keine Aufnahme. Erst mit Start beginnt die Bildserie. Bewegung, Warten auf eine ruhige Kamera und Auslösen übernimmt die Firmware im Kopf. Wie daraus ein fertiges Panorama wird, beschreibe ich im [Workflow](../workflow/).
 
 ## Android und Windows in der Praxis
 
@@ -46,6 +46,8 @@ Für Revision 40 wurden **96 Aufnahmeereignisse** ausgewertet. Die größte Pan-
 Der [Pan-Korrekturbericht](https://github.com/TomNaiser/PanoramaSoftware/blob/main/docs/validation/2026-10-27-pan-positioning.md) enthält die Messreihen, Bedingungen und geänderten Parameter.
 
 ## Geprüfter Stand und passende Anleitungen
+
+<aside class="content-note"><strong>Kurzfassung:</strong> Gemeinsam geprüft wurden Firmware 2.4.75, Android-App 0.6.27, Windows 27.5.4 und Motorprofil Revision 40. Das Profil wird separat übertragen. Die Fortsetzung nach einem echten Fehler und der gesamte Ablauf auf dem Surface müssen noch einmal in der Praxis geprüft werden.</aside>
 
 **Stand vom 27. Oktober 2026:** Diese Kombination wurde gemeinsam am Kopf geprüft:
 

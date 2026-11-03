@@ -7,7 +7,7 @@ Ein gutes Gigapixelpanorama beginnt mit sauber aufgenommenen Einzelbildern. Eine
 3. **Kamera einstellen und testen:** Fokusziel und Schärfentiefe prüfen, passende Blende, Belichtungszeit und ISO wählen und die Einstellungen für die Serie festlegen.
 4. **Raster planen und aufnehmen:** Überlappung, Bildausschnitt und Zeitablauf prüfen; nach jeder Bewegung ausschwingen lassen.
 5. **RAW-Dateien entwickeln:** Mit DxO PhotoLab 9 entrauschen und konsistent als 16-Bit-TIFF ausgeben; die Vignettierungskorrektur folgt in PTGui Pro.
-6. **In PTGui zusammenfügen:** Positionsdaten übernehmen, mit „Align to Grid“ ausrichten, Kontrollpunkte und Masken prüfen.
+6. **In PTGui zusammenfügen:** Positionsdaten übernehmen, mit „Align to Grid“ (Rasterausrichtung) ausrichten, Kontrollpunkte und Masken prüfen.
 7. **In PTGui korrigieren:** Horizont ausrichten, falsch platzierte Einzelbilder einordnen und bewegte oder an Bildnähten abgeschnittene Objekte mit dem Mask Tool behandeln.
 8. **Für das Web vorbereiten:** krpano-Kacheln erzeugen, Dateizahl und Kachelgröße prüfen und veröffentlichen.
 
@@ -97,7 +97,7 @@ Die Überlappung muss **horizontal und vertikal** passen. Gemeinsame Motivteile 
 
 In der Vorschau prüfe ich Kameraprofil, Bildausschnitt, Überlappung und die Wartezeiten zwischen den Aufnahmen. Dann übertrage ich den Plan und warte auf die Bestätigung vom Kopf. Erst mit Start beginnt die Serie. Während die Firmware die Kamera bewegt und auslöst, zeigt die App den Fortschritt und mögliche Warnungen.
 
-Android und Windows speichern den Aufnahmeverlauf und schreiben die Kamerapositionen als Papywizard-XML-Datei. Vor dem Export prüfe ich, ob alles gesichert ist. Nach einer Unterbrechung kontrolliere ich zuerst die Verbindung und die Referenzposition des Kopfes. Dann kann ich ab der betroffenen oder der vorherigen Spalte weitermachen. Bei sphärischen Aufnahmen bleiben die ursprünglichen Bänder erhalten. Auch diesen Restauftrag muss ich erst laden und danach starten.
+Android und Windows speichern den Aufnahmeverlauf und schreiben die Kamerapositionen als Papywizard-XML-Datei. Vor dem Export prüfe ich, ob alles gesichert ist. Nach einer Unterbrechung kontrolliere ich zuerst die Verbindung und die Referenzposition des Kopfes. Dann kann ich ab der betroffenen oder der vorherigen Spalte weitermachen. Bei sphärischen Aufnahmen bleiben die ursprünglichen Bänder erhalten. Auch diesen **Restauftrag – einen Plan nur für die noch fehlenden Positionen –** muss ich erst laden und danach starten.
 
 Den Ablauf beschreibe ich im [Beispiel zur Wiederaufnahme](../software/#beispiel-eine-unterbrochene-serie-fortsetzen). Auf der [Softwareseite stehen die gemeinsam geprüften Versionen](../software/#geprüfter-stand-und-passende-anleitungen) von Apps, Firmware und Motorprofil. Vor einer wichtigen Bildserie teste ich die Einstellungen mit meinem Aufbau. Der erneute Praxistest der Wiederaufnahme nach einem echten Fehler und die Prüfung auf dem Surface stehen noch aus.
 
@@ -133,15 +133,17 @@ Eine leichte Schärfekorrektur beziehungsweise Nachschärfung kann den Schärfee
 
 ### Dunstkorrektur vor dem Stapel testen
 
-**ClearView Plus** kann entfernte Details sichtbar machen, aber auch neue Helligkeitsverläufe in jedem Einzelbild erzeugen. Im Panorama erschienen sie in meinen Versuchen als wiederkehrende Muster im Himmel. Die übliche DxO- oder PTGui-Korrektur entfernte sie nicht vollständig. Rund 40 % Überlappung und Randbeschnitt halfen teilweise. Deshalb teste ich eine starke Dunstkorrektur zunächst an einem repräsentativen Ausschnitt.
+**ClearView Plus, das Werkzeug zur Dunstkorrektur in DxO PhotoLab,** kann entfernte Details sichtbar machen, aber auch neue Helligkeitsverläufe in jedem Einzelbild erzeugen. Im Panorama erschienen sie in meinen Versuchen als wiederkehrende Muster im Himmel. Die üblichen Korrekturen in DxO PhotoLab oder PTGui entfernten sie nicht vollständig. Rund 40 % Überlappung und Randbeschnitt halfen teilweise. Deshalb teste ich eine starke Dunstkorrektur zunächst an einem repräsentativen Ausschnitt.
 
 ### Ausgabe und Speicherbedarf
 
-Für PTGui exportiere ich **verlustfreie 16-Bit-TIFF-Dateien**. Die höhere Bittiefe bewahrt feine Helligkeitsverläufe für die weitere Bearbeitung und begrenzt Banding. Aus einer etwa **41 MB** großen RAW-Datei wurden in meinem Beispiel ungefähr **214 MB** TIFF, also rund fünfmal so viel. Bei mehr als 500 Bildern ist das ein erheblicher Zwischenbestand.
+Für PTGui exportiere ich **verlustfreie 16-Bit-TIFF-Dateien**. Die höhere Bittiefe bewahrt feine Helligkeitsverläufe für die weitere Bearbeitung und begrenzt **Banding**, also sichtbare Streifen durch abgestufte Helligkeitsverläufe. Aus einer etwa **41 MB** großen RAW-Datei wurden in meinem Beispiel ungefähr **214 MB** TIFF, also rund fünfmal so viel. Bei mehr als 500 Bildern ist das ein erheblicher Zwischenbestand.
 
 Die RAW-Dateien bleiben meine Grundlage für eine spätere Neuentwicklung. Entbehrliche TIFF-Zwischenstände entferne ich nach dem fertigen Panorama. In meinen Aufnahmen hatten chromatische Aberrationen mit der verwendeten Ausrüstung und den üblichen Einstellungen vergleichsweise wenig Einfluss.
 
-## 05 · In PTGui ausrichten und stitchen
+<span id="05--in-ptgui-ausrichten-und-stitchen"></span>
+
+## 05 · In PTGui ausrichten und zusammenfügen (stitchen)
 
 Die TIFF-Serie wird in PTGui geladen. **Papywizard-Positionsdaten** geben der Anordnung einen brauchbaren Ausgangspunkt. Bei ordentlich horizontal ausgerichtetem Panoramakopf funktioniert **„Align to Grid“** für die regelmäßige Rasteranordnung sehr gut — auch dort, wo Himmel oder unscharfer Vordergrund keine verlässlichen Kontrollpunkte liefern.
 
@@ -161,7 +163,7 @@ Nach der Optimierung prüfe ich die Anordnung der Einzelbilder über das gesamte
 
 ### Horizont, Helligkeitsabgleich und Masken
 
-Mit **PTGui Pro 12** nutzte ich für den Horizont meist **vier bis acht vertikale Kontrollpunkte** oder „Straighten“. Die geometrisch richtige Anordnung unterstützt auch einen brauchbaren Helligkeitsabgleich. In den Exposure-/HDR-Einstellungen prüfe ich Exposure Fusion und Tone Mapping; „Keep current“ kann bereits passende Belichtungs-/Vignettierungswerte erhalten. Einzelne verbleibende Belichtungsabweichungen korrigiere ich nötigenfalls manuell.
+Mit **PTGui Pro 12** nutzte ich für den Horizont meist **vier bis acht vertikale Kontrollpunkte** oder „Straighten“ (Geraderichten). Die geometrisch richtige Anordnung unterstützt auch einen brauchbaren Helligkeitsabgleich. In den Exposure-/HDR-Einstellungen prüfe ich Exposure Fusion (Belichtungsfusion) und Tone Mapping (Abbildung des Tonwertumfangs); „Keep current“ (aktuelle Werte beibehalten) kann bereits passende Belichtungs-/Vignettierungswerte erhalten. Einzelne verbleibende Belichtungsabweichungen korrigiere ich nötigenfalls manuell.
 
 Bewegte Autos und Personen können Doppelkonturen oder Geisterbilder erzeugen. Auch ein am Rand eines Einzelbilds oder an einer Bildnaht abgeschnittenes Objekt lässt sich häufig mit dem **Mask Tool in PTGui Pro** korrigieren: Rot markiert auszuschließende Bereiche, Grün die gewünschten Bildteile. Dafür muss ein anderes Bild das Motiv passend enthalten beziehungsweise ausreichend Ersatzfläche bieten. [Das PTGui-Masking-Tutorial zeigt unter anderem eine an der Naht geteilte Person.](https://www.ptgui.com/examples/masktutorial.html)
 
@@ -183,8 +185,6 @@ Vor der Veröffentlichung kontrolliere ich das Panorama auch in hoher Vergröße
 
 Konkret wird im PTGui-Projekt der **Horizont ausgerichtet**, die Lage falsch platzierter Einzelbilder korrigiert und die Auswahl problematischer Objekte mit Masken angepasst. Mit falsch platzierten „Kacheln“ sind hier die Quellbilder im Stitchingprojekt gemeint; die Webkacheln entstehen erst im folgenden Schritt. Die Schärfekontrolle zeigt, ob die Aufnahme gelungen ist. Sie ist kein nachträgliches Einstellen des Fokus in PTGui.
 
-<!-- REDAKTION: Verpixelungstool ins GitHub-Repository hochladen und hier den konkreten Werkzeug-Link ergänzen. Bis dahin keinen ungültigen Besucherlink ausgeben. -->
-
 ## 07 · krpano-Kacheln erstellen und veröffentlichen
 
 **krpano** besteht aus Werkzeugen zur Aufbereitung und einem interaktiven Panorama-Viewer für den Browser. Ein Gigapixelbild lässt sich nicht sinnvoll wie ein gewöhnliches Foto vollständig auf einmal laden: Die Datei wäre sehr groß, und Speicherbedarf sowie Wartezeit würden das Betrachten erschweren.
@@ -199,13 +199,19 @@ Meine damalige Ausgabe bestand leicht aus **rund 30.000 Dateien**. Kleine **512-
 
 Die krpano-Ausgabe umfasst HTML, XML und JavaScript. Früher zusätzlich erzeugte Flash-Dateien gehören zur historischen Ausgabe und werden auf der heutigen Seite nicht benötigt. Die Kachelausgabe war kleiner als das große PSB. Die vollständigen Panoramen liegen weiterhin auf AWS/CloudFront; die Website zeigt zunächst eine lokale Vorschau und öffnet die interaktive Aufnahme auf Wunsch. Weitere Aufnahmen liegen auf Gigapan.
 
-### Große Dateien: Erzeugen, Öffnen und Kacheln unterscheiden
+### Panoramen auf dem Smartphone betrachten
+
+Auch auf dem Smartphone lädt der Viewer zunächst die Übersicht und beim Hineinzoomen die benötigten Detailkacheln. Mit einem Finger lässt sich der Ausschnitt verschieben, mit zwei Fingern zoomen. Bis neue Details erscheinen, kann je nach Verbindung ein Moment vergehen. Bei Darstellungsproblemen führt „Direkt öffnen“ zur Originalansicht; für mehr Platz lässt sich das Gerät ins Querformat drehen.
+
+<details class="content-note"><summary>Hintergrund: große Dateien erzeugen, öffnen und kacheln</summary>
 
 **PTGui kann PSB-Panoramen mit mehr als 300.000 Pixeln Kantenlänge erzeugen.** Die Grenze von **300.000 × 300.000 Pixeln** betrifft das Öffnen in Photoshop; sie ist keine allgemeine Ausgabegrenze von PTGui. [PTGui erklärt diesen Unterschied ausdrücklich.](https://www.ptgui.com/faq/)
 
 Für den nächsten Schritt zählt jedoch auch das Eingabeformat: Die aktuelle **krpano-Dokumentation nennt für PSB ebenfalls 300.000 × 300.000 Pixel**. Für größere Zwischenbilder kommen dort unter anderem **BigTIFF oder KRO** infrage. Die Kacheldarstellung und die Grenzen eines eingelesenen PSB sind also getrennte Fragen; ein größeres PTGui-PSB lässt sich nicht allein deshalb garantiert direkt in krpano verarbeiten. [Unterstützte krpano-Formate](https://krpano.com/docu/tools/).
 
 Auch bei TIFF und JPG unterscheiden sich Format und Programm: Klassisches TIFF ist auf ungefähr **4 GB** begrenzt, PTGui kann für größere Dateien auf **BigTIFF** wechseln. JPEG erlaubt bis **65.535 Pixel pro Kante**; manche Programme beschränken das Öffnen auf etwa **30.000 Pixel**. Für Gigapan habe ich ein zusammengefügtes, flaches **16-Bit-PSB mit PackBits-Kompression** verwendet.
+
+</details>
 
 ## Rechner und dokumentierte Laufzeiten
 

@@ -12,6 +12,6 @@ if (page.kind === 'panorama') {
 }
 if (page.kind === 'project') trail.push({label:ui[lang].projects,page:{kind:'projects'}});
 if (['astronomy','landscapes','aerial'].includes(page.kind)) trail.push({label:ui[lang].photography,page:{kind:'photography'}});
-if (page.kind === 'science') trail.push({label:ui[lang].about,page:{kind:'about'}});
+if (['science','interests'].includes(page.kind)) trail.push({label:ui[lang].about,page:{kind:'about'}});
 ---
 <nav class="breadcrumbs wrap" aria-label={lang === 'de' ? 'Seitenpfad' : 'Breadcrumbs'}><ol>{trail.map(item=><li><a href={href(item.page,lang)}>{item.label}</a><span aria-hidden="true">/</span></li>)}<li aria-current="page">{title}</li></ol></nav>

@@ -1,0 +1,1297 @@
+[
+  {
+    "id": "ai",
+    "title": {
+      "de": "KI, Programmierung & Softwareentwicklung",
+      "en": "AI, programming & software development"
+    },
+    "books": [
+      {
+        "title": "Agent Memory Engineering",
+        "subtitle": "Build Memory-Driven AI Agents with Claude Code, Obsidian, HTML Knowledge Bases, and Long-Term Context Systems"
+      },
+      {
+        "title": "AI Agents in Action, Second Edition",
+        "subtitle": "Intelligent workflows with LLMs, MCP, A2A, and more",
+        "authors": [
+          "Micheal Lanham"
+        ],
+        "publicationYear": 2026,
+        "sourceUrl": "https://www.manning.com/books/ai-agents-in-action-second-edition"
+      },
+      {
+        "title": "AI Engineering",
+        "subtitle": "Building Applications with Foundation Models",
+        "authors": [
+          "Chip Huyen"
+        ],
+        "publicationYear": 2025,
+        "sourceUrl": "https://books.google.com/books/about/AI_Engineering.html?id=YLbT0AEACAAJ"
+      },
+      {
+        "title": "Android-Apps entwickeln",
+        "subtitle": "mit Java",
+        "authors": [
+          "Uwe Post"
+        ],
+        "publicationYear": 2020,
+        "sourceUrl": "https://www.rheinwerk-verlag.de/android-apps-entwickeln-mit-java-fuer-einsteiger/"
+      },
+      {
+        "title": "CUDA by Example",
+        "subtitle": "An Introduction to General-Purpose GPU Programming",
+        "authors": [
+          "Jason Sanders",
+          "Edward Kandrot"
+        ],
+        "publicationYear": 2010,
+        "sourceUrl": "https://www.oreilly.com/library/view/cuda-by-example/9780132180160/"
+      },
+      {
+        "title": "Daily Git",
+        "subtitle": "Wie ein kompetenter Kollege Ihnen Git erklären würde",
+        "authors": [
+          "Martin Dilger"
+        ],
+        "publicationYear": 2014,
+        "sourceUrl": "https://www.goodreads.com/author/show/9771066.Martin_Dilger"
+      },
+      {
+        "title": "Deep Learning",
+        "subtitle": "Foundations and Concepts (Computer Science)",
+        "authors": [
+          "Christopher M. Bishop",
+          "Hugh Bishop"
+        ],
+        "publicationYear": 2024,
+        "sourceUrl": "https://link.springer.com/book/10.1007/978-3-031-45468-4"
+      },
+      {
+        "title": "Deep Learning",
+        "subtitle": "Adaptive Computation and Machine Learning",
+        "authors": [
+          "Ian Goodfellow",
+          "Yoshua Bengio",
+          "Aaron Courville"
+        ],
+        "publicationYear": 2016,
+        "sourceUrl": "https://mitpress.mit.edu/9780262337373/deep-learning/"
+      },
+      {
+        "title": "Deep Learning for Coders with fastai and PyTorch",
+        "subtitle": "AI Applications Without a PhD",
+        "authors": [
+          "Jeremy Howard",
+          "Sylvain Gugger"
+        ],
+        "publicationYear": 2020,
+        "sourceUrl": "https://openlibrary.org/works/OL21655069W"
+      },
+      {
+        "title": "Deep Learning illustriert",
+        "subtitle": "Eine anschauliche Einführung in Machine Vision, Natural Language Processing und Bilderzeugung für Programmierer und Datenanalysten",
+        "authors": [
+          "Jon Krohn",
+          "Grant Beyleveld",
+          "Aglaé Bassens"
+        ],
+        "publicationYear": 2020,
+        "sourceUrl": "https://www.oreilly.com/library/view/deep-learning-illustriert/9781098125776/"
+      },
+      {
+        "title": "Deep Learning mit Python und Keras",
+        "subtitle": "Das Praxis-Handbuch vom Entwickler der Keras-Bibliothek",
+        "authors": [
+          "François Chollet"
+        ],
+        "publicationYear": 2018,
+        "sourceUrl": "https://www.mitp.de/ANGEBOTE/Deep-Learning-mit-Python-und-Keras.html"
+      },
+      {
+        "title": "Deep Learning with PyTorch",
+        "subtitle": "Build, train, and tune neural networks using Python tools",
+        "authors": [
+          "Eli Stevens",
+          "Luca Antiga",
+          "Thomas Viehmann"
+        ],
+        "publicationYear": 2020,
+        "sourceUrl": "https://openlibrary.org/works/OL26591961W"
+      },
+      {
+        "title": "FIRST CONTACT WITH TENSORFLOW",
+        "subtitle": "get started with deep learning programming",
+        "authors": [
+          "Jordi Torres"
+        ],
+        "publicationYear": 2016,
+        "sourceUrl": "https://torres.ai/books/"
+      },
+      {
+        "title": "Game Changer",
+        "subtitle": "AlphaZero's Groundbreaking Chess Strategies and the Promise of AI",
+        "authors": [
+          "Matthew Sadler",
+          "Natasha Regan"
+        ],
+        "publicationYear": 2019,
+        "sourceUrl": "https://www.simonandschuster.com/books/Game-Changer/Matthew-Sadler/9789056918187"
+      },
+      {
+        "title": "Generative Deep Learning",
+        "subtitle": "Teaching Machines To Paint, Write, Compose, and Play",
+        "authors": [
+          "David Foster"
+        ],
+        "publicationYear": 2019,
+        "sourceUrl": "https://openlibrary.org/works/OL20905710W"
+      },
+      {
+        "title": "Generative Deep Learning",
+        "subtitle": "Teaching Machines to Paint, Write, Compose, and Play",
+        "authors": [
+          "David Foster"
+        ],
+        "publicationYear": 2019,
+        "sourceUrl": "https://openlibrary.org/works/OL20905710W"
+      },
+      {
+        "title": "Genesis",
+        "subtitle": "Artificial Intelligence, Hope, and the Human Spirit",
+        "authors": [
+          "Henry A. Kissinger",
+          "Eric Schmidt",
+          "Craig Mundie"
+        ],
+        "publicationYear": 2024,
+        "sourceUrl": "https://www.hachettebookgroup.com/titles/henry-a-kissinger/genesis/9780316581295/"
+      },
+      {
+        "title": "Hands-On Computer Vision with TensorFlow 2",
+        "subtitle": "Leverage deep learning to create powerful image processing apps with TensorFlow 2.0 and Keras",
+        "authors": [
+          "Benjamin Planche",
+          "Eliot Andres"
+        ],
+        "publicationYear": 2019,
+        "sourceUrl": "https://openlibrary.org/works/OL25223242W"
+      },
+      {
+        "title": "Hands-On Generative AI with Transformers and Diffusion Models",
+        "subtitle": "",
+        "authors": [
+          "Omar Sanseviero",
+          "Pedro Cuenca",
+          "Apolinario Passos",
+          "Jonathan Whitaker"
+        ],
+        "publicationYear": 2024,
+        "sourceUrl": "https://openlibrary.org/works/OL38628850W"
+      },
+      {
+        "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+        "subtitle": "Concepts, Tools, and Techniques to Build Intelligent Systems",
+        "authors": [
+          "Aurélien Géron"
+        ],
+        "publicationYear": 2019,
+        "sourceUrl": "https://openlibrary.org/works/OL20709638W"
+      },
+      {
+        "title": "How Smart Machines Think",
+        "subtitle": "",
+        "authors": [
+          "Sean Gerrish"
+        ],
+        "publicationYear": 2018,
+        "sourceUrl": "https://mitpress.mit.edu/9780262038409/how-smart-machines-think/"
+      },
+      {
+        "title": "Learning OpenCV",
+        "subtitle": "Computer Vision with the OpenCV Library",
+        "authors": [
+          "Gary Bradski",
+          "Adrian Kaehler"
+        ],
+        "publicationYear": 2008,
+        "sourceUrl": "https://www.oreilly.com/library/view/learning-opencv/9780596516130/"
+      },
+      {
+        "title": "matplotlib Plotting Cookbook",
+        "subtitle": "",
+        "authors": [
+          "Alexandre Devert"
+        ],
+        "publicationYear": 2014,
+        "sourceUrl": "https://openlibrary.org/works/OL27686863W"
+      },
+      {
+        "title": "OpenCL Programming by Example",
+        "subtitle": "",
+        "authors": [
+          "Ravishekhar Banger",
+          "Koushik Bhattacharyya"
+        ],
+        "publicationYear": 2013,
+        "sourceUrl": "https://openlibrary.org/works/OL27686926W"
+      },
+      {
+        "title": "Practical Deep Learning for Cloud, Mobile, and Edge",
+        "subtitle": "Real-World AI & Computer-Vision Projects Using Python, Keras & TensorFlow",
+        "authors": [
+          "Anirudh Koul",
+          "Siddha Ganju",
+          "Meher Kasam"
+        ],
+        "publicationYear": 2019,
+        "sourceUrl": "https://www.oreilly.com/library/view/practical-deep-learning/9781492034858/"
+      },
+      {
+        "title": "Programming PyTorch for Deep Learning",
+        "subtitle": "Creating and Deploying Deep Learning Applications",
+        "authors": [
+          "Ian Pointer"
+        ],
+        "publicationYear": 2019,
+        "sourceUrl": "https://www.oreilly.com/library/view/programming-pytorch-for/9781492045342/"
+      },
+      {
+        "title": "Python for Data Analysis",
+        "subtitle": "Data Wrangling with Pandas, NumPy, and IPython",
+        "authors": [
+          "Wes McKinney"
+        ],
+        "publicationYear": 2012,
+        "sourceUrl": "https://openlibrary.org/works/OL17422847W"
+      },
+      {
+        "title": "Python Machine Learning",
+        "subtitle": "",
+        "authors": [
+          "Sebastian Raschka"
+        ],
+        "publicationYear": 2015,
+        "sourceUrl": "https://www.sebastianraschka.com/publications/"
+      },
+      {
+        "title": "PyTorch (2023)",
+        "subtitle": "Learn How to Pytorch Deep Learning With Python for Beginners"
+      },
+      {
+        "title": "TensorFlow 2.0 Quick Start Guide",
+        "subtitle": "Get up to speed with the newly introduced features of TensorFlow 2.0",
+        "authors": [
+          "Tony Holdroyd"
+        ],
+        "publicationYear": 2019,
+        "sourceUrl": "https://openlibrary.org/works/OL28341811W"
+      },
+      {
+        "title": "TensorFlow For Machine Intelligence",
+        "subtitle": "A hands-on introduction to learning algorithms",
+        "authors": [
+          "Sam Abrahams",
+          "Danijar Hafner",
+          "Erik Erwitt",
+          "Ariel Scarpinelli"
+        ],
+        "publicationYear": 2016,
+        "sourceUrl": "https://www.samabrahams.com/publications/"
+      },
+      {
+        "title": "TensorFlow Machine Learning Cookbook",
+        "subtitle": "Explore machine learning concepts using the latest numerical computing library - TensorFlow - with the help of this comprehensive cookbook",
+        "authors": [
+          "Nick McClure"
+        ],
+        "publicationYear": 2017,
+        "sourceUrl": "https://openlibrary.org/works/OL38116041W"
+      },
+      {
+        "title": "The Eureka Machine",
+        "subtitle": "Why AI Is the Key to Unlocking a New Era of Scientific Discoveries",
+        "authors": [
+          "Richard Socher"
+        ],
+        "publicationYear": 2026,
+        "sourceUrl": "https://www.hbglibrary.com/titles/richard-socher/the-eureka-machine/9781541705708/"
+      },
+      {
+        "title": "The Hundred-Page Machine Learning Book",
+        "subtitle": "",
+        "authors": [
+          "Andriy Burkov"
+        ],
+        "publicationYear": 2019,
+        "sourceUrl": "https://openlibrary.org/works/OL21654311W"
+      },
+      {
+        "title": "Von Vibe Coding zu Agentic Engineering",
+        "subtitle": "Methoden für professionelle Softwareentwicklung mit KI",
+        "authors": [
+          "Thomas Raffelsieper"
+        ],
+        "publicationYear": 2026,
+        "sourceUrl": "https://www.hanser-fachbuch.de/Von-Vibe-Coding-zu-Agentic-Engineering/978-3-446-48855-7"
+      }
+    ]
+  },
+  {
+    "id": "technology",
+    "title": {
+      "de": "Technik, Elektronik & Energie",
+      "en": "Technology, electronics & energy"
+    },
+    "books": [
+      {
+        "title": "Autarker Solarstrom - Selbstbau Photovoltaikanlage",
+        "subtitle": "So Entwerfen und Installieren Sie Ihr Eigenes Netzunabhängiges Photovoltaik-Solarstromsystem für Privathaushalte, Lieferwagen, Wohnmobile, Hütten",
+        "authors": [
+          "Volodymyr Vasyliv"
+        ],
+        "publicationYear": 2021,
+        "sourceUrl": "https://www.eurobuch.ch/buch/isbn/9798599425281.html"
+      },
+      {
+        "title": "Chip War",
+        "subtitle": "The Fight for the World's Most Critical Technology",
+        "authors": [
+          "Chris Miller"
+        ],
+        "publicationYear": 2022,
+        "sourceUrl": "https://openlibrary.org/works/OL27846746W"
+      },
+      {
+        "title": "Energy",
+        "subtitle": "A Beginner's Guide (Beginner's Guides)",
+        "authors": [
+          "Vaclav Smil"
+        ],
+        "publicationYear": 2006,
+        "sourceUrl": "https://books.google.com/books/about/Energy.html?id=TR3VXHOWYiwC"
+      },
+      {
+        "title": "ESP32 Development using the Arduino IDE",
+        "subtitle": "",
+        "authors": [
+          "Iain Hendry"
+        ],
+        "sourceUrl": "https://www.espressif.com/en/ecosystem/community-engagement/books"
+      },
+      {
+        "title": "How Things Are Made",
+        "subtitle": "A Journey Through the Hidden World of Manufacturing – A Guide to Sustainable Innovation",
+        "authors": [
+          "Tim Minshall"
+        ],
+        "publicationYear": 2025,
+        "sourceUrl": "https://mitpressbookstore.mit.edu/book/9780063434653"
+      },
+      {
+        "title": "Networking All-in-One For Dummies",
+        "subtitle": "",
+        "authors": [
+          "Doug Lowe"
+        ],
+        "publicationYear": 2012,
+        "sourceUrl": "https://openlibrary.org/works/OL25192516W"
+      },
+      {
+        "title": "Optical System Design",
+        "subtitle": "",
+        "authors": [
+          "Robert E. Fischer",
+          "Biljana Tadic-Galeb",
+          "Paul R. Yoder"
+        ],
+        "publicationYear": 2008,
+        "publisher": "SPIE Press",
+        "sourceUrl": "https://books.google.com/books/about/Optical_System_Design.html?id=oxGfOwAACAAJ"
+      },
+      {
+        "title": "Photovoltaic Design & Installation For Dummies",
+        "subtitle": "",
+        "authors": [
+          "Ryan Mayfield"
+        ],
+        "publicationYear": 2010,
+        "sourceUrl": "https://openlibrary.org/works/OL16944561W"
+      },
+      {
+        "title": "The Circuit Designer's Companion",
+        "subtitle": "",
+        "authors": [
+          "Peter Wilson"
+        ],
+        "publicationYear": 2017,
+        "sourceUrl": "https://shop.elsevier.com/books/the-circuit-designers-companion/wilson/978-0-08-101764-7"
+      }
+    ]
+  },
+  {
+    "id": "health",
+    "title": {
+      "de": "Medizin, Biologie & Gesundheit",
+      "en": "Medicine, biology & health"
+    },
+    "books": [
+      {
+        "title": "Ab jetzt Biohacking!",
+        "subtitle": "Ihr Quickstart in ein besseres, längeres, gesünderes Leben",
+        "authors": [
+          "Andreas Breitfeld",
+          "Stefan Wagner"
+        ],
+        "publicationYear": 2025,
+        "sourceUrl": "https://www.thalia.de/shop/home/artikeldetails/A1066478751"
+      },
+      {
+        "title": "Bioenergetics 4",
+        "subtitle": "",
+        "authors": [
+          "David G. Nicholls",
+          "Stuart J. Ferguson"
+        ],
+        "publicationYear": 2013,
+        "sourceUrl": "https://www.ncbi.nlm.nih.gov/nlmcatalog/101616422"
+      },
+      {
+        "title": "Brain Energy",
+        "subtitle": "A Revolutionary Breakthrough in Understanding Mental Health--and Improving Treatment for Anxiety, Depression, OCD, PTSD, and More",
+        "authors": [
+          "Christopher M. Palmer"
+        ],
+        "publicationYear": 2022,
+        "sourceUrl": "https://openlibrary.org/works/OL28447327W"
+      },
+      {
+        "title": "Brain Maker",
+        "subtitle": "The Power of Gut Microbes to Heal and Protect Your Brain - for Life",
+        "authors": [
+          "David Perlmutter"
+        ],
+        "publicationYear": 2015,
+        "sourceUrl": "https://openlibrary.org/works/OL17199365W"
+      },
+      {
+        "title": "Cure Unknown",
+        "subtitle": "Inside the Lyme Epidemic",
+        "authors": [
+          "Pamela Weintraub"
+        ],
+        "publicationYear": 2008,
+        "sourceUrl": "https://openlibrary.org/works/OL517898W"
+      },
+      {
+        "title": "Das große Buch vom Schlaf",
+        "subtitle": "Die enorme Bedeutung des Schlafs - Beste Vorbeugung gegen Alzheimer, Krebs, Herzinfarkt und vieles mehr",
+        "authors": [
+          "Matthew Walker"
+        ],
+        "publicationYear": 2018,
+        "sourceUrl": "https://openlibrary.org/works/OL41724205W"
+      },
+      {
+        "title": "Der Stoffwechsel-Kompass",
+        "subtitle": "Was uns in der zweiten Lebenshälfte fit, schlank und wach hält | Das ist wichtig für Gewicht, Verjüngung und Vitalität: Der Bestseller-Ratgeber",
+        "authors": [
+          "Ingo Froböse"
+        ],
+        "publicationYear": 2022,
+        "sourceUrl": "https://www.ullstein.de/werke/stoffwechseljahre/epub/9783843726429"
+      },
+      {
+        "title": "Die Algenöl-Revolution",
+        "subtitle": "Lebenswichtiges Omega-3 – Das pflanzliche Lebenselixier aus dem Meer",
+        "authors": [
+          "Michael Nehls"
+        ],
+        "publicationYear": 2022,
+        "sourceUrl": "https://michael-nehls.de/die-algenoel-revolution/"
+      },
+      {
+        "title": "Feeling Good",
+        "subtitle": "Overcome Depression and Anxiety with Proven Techniques",
+        "authors": [
+          "David D. Burns"
+        ],
+        "publicationYear": 1980,
+        "sourceUrl": "https://openlibrary.org/works/OL4310025W"
+      },
+      {
+        "title": "How Can I Get Better?",
+        "subtitle": "An Action Plan for Treating Resistant Lyme & Chronic Disease",
+        "authors": [
+          "Richard I. Horowitz"
+        ],
+        "publicationYear": 2017,
+        "sourceUrl": "https://openlibrary.org/works/OL20047672W"
+      },
+      {
+        "title": "In aller Munde",
+        "subtitle": "Unsere Zähne und ihre Bedeutung für die Gesundheit des gesamten Körpers",
+        "authors": [
+          "Dominik Nischwitz"
+        ],
+        "publicationYear": 2019,
+        "sourceUrl": "https://www.thalia.de/shop/home/artikeldetails/A1052755878"
+      },
+      {
+        "title": "Keto Answers",
+        "subtitle": "Simplifying Everything You Need to Know about the World's Most Confusing Diet",
+        "authors": [
+          "Anthony Gustin",
+          "Chris Irvin"
+        ],
+        "publicationYear": 2019,
+        "sourceUrl": "https://openlibrary.org/works/OL40218144W"
+      },
+      {
+        "title": "Livewired",
+        "subtitle": "The Inside Story of the Ever-Changing Brain",
+        "authors": [
+          "David Eagleman"
+        ],
+        "publicationYear": 2020,
+        "sourceUrl": "https://openlibrary.org/works/OL20878294W"
+      },
+      {
+        "title": "Mitochondria and the Future of Medicine",
+        "subtitle": "The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself",
+        "authors": [
+          "Lee Know"
+        ],
+        "publicationYear": 2018,
+        "sourceUrl": "https://openlibrary.org/works/OL19751767W"
+      },
+      {
+        "title": "Outlive",
+        "subtitle": "The Science and Art of Longevity: The Million-Copy Bestseller",
+        "authors": [
+          "Peter Attia",
+          "Bill Gifford"
+        ],
+        "publicationYear": 2023,
+        "sourceUrl": "https://openlibrary.org/works/OL28148070W"
+      },
+      {
+        "title": "Power, Sex, Suicide",
+        "subtitle": "Mitochondria and the meaning of life (Oxford Landmark Science)",
+        "authors": [
+          "Nick Lane"
+        ],
+        "publicationYear": 2005,
+        "sourceUrl": "https://openlibrary.org/works/OL7998481W"
+      },
+      {
+        "title": "Protocols",
+        "subtitle": "An Operating Manual for the Human Body",
+        "authors": [
+          "Andrew D. Huberman"
+        ],
+        "publicationYear": 2026,
+        "sourceUrl": "https://www.simonandschuster.com/books/Protocols/Andrew-D-Huberman/9781668032145"
+      },
+      {
+        "title": "Super Agers",
+        "subtitle": "An Evidence-Based Approach to Longevity – The New York Times Bestseller",
+        "authors": [
+          "Eric J. Topol"
+        ],
+        "publicationYear": 2025,
+        "sourceUrl": "https://openlibrary.org/works/OL43980461W"
+      },
+      {
+        "title": "The AFib Cure, Updated Edition",
+        "subtitle": "Get Off Your Medications, Take Control of Your Health, and Add Years to Your Life",
+        "authors": [
+          "John D. Day",
+          "T. Jared Bunch",
+          "Matthew LaPlante"
+        ],
+        "publicationYear": 2025,
+        "sourceUrl": "https://www.simonandschuster.com/books/The-AFib-Cure-Updated-Edition/John-D-Day/9781637747209"
+      },
+      {
+        "title": "The Disease Delusion",
+        "subtitle": "Conquering the Causes of Chronic Illness for a Healthier, Longer, and Happier Life — A Health Book",
+        "authors": [
+          "Jeffrey S. Bland"
+        ],
+        "publicationYear": 2014,
+        "sourceUrl": "https://openlibrary.org/works/OL18820803W"
+      },
+      {
+        "title": "The Vital Question",
+        "subtitle": "Why is life the way it is?",
+        "authors": [
+          "Nick Lane"
+        ],
+        "publicationYear": 2015,
+        "sourceUrl": "https://wellcomecollection.org/works/nqz5jcw8"
+      },
+      {
+        "title": "Transformer",
+        "subtitle": "The Deep Chemistry of Life and Death",
+        "authors": [
+          "Nick Lane"
+        ],
+        "publicationYear": 2022,
+        "sourceUrl": "https://search.worldcat.org/title/1272855062"
+      },
+      {
+        "title": "Unlocking Lyme",
+        "subtitle": "Myths, Truths, and Practical Solutions for Chronic Lyme Disease",
+        "authors": [
+          "William Rawls MD"
+        ],
+        "publicationYear": 2017,
+        "sourceUrl": "https://openlibrary.org/works/OL24613618W"
+      },
+      {
+        "title": "Unlocking the Keto Code",
+        "subtitle": "The Revolutionary New Science of Keto That Offers More Benefits Without Deprivation – A Practical Wellness Book with Fat Burning ... (The Plant Paradox 7)",
+        "authors": [
+          "Steven R. Gundry"
+        ],
+        "publicationYear": 2022,
+        "sourceUrl": "https://openlibrary.org/works/OL26520838W"
+      },
+      {
+        "title": "Upgrade Your Brain",
+        "subtitle": "Unlock Your Life’s Full Potential",
+        "authors": [
+          "Patrick Holford"
+        ],
+        "publicationYear": 2024,
+        "sourceUrl": "https://openlibrary.org/works/OL37829858W"
+      },
+      {
+        "title": "We Are Electric",
+        "subtitle": "The New Science of Our Body’s Electrome",
+        "authors": [
+          "Sally Adee"
+        ],
+        "publicationYear": 2023,
+        "sourceUrl": "https://openlibrary.org/works/OL28417563W"
+      },
+      {
+        "title": "Why Can't I Get Better?",
+        "subtitle": "Solving the Mystery of Lyme & Chronic Disease",
+        "authors": [
+          "Richard Horowitz"
+        ],
+        "publicationYear": 2013,
+        "sourceUrl": "https://openlibrary.org/works/OL19972429W"
+      },
+      {
+        "title": "Young Forever",
+        "subtitle": "THE SUNDAY TIMES BESTSELLER - reverse disease, ease pain and renew energy",
+        "authors": [
+          "Mark Hyman"
+        ],
+        "publicationYear": 2023,
+        "sourceUrl": "https://openlibrary.org/works/OL28148046W"
+      }
+    ]
+  },
+  {
+    "id": "psychology",
+    "title": {
+      "de": "Psychologie, Kommunikation & Selbstentwicklung",
+      "en": "Psychology, communication & personal development"
+    },
+    "books": [
+      {
+        "title": "Altered Traits",
+        "subtitle": "Science Reveals How Meditation Changes Your Mind, Brain, and Body",
+        "authors": [
+          "Daniel Goleman",
+          "Richard J. Davidson"
+        ],
+        "publicationYear": 2017,
+        "sourceUrl": "https://openlibrary.org/works/OL29232929W"
+      },
+      {
+        "title": "Behave",
+        "subtitle": "The bestselling exploration of why humans behave as they do",
+        "authors": [
+          "Robert M. Sapolsky"
+        ],
+        "publicationYear": 2017,
+        "sourceUrl": "https://openlibrary.org/works/OL17835813W"
+      },
+      {
+        "title": "Conscious",
+        "subtitle": "A Brief Guide to the Fundamental Mystery of the Mind — A Mind-Expanding Brain Science Primer",
+        "authors": [
+          "Annaka Harris"
+        ],
+        "publicationYear": 2019,
+        "sourceUrl": "https://openlibrary.org/works/OL20804946W"
+      },
+      {
+        "title": "Cues",
+        "subtitle": "Master the Secret Language of Charismatic Communication",
+        "authors": [
+          "Vanessa Van Edwards"
+        ],
+        "publicationYear": 2022,
+        "sourceUrl": "https://openlibrary.org/works/OL25347311W"
+      },
+      {
+        "title": "Exactly What to Say",
+        "subtitle": "The Magic Words for Influence and Impact",
+        "authors": [
+          "Phil M. Jones"
+        ],
+        "publicationYear": 2017,
+        "sourceUrl": "https://openlibrary.org/works/OL19754615W"
+      },
+      {
+        "title": "Focus",
+        "subtitle": "The Hidden Driver of Excellence — A Look at the Science of Attention and Excellence",
+        "authors": [
+          "Daniel Goleman"
+        ],
+        "publicationYear": 2013,
+        "sourceUrl": "https://books.google.com/books/about/Focus.html?id=_T0sngEACAAJ"
+      },
+      {
+        "title": "How the Mind Works",
+        "subtitle": "",
+        "authors": [
+          "Steven Pinker"
+        ],
+        "publicationYear": 1997,
+        "sourceUrl": "https://openlibrary.org/works/OL477829W"
+      },
+      {
+        "title": "Incognito",
+        "subtitle": "The Secret Lives of The Brain (Canons)",
+        "authors": [
+          "David Eagleman"
+        ],
+        "publicationYear": 2011,
+        "sourceUrl": "https://openlibrary.org/works/OL15999455W"
+      },
+      {
+        "title": "Mindset",
+        "subtitle": "The New Psychology of Success",
+        "authors": [
+          "Carol S. Dweck"
+        ],
+        "publicationYear": 2006,
+        "sourceUrl": "https://openlibrary.org/works/OL2003465W"
+      },
+      {
+        "title": "Noise",
+        "subtitle": "The new book from the authors of ‘Thinking, Fast and Slow’ and ‘Nudge’",
+        "authors": [
+          "Daniel Kahneman",
+          "Olivier Sibony",
+          "Cass R. Sunstein"
+        ],
+        "publicationYear": 2021,
+        "sourceUrl": "https://openlibrary.org/works/OL17962180W"
+      },
+      {
+        "title": "Shaolin Spirit",
+        "subtitle": "The Way to Self-Mastery",
+        "authors": [
+          "Shi Heng Yi"
+        ],
+        "publicationYear": 2025,
+        "sourceUrl": "https://openlibrary.org/works/OL42403156W"
+      },
+      {
+        "title": "Start With Why",
+        "subtitle": "How Great Leaders Inspire Everyone to Take Action",
+        "authors": [
+          "Simon Sinek"
+        ],
+        "publicationYear": 2009,
+        "sourceUrl": "https://openlibrary.org/works/OL13806374W"
+      },
+      {
+        "title": "Supercommunicators",
+        "subtitle": "How to Unlock the Secret Language of Connection",
+        "authors": [
+          "Charles Duhigg"
+        ],
+        "publicationYear": 2024,
+        "sourceUrl": "https://openlibrary.org/works/OL37564042W"
+      },
+      {
+        "title": "Talk",
+        "subtitle": "The Science of Conversation and the Art of Being Ourselves",
+        "authors": [
+          "Alison Wood Brooks"
+        ],
+        "publicationYear": 2025,
+        "sourceUrl": "https://www.penguin.co.uk/books/448332/talk-by-brooks-alison-wood/9780241606148"
+      },
+      {
+        "title": "TED Talks",
+        "subtitle": "The official TED guide to public speaking: Tips and tricks for giving unforgettable speeches and presentations",
+        "authors": [
+          "Chris Anderson"
+        ],
+        "publicationYear": 2016,
+        "sourceUrl": "https://openlibrary.org/works/OL20210148W"
+      },
+      {
+        "title": "Thank You for Arguing, Fourth Edition (Revised and Updated)",
+        "subtitle": "What Aristotle, Lincoln, and Homer Simpson Can Teach Us About the Art of Persuasion",
+        "authors": [
+          "Jay Heinrichs"
+        ],
+        "publicationYear": 2020,
+        "sourceUrl": "https://www.penguinrandomhouse.com/books/646966/thank-you-for-arguing-fourth-edition-revised-and-updated-by-jay-heinrichs/"
+      },
+      {
+        "title": "That Little Voice In Your Head",
+        "subtitle": "Adjust the Code that Runs Your Brain",
+        "authors": [
+          "Mo Gawdat"
+        ],
+        "publicationYear": 2022,
+        "sourceUrl": "https://openlibrary.org/works/OL26347537W"
+      },
+      {
+        "title": "The Laws of Connection",
+        "subtitle": "13 Social Strategies That Will Transform Your Life",
+        "authors": [
+          "David Robson"
+        ],
+        "publicationYear": 2024,
+        "sourceUrl": "https://www.simonandschuster.com/books/The-Laws-of-Connection/David-Robson/9781639366484"
+      },
+      {
+        "title": "The Socratic Method",
+        "subtitle": "A Practitioner's Handbook",
+        "authors": [
+          "Ward Farnsworth"
+        ],
+        "publicationYear": 2021,
+        "sourceUrl": "https://openlibrary.org/works/OL44360548W"
+      },
+      {
+        "title": "Think Like a Freak",
+        "subtitle": "The Authors of Freakonomics Offer to Retrain Your Brain",
+        "authors": [
+          "Steven D. Levitt",
+          "Stephen J. Dubner"
+        ],
+        "publicationYear": 2014,
+        "sourceUrl": "https://openlibrary.org/works/OL17078346W"
+      },
+      {
+        "title": "Thinking, Fast and Slow",
+        "subtitle": "",
+        "authors": [
+          "Daniel Kahneman"
+        ],
+        "publicationYear": 2011,
+        "sourceUrl": "https://openlibrary.org/works/OL15992072W"
+      },
+      {
+        "title": "Tiny Habits",
+        "subtitle": "The Small Changes That Change Everything",
+        "authors": [
+          "B. J. Fogg"
+        ],
+        "publicationYear": 2019,
+        "sourceUrl": "https://openlibrary.org/works/OL20641940W"
+      }
+    ]
+  },
+  {
+    "id": "science",
+    "title": {
+      "de": "Naturwissenschaften, Mathematik & Philosophie",
+      "en": "Science, mathematics & philosophy"
+    },
+    "books": [
+      {
+        "title": "13 Things That Don't Make Sense",
+        "subtitle": "The Most Intriguing Scientific Mysteries of Our Time",
+        "authors": [
+          "Michael Brooks"
+        ],
+        "publicationYear": 2008,
+        "sourceUrl": "https://openlibrary.org/works/OL24470006W"
+      },
+      {
+        "title": "Abschied von der Weltformel",
+        "subtitle": "Die Neuerfindung der Physik",
+        "authors": [
+          "Robert B. Laughlin"
+        ],
+        "publicationYear": 2007,
+        "sourceUrl": "https://mein.perlentaucher.de/buch/robert-b-laughlin/abschied-von-der-weltformel.html"
+      },
+      {
+        "title": "Einstein - Einblicke in seine Gedankenwelt",
+        "subtitle": "",
+        "authors": [
+          "Alexander Moszkowski"
+        ],
+        "publicationYear": 1922,
+        "sourceUrl": "https://projekt-gutenberg.org/authors/alexander-moszkowski/books/einstein-einblicke-in-seine-gedankenwelt/"
+      },
+      {
+        "title": "Emergence",
+        "subtitle": "The Connected Lives of Ants, Brains, Cities, and Software",
+        "authors": [
+          "Steven Johnson"
+        ],
+        "publicationYear": 2001,
+        "sourceUrl": "https://openlibrary.org/works/OL2668646W"
+      },
+      {
+        "title": "From Quantum to Cosmos",
+        "subtitle": "The Universe Within",
+        "authors": [
+          "Neil Turok"
+        ],
+        "publicationYear": 2012,
+        "sourceUrl": "https://openlibrary.org/works/OL27350312W"
+      },
+      {
+        "title": "God Created the Integers",
+        "subtitle": "The Mathematical Breakthroughs That Changed History",
+        "authors": [
+          "Stephen Hawking"
+        ],
+        "contributorRole": "editor",
+        "publicationYear": 2005,
+        "sourceUrl": "https://books.google.com/books?id=3zdFSOS3f4AC"
+      },
+      {
+        "title": "How the World Really Works",
+        "subtitle": "A Scientist’s Guide to Our Past, Present and Future",
+        "authors": [
+          "Vaclav Smil"
+        ],
+        "publicationYear": 2022,
+        "sourceUrl": "https://openlibrary.org/works/OL25283119W"
+      },
+      {
+        "title": "On the origin of species",
+        "subtitle": "",
+        "authors": [
+          "Charles Darwin"
+        ],
+        "publicationYear": 1859,
+        "sourceUrl": "https://openlibrary.org/works/OL515051W"
+      },
+      {
+        "title": "Science Ideated",
+        "subtitle": "The Fall Of Matter And The Contours Of The Next Mainstream Scientific Worldview",
+        "authors": [
+          "Bernardo Kastrup"
+        ],
+        "publicationYear": 2021,
+        "sourceUrl": "https://openlibrary.org/works/OL25307464W"
+      },
+      {
+        "title": "Selbstbetrachtungen von Marcus Aurelius",
+        "subtitle": "Bereicherte Ausgabe. Stoische Weisheiten zu Tugend, Selbstbeherrschung und innerer Ruhe aus dem Feldlager",
+        "authors": [
+          "Marc Aurel"
+        ],
+        "sourceUrl": "https://openlibrary.org/works/OL30597646W"
+      },
+      {
+        "title": "The Beginning of Infinity",
+        "subtitle": "Explanations that Transform The World",
+        "authors": [
+          "David Deutsch"
+        ],
+        "publicationYear": 2011,
+        "sourceUrl": "https://catalog.libraries.vsc.edu/cgi-bin/koha/opac-MARCdetail.pl?biblionumber=343012"
+      },
+      {
+        "title": "The Blind Watchmaker",
+        "subtitle": "",
+        "authors": [
+          "Richard Dawkins"
+        ],
+        "publicationYear": 1986,
+        "sourceUrl": "https://openlibrary.org/works/OL1966501W"
+      },
+      {
+        "title": "The Book of Why",
+        "subtitle": "The New Science of Cause and Effect (Penguin Science)",
+        "authors": [
+          "Judea Pearl",
+          "Dana Mackenzie"
+        ],
+        "publicationYear": 2018,
+        "sourceUrl": "https://openlibrary.org/works/OL17872278W"
+      },
+      {
+        "title": "The Joy of X",
+        "subtitle": "A Guided Tour of Mathematics, from One to Infinity",
+        "authors": [
+          "Steven H. Strogatz"
+        ],
+        "publicationYear": 2012,
+        "sourceUrl": "https://openlibrary.org/works/OL16681334W"
+      },
+      {
+        "title": "The Science of Can and Can't",
+        "subtitle": "A Physicist's Journey Through the Land of Counterfactuals",
+        "authors": [
+          "Chiara Marletto"
+        ],
+        "publicationYear": 2021,
+        "sourceUrl": "https://openlibrary.org/works/OL24366388W"
+      },
+      {
+        "title": "The Selfish Gene",
+        "subtitle": "30th Anniversary edition",
+        "authors": [
+          "Richard Dawkins"
+        ],
+        "publicationYear": 2006,
+        "sourceUrl": "https://search.worldcat.org/title/1015976343"
+      },
+      {
+        "title": "The Undivided Universe",
+        "subtitle": "An Ontological Interpretation of Quantum Theory",
+        "authors": [
+          "David Bohm",
+          "Basil J. Hiley"
+        ],
+        "publicationYear": 1993,
+        "sourceUrl": "https://books.google.com/books?id=_7YNAAAAQAAJ"
+      },
+      {
+        "title": "The Voyage of the Beagle",
+        "subtitle": "",
+        "authors": [
+          "Charles Darwin"
+        ],
+        "publicationYear": 1839,
+        "sourceUrl": "https://openlibrary.org/works/OL515065W"
+      },
+      {
+        "title": "Thinking in Systems",
+        "subtitle": "International Bestseller",
+        "authors": [
+          "Donella H. Meadows"
+        ],
+        "publicationYear": 2008,
+        "sourceUrl": "https://openlibrary.org/works/OL3737036W"
+      },
+      {
+        "title": "Time Reborn",
+        "subtitle": "From the Crisis in Physics to the Future of the Universe",
+        "authors": [
+          "Lee Smolin"
+        ],
+        "publicationYear": 2013,
+        "sourceUrl": "https://openlibrary.org/works/OL16805378W"
+      }
+    ]
+  },
+  {
+    "id": "business",
+    "title": {
+      "de": "Wirtschaft, Management & Finanzen",
+      "en": "Business, management & finance"
+    },
+    "books": [
+      {
+        "title": "Creativity, Inc.",
+        "subtitle": "an inspiring look at how creativity can - and should - be harnessed for business success by the founder of Pixar",
+        "authors": [
+          "Ed Catmull",
+          "Amy Wallace"
+        ],
+        "publicationYear": 2014,
+        "sourceUrl": "https://www.amy-wallace.com/creativity-inc"
+      },
+      {
+        "title": "Good Economics for Hard Times",
+        "subtitle": "Better Answers to Our Biggest Problems",
+        "authors": [
+          "Abhijit Banerjee",
+          "Esther Duflo"
+        ],
+        "publicationYear": 2019,
+        "sourceUrl": "https://openlibrary.org/works/OL20659791W"
+      },
+      {
+        "title": "Lean Startup",
+        "subtitle": "Schnell, risikolos und erfolgreich Unternehmen gründen",
+        "authors": [
+          "Eric Ries"
+        ],
+        "publicationYear": 2012,
+        "sourceUrl": "https://www.m-vg.de/mediafiles/Leseprobe/9783868813333.pdf"
+      },
+      {
+        "title": "Poor Charlie’s Almanack",
+        "subtitle": "The Essential Wit and Wisdom of Charles T. Munger",
+        "authors": [
+          "Charles T. Munger"
+        ],
+        "publicationYear": 2005,
+        "sourceUrl": "https://openlibrary.org/works/OL8928012W"
+      },
+      {
+        "title": "Power",
+        "subtitle": "Die 48 Gesetze der Macht. Kompaktausgabe",
+        "authors": [
+          "Robert Greene"
+        ],
+        "publicationYear": 2013,
+        "sourceUrl": "https://www.hanser-fachbuch.de/Power/978-3-446-43553-7"
+      },
+      {
+        "title": "The Algebra of Wealth",
+        "subtitle": "A Simple Formula for Success",
+        "authors": [
+          "Scott Galloway"
+        ],
+        "publicationYear": 2024,
+        "sourceUrl": "https://openlibrary.org/works/OL43733858W"
+      },
+      {
+        "title": "The Honorable Entrepreneur",
+        "subtitle": "Revenue makes you VISIBLE. Profit makes you POWERFUL. Staying true to yourself makes you UNSTOPPABLE.",
+        "authors": [
+          "Philipp Baaske"
+        ],
+        "publicationYear": 2025,
+        "sourceUrl": "https://www.philippbaaske.com/book"
+      },
+      {
+        "title": "Über die Psychologie des Geldes",
+        "subtitle": "Zeitlose Lektionen über Reichtum, Gier und Glück",
+        "authors": [
+          "Morgan Housel"
+        ],
+        "publicationYear": 2021,
+        "sourceUrl": "https://www.m-vg.de/finanzbuchverlag/shop/article/20538-ueber-die-psychologie-des-geldes/"
+      },
+      {
+        "title": "Zero to One",
+        "subtitle": "Notes on Start Ups, or How to Build the Future",
+        "authors": [
+          "Peter Thiel",
+          "Blake Masters"
+        ],
+        "publicationYear": 2014,
+        "sourceUrl": "https://www.penguin.co.uk/books/419711/zero-to-one-by-masters-peter-thiel-with-blake/9780753550304"
+      }
+    ]
+  },
+  {
+    "id": "history",
+    "title": {
+      "de": "Geschichte, Politik & Gesellschaft",
+      "en": "History, politics & society"
+    },
+    "books": [
+      {
+        "title": "Alarmstufe Rot",
+        "subtitle": "Wie Chinas aggressive Außenpolitik im Pazifik in einen globalen Krieg führt (Das aktuelle Buch zu Taiwan, China und der Krise)",
+        "authors": [
+          "Alexander Görlach"
+        ],
+        "publicationYear": 2022,
+        "sourceUrl": "https://hoffmann-und-campe.de/products/58862-alarmstufe-rot"
+      },
+      {
+        "title": "China",
+        "subtitle": "A History",
+        "authors": [
+          "John Keay"
+        ],
+        "publicationYear": 2008,
+        "sourceUrl": "https://books.google.com/books/about/China_a_History.html?id=CKUEPwAACAAJ"
+      },
+      {
+        "title": "Factfulness",
+        "subtitle": "Wie wir lernen, die Welt so zu sehen, wie sie wirklich ist | Der Weltbestseller, der Ihre Weltansicht revolutionieren und in konstruktives Handeln umwandeln wird",
+        "authors": [
+          "Hans Rosling",
+          "Ola Rosling",
+          "Anna Rosling Rönnlund"
+        ],
+        "publicationYear": 2018,
+        "sourceUrl": "https://openlibrary.org/works/OL17877260W"
+      }
+    ]
+  },
+  {
+    "id": "photography",
+    "title": {
+      "de": "Fotografie",
+      "en": "Photography"
+    },
+    "books": [
+      {
+        "title": "David Busch’s Sony Alpha a7R II/a7 II Guide to Digital Photography (The David Busch Camera Guide Series)",
+        "subtitle": "",
+        "authors": [
+          "David D. Busch"
+        ],
+        "publicationYear": 2016,
+        "sourceUrl": "https://openlibrary.org/works/OL21119662W"
+      },
+      {
+        "title": "The Complete Guide to Sony's Alpha 7r Ii",
+        "subtitle": "",
+        "authors": [
+          "Gary L. Friedman"
+        ],
+        "publicationYear": 2015,
+        "sourceUrl": "https://www.lulu.com/shop/gary-l-friedman/the-complete-guide-to-sonys-alpha-7r-ii-color-edition/paperback/product-17q6y4p4.html"
+      }
+    ]
+  },
+  {
+    "id": "literature",
+    "title": {
+      "de": "Literatur & Biografien",
+      "en": "Literature & biographies"
+    },
+    "books": [
+      {
+        "title": "James Watt",
+        "subtitle": ""
+      },
+      {
+        "title": "The Adventures of Tom Sawyer (Tom Sawyer & Huckleberry Finn Series Book 1)",
+        "subtitle": "",
+        "authors": [
+          "Mark Twain"
+        ],
+        "publicationYear": 1876,
+        "sourceUrl": "https://www.themorgan.org/printed-books/174215"
+      }
+    ]
+  },
+  {
+    "id": "career",
+    "title": {
+      "de": "Beruf & Bewerbung",
+      "en": "Careers & applications"
+    },
+    "books": [
+      {
+        "title": "BEWERBUNGEN NUR FÜR AKADEMIKER",
+        "subtitle": "Jobwechsler – Seiteneinsteiger – Arbeitslos – Einstieg nach Mutterschaftspause – Bewerbungen für Ältere – Initiativ-Bewerbungen (Berufsspezifische Bewerbungen 2)"
+      },
+      {
+        "title": "Im Vorstellungsgespräch überzeugen. Alles Wichtige und die 200 häufigsten Fragen",
+        "subtitle": ""
+      }
+    ]
+  }
+]
