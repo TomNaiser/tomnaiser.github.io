@@ -34,6 +34,8 @@ Mit diesen Umgebungsvariablen erzeugt `pnpm build:pages` denselben geprüften Ve
 
 ## Inhalte und Gestaltung
 
+Die optionale Statistik verwendet Google Analytics 4 mit der Mess-ID `G-LSVZMC8HFD` aus der Google-Sites-Konfiguration (am 4. November 2026 geprüft). Die Konfiguration liegt in `src/data/google-analytics.json`. Das Google-Tag lädt ausschließlich auf `tomnaiser.github.io` nach Zustimmung, nicht in der lokalen Vorschau oder auf der Datenschutzerklärung. Frühere Statistik-Zustimmungen werden beim Anbieterwechsel ungültig; Ablehnungen bleiben bis zum Ablauf bestehen. Der Widerruf deaktiviert weitere Übertragungen und entfernt die zugehörigen Cookies. Google Signals und Werbepersonalisierung sind im Tag deaktiviert, die Cookie-Laufzeit beträgt höchstens 180 Tage. Einstellungen im bestehenden Google-Analytics-Konto, etwa Datenaufbewahrung und erweiterte Ereignismessung, werden dadurch nicht verändert. Die automatischen Prüfungen testen die Einbindung ohne Anfragen an Google.
+
 - `src/content/de/` und `src/content/en/`: ausführliche Artikel.
 - `src/data/`: Panoramakatalog, Standortgruppen, Bildbeschreibungen und Quellen.
 - `src/pages/` und `src/components/`: Seiten und Navigation.

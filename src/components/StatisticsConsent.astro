@@ -1,16 +1,16 @@
 ---
-import { href, basePath } from '../lib/routes.mjs';
+import { href } from '../lib/routes.mjs';
 const { lang, page } = Astro.props;
 const t = (de, en) => lang === 'de' ? de : en;
 const enabled = import.meta.env.PUBLIC_SITE_LIVE === 'true' || import.meta.env.DEV;
 ---
-<div data-statistics-consent data-enabled={String(enabled)} data-count-page={String(page.kind !== 'privacy')} data-counter-script={basePath('js/goatcounter-count.js')}>
+<div data-statistics-consent data-enabled={String(enabled)} data-count-page={String(page.kind !== 'privacy')}>
   <button type="button" class="statistics-settings" data-statistics-open aria-controls="statistics-panel" aria-expanded="false">{t('Datenschutzeinstellungen', 'Privacy settings')}</button>
   <section id="statistics-panel" class="statistics-panel" role="region" aria-labelledby="statistics-heading" hidden>
     <div class="statistics-copy">
       <h2 id="statistics-heading" tabindex="-1">{enabled ? t('Darf ich Seitenaufrufe zählen?', 'May I count page views?') : t('Statistik ist ausgeschaltet.', 'Statistics are switched off.')}</h2>
-      <p>{enabled ? t('Mit GoatCounter sehe ich, welche Seiten gefragt sind und aus welchen Ländern Besucher kommen. Die Seite funktioniert auch ohne Statistik vollständig.', 'GoatCounter helps me see which pages are popular and which countries visitors come from. The website works fully without statistics.') : t('Diese Webseite sendet derzeit keine Statistikdaten an GoatCounter.', 'This website currently sends no statistics to GoatCounter.')}</p>
-      {enabled && <details><summary>{t('Was wird erfasst?', 'What is collected?')}</summary><p>{t('Übertragen werden der Seitenpfad und gegebenenfalls die Domain der verweisenden Webseite. IP-Adresse und Browserkennung werden bei der Verbindung technisch an den Dienst übermittelt; aus der IP-Adresse wird das Land ermittelt. Zur Besuchswiedererkennung kann GoatCounter Website, IP-Adresse und Browserkennung bis zu acht Stunden im Arbeitsspeicher verknüpfen. Individuelle Besuchsverläufe werden nicht gespeichert. Anbieter ist Martin Tournoij in Irland; laut Anbieter liegen die Server in Deutschland und Finnland. Die Statistik erfolgt auf Grundlage deiner Einwilligung. Du kannst sie hier jederzeit widerrufen. Deine Auswahl gilt für höchstens sechs Monate in diesem Browser.', 'The page path and, where available, the referring website’s domain are sent. The connection also transmits the IP address and browser header to the service; the country is derived from the IP address. To recognise repeat visits, GoatCounter may associate the website, IP address and browser header in memory for up to eight hours. Individual visit histories are not stored. The provider is Martin Tournoij in Ireland; according to the provider, servers are located in Germany and Finland. Statistics are based on your consent, which you can withdraw here at any time. Your choice is valid in this browser for up to six months.')}</p></details>}
+      <p>{enabled ? t('Mit Google Analytics sehe ich, welche Seiten gefragt sind und wie Besucher die Webseite nutzen. Erst mit deiner Zustimmung wird Google Analytics geladen und setzt Cookies zur Wiedererkennung. Die Seite funktioniert auch ohne Statistik vollständig.', 'Google Analytics helps me understand which pages are popular and how visitors use the website. It loads and sets cookies to recognise visits only with your consent. The website works fully without statistics.') : t('Diese Webseite sendet derzeit keine Statistikdaten an Google Analytics.', 'This website currently sends no statistics to Google Analytics.')}</p>
+      {enabled && <details><summary>{t('Was wird erfasst?', 'What is collected?')}</summary><p>{t('Google Analytics verarbeitet Seitenaufrufe, Interaktionen sowie Browser-, Geräte- und ungefähre Standortdaten. Anbieter ist Google Ireland Limited; Daten können auch außerhalb der EU verarbeitet werden. Die Verbindung übermittelt deine IP-Adresse an Google. Die Analyse-Cookies sind auf höchstens 180 Tage eingestellt. Google Signals und die Signale für personalisierte Werbung sind in dieser Einbindung deaktiviert. Grundlage ist deine Einwilligung, die du hier jederzeit widerrufen kannst. Deine Auswahl gilt für höchstens sechs Monate in diesem Browser. Weitere Angaben stehen in der Datenschutzerklärung.', 'Google Analytics processes page views, interactions, browser and device information, and approximate location. The provider is Google Ireland Limited; processing may also take place outside the EU. The connection transmits your IP address to Google. Analytics cookies are configured for a maximum of 180 days. Google Signals and advertising personalisation signals are disabled in this integration. Processing is based on your consent, which you can withdraw here at any time. Your choice is valid in this browser for up to six months. See the privacy notice for details.')}</p></details>}
       <p class="statistics-status" data-statistics-status role="status"></p>
       <a class="statistics-privacy" href={href({kind:'privacy'},lang)}>{t('Datenschutzerklärung lesen', 'Read the privacy notice')} →</a>
     </div>
@@ -21,7 +21,8 @@ const enabled = import.meta.env.PUBLIC_SITE_LIVE === 'true' || import.meta.env.D
   </section>
 </div>
 <script>
-  import { CONSENT_KEY, createStatisticsConsent, countConsentedPage, referringOrigin } from '../lib/statistics-consent.mjs';
+  import { CONSENT_KEY, createStatisticsConsent } from '../lib/statistics-consent.mjs';
+  import { createGoogleAnalytics } from '../lib/google-analytics.mjs';
 
   const root = document.querySelector<HTMLElement>('[data-statistics-consent]');
   if (root) {
@@ -38,8 +39,7 @@ const enabled = import.meta.env.PUBLIC_SITE_LIVE === 'true' || import.meta.env.D
       setItem: (key: string, value: string) => window.localStorage.setItem(key, value),
     };
     const consent = createStatisticsConsent({ storage, enabled });
-    let countPromise: Promise<unknown> | null = null;
-    let hasCounted = false;
+    const analytics = createGoogleAnalytics({ window, document, consent, countPage: root.dataset.countPage === 'true' });
 
     function show(focus = true) {
       panel.hidden = false;
@@ -55,48 +55,26 @@ const enabled = import.meta.env.PUBLIC_SITE_LIVE === 'true' || import.meta.env.D
         ? (isEnglish ? 'Statistics are allowed. Choose “Continue without statistics” to withdraw.' : 'Statistik ist erlaubt. Mit „Ohne Statistik fortfahren“ kannst du widerrufen.')
         : '';
     }
-    function loadCounter() {
-      if (countPromise) return countPromise;
-      countPromise = new Promise((resolve, reject) => {
-        const counterWindow = window as typeof window & { goatcounter?: Record<string, any> };
-        counterWindow.goatcounter = { no_onload: true, no_events: true };
-        const script = document.createElement('script');
-        script.async = true;
-        script.src = root.dataset.counterScript!;
-        script.referrerPolicy = 'no-referrer';
-        script.dataset.goatcounter = 'https://toms-pixel-labs.goatcounter.com/count';
-        script.onload = () => resolve(counterWindow.goatcounter);
-        script.onerror = () => { script.remove(); countPromise = null; reject(new Error('Statistics unavailable')); };
-        document.head.appendChild(script);
-      });
-      return countPromise;
-    }
-    async function countPage() {
-      if (hasCounted || root.dataset.countPage !== 'true') return;
-      try {
-        await countConsentedPage({ consent, loadCounter, count: (counter: any) => {
-          if (hasCounted || counter.filter()) return;
-          hasCounted = true;
-          counter.count({ path: window.location.pathname, title: '',
-            referrer: referringOrigin(document.referrer, window.location.origin) });
-        } });
-      } catch { /* Blocking analytics must never affect the website. */ }
-    }
     open.addEventListener('click', () => { updateStatus(); show(); });
     root.querySelector('[data-statistics-close]')?.addEventListener('click', () => { hide(); open.focus(); });
     root.querySelector('[data-statistics-deny]')?.addEventListener('click', () => {
-      consent.choose('deny'); hide(); open.focus();
+      consent.choose('deny'); analytics.sync(); hide(); open.focus();
     });
     root.querySelector('[data-statistics-allow]')?.addEventListener('click', () => {
-      consent.choose('allow'); hide(); open.focus(); void countPage();
+      consent.choose('allow'); analytics.sync(); hide(); open.focus();
     });
     panel.addEventListener('keydown', event => { if (event.key === 'Escape') { hide(); open.focus(); } });
     window.addEventListener('storage', event => {
-      if (event.key === CONSENT_KEY || event.key === null) updateStatus();
+      if (event.key === CONSENT_KEY || event.key === null) {
+        analytics.sync(); updateStatus();
+        if (uiEnabled && consent.choice() === null && root.dataset.countPage === 'true') show(false);
+      }
     });
+    window.addEventListener('pageshow', () => analytics.sync());
+    window.addEventListener('focus', () => { analytics.sync(); updateStatus(); });
+    analytics.sync();
     if (uiEnabled && root.dataset.countPage === 'true') {
       if (consent.choice() === null) show(false);
-      else void countPage();
     }
   }
 </script>

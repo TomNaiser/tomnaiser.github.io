@@ -23,7 +23,8 @@ for (const file of files) {
     const privacyRoute = lang === 'de' ? '/de/datenschutz/' : '/en/privacy/';
     assert.ok(html.includes(`href="${privacyRoute}"`), `${file}: missing privacy notice`);
     assert.ok(html.includes('data-statistics-consent data-enabled="true"'), `${file}: missing consent controls`);
-    assert.ok(!/<script\b[^>]*\bsrc=["'][^"']*(?:goatcounter|gc\.zgo\.at)/i.test(html), `${file}: statistics script loaded before consent`);
+    assert.ok(!/<script\b[^>]*\bsrc=["'][^"']*(?:googletagmanager|google-analytics|gtag\/js)/i.test(html), `${file}: analytics script loaded before consent`);
+    assert.ok(!/goatcounter|gc\.zgo\.at/i.test(html), `${file}: obsolete statistics provider`);
     if (file.replaceAll('\\', '/').endsWith(`${privacyRoute.slice(1)}index.html`)) {
       assert.ok(html.includes('data-count-page="false"'), `${file}: privacy notice must not be counted`);
     }
@@ -32,6 +33,7 @@ for (const file of files) {
 for (const name of ['Archive', 'Docs', '.local', 'node_modules', 'src', '.git']) {
   assert.ok(!fs.existsSync(path.join(root, name)), `${name}: private/build sources in published artifact`);
 }
+assert.ok(!fs.existsSync(path.join(root, 'js/goatcounter-count.js')), 'Obsolete collector must not be published');
 assert.ok(fs.readFileSync(path.join(root, 'index.html'), 'utf8').includes('url=/de/'), 'Root must open German home');
 const sitemap = fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8');
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);

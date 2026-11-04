@@ -2,7 +2,7 @@
 
 Thomas Naiser, Tom’s Pixel Labs, is responsible for this personal website. For privacy enquiries and to exercise your rights, please use the [contact page](../contact/), which displays my email address as a clickable image.
 
-Last updated: 30 October 2026.
+Last updated: 4 November 2026.
 
 ## Visiting the website
 
@@ -10,27 +10,27 @@ GitHub Pages hosts this website. To deliver content to your browser, the hosting
 
 Providing and securing the website is based on my legitimate interest under Article 6(1)(f) GDPR. I do not have direct access to GitHub’s technical logs. Details about recipients, international transfers and retention are available in [GitHub’s privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
-Fonts, preview images and the optional statistics script are served by this website. They do not require Google Fonts or an external script CDN.
+Fonts and preview images are served by this website. Google Fonts is not embedded. The external script for optional visitor statistics loads only after your consent.
 
-## Optional statistics with GoatCounter
+## Optional statistics with Google Analytics
 
-I would like to understand which content is read and which countries and referring websites visitors come from. Statistics are optional. This website sends a count request to `toms-pixel-labs.goatcounter.com` only after you select “Allow statistics”. The website remains fully usable if you decline. Google Analytics and advertising tracking are not used.
+I use Google Analytics 4 to understand which content is read and how visitors use the website. Measurement ID `G-LSVZMC8HFD` comes from my previous Google Sites website. Statistics are optional: the Google script from `www.googletagmanager.com` loads and statistics are enabled only after you select “Allow statistics”. Without consent, this integration neither sets analytics cookies nor sends requests to Google. The website remains fully usable.
 
-GoatCounter is operated by Martin Tournoij in Ireland. According to the provider, data is processed on Hetzner Online GmbH servers in Germany and Finland. Optional statistics are based on your consent under Article 6(1)(a) GDPR and, where consent is required for access to your device, Section 25(1) of Germany’s TDDDG.
+The provider is Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Data may also be transferred to Google LLC in the USA and other Google processing systems outside the EU. Processing is based on your consent under Article 6(1)(a) GDPR and, for storage or access on your device requiring consent, Section 25(1) of Germany’s TDDDG.
 
-The count request includes the page path and, where available, the referring website’s domain. Full referring page addresses, query parameters and URL fragments are not sent. The local version of the script sends no screen size or campaign parameters. The connection necessarily transmits the IP address and browser header to the provider. Depending on the settings enabled there, these can be used to produce aggregate country, region, browser and operating-system statistics.
+Google Analytics processes pseudonymous cookie identifiers, page views and usage events, together with browser, device, language and approximate location information. This allows visits and returning visitors to be recognised. This integration supplies page addresses without query parameters or URL fragments and only an external referring origin. The connection necessarily transmits your IP address to Google. According to Google, Google Analytics 4 does not log or store IP addresses; for EU traffic, approximate location is derived before the IP address is discarded.
 
-To recognise repeat visits, GoatCounter may associate the website, IP address and browser header with a random session identifier in memory for up to eight hours. According to the provider, raw IP addresses and full browser headers are not retained in the statistics database. No advertising profiles or cross-device user accounts are created. Aggregate statistics remain in the statistics account until deleted. They are not combined with contact emails.
+This integration configures the `_ga` and `_ga_LSVZMC8HFD` cookies for a maximum of 180 days, without automatically extending their expiry on subsequent visits. Google Signals and advertising personalisation signals are disabled in the integration. No Google Ads tags are embedded and contact emails are not sent to Analytics. Additional automatically collected usage events and event-data retention also depend on the existing Analytics account settings; this integration does not change its retention settings.
 
-Further details: [GoatCounter privacy policy](https://www.goatcounter.com/help/privacy) and [technical explanation of visit counting](https://www.goatcounter.com/help/sessions).
+Further details: [Google’s information about data use on partner sites](https://policies.google.com/technologies/partner-sites?hl=en), [Google’s privacy policy](https://policies.google.com/privacy?hl=en), [Analytics cookie information](https://support.google.com/analytics/answer/11397207?hl=en) and [GA4 information about IP addresses](https://support.google.com/analytics/answer/12017362?hl=en).
 
-Our GoatCounter integration does not count the privacy notice itself.
+This integration does not load Google Analytics on the privacy notice itself.
 
 ## Changing or withdrawing your choice
 
-You can change your choice using “Privacy settings” in the footer of every page. Selecting “Continue without statistics” withdraws previous consent. The integration then sends no further count requests. Withdrawal does not affect the lawfulness of processing before withdrawal. Existing aggregate counts generally cannot be attributed to a particular person.
+You can change your choice using “Privacy settings” in the footer of every page. Selecting “Continue without statistics” withdraws previous consent. The integration then disables further Analytics transmissions and removes its Analytics cookies on this domain. Connections already started and data already sent cannot be recalled by doing so. Withdrawal does not affect the lawfulness of processing before withdrawal.
 
-Your choice is stored locally in your browser under `pixel-labs-statistics`, without a unique user identifier, and treated as valid for up to six months. A new choice replaces the entry; you can also remove it by clearing website data. Other browsers and devices use their own saved choices. If browser storage is blocked, a new choice may apply only to the current page.
+Your choice is stored locally in your browser under `pixel-labs-statistics`, without a unique user identifier, and treated as valid for up to six months. Consent to the previous statistics service does not count as consent to Google Analytics. An existing refusal remains valid until it expires. A new choice replaces the entry; you can also remove it by clearing website data. Other browsers and devices use their own saved choices. If browser storage is blocked, a new choice may apply only to the current page.
 
 ## Display preference
 
@@ -40,7 +40,7 @@ Your browser stores your selected light or dark appearance under `pixel-labs-the
 
 Opening an interactive panorama loads the original viewer from Amazon CloudFront or Gigapan. This may happen immediately when you follow a panorama link intended to open the viewer. The provider receives connection information including your IP address, browser information and requested address. The viewer delivers the panorama you requested. The legal basis for this delivery is Article 6(1)(f) GDPR. The provider’s own terms also govern processing and storage on its systems.
 
-Provider information: [Amazon Web Services](https://aws.amazon.com/privacy/) and [Gigapan](https://www.gigapan.com/). These external services may process data outside the EU. Statistics settings control GoatCounter only; they do not control a panorama viewer that you open.
+Provider information: [Amazon Web Services](https://aws.amazon.com/privacy/) and [Gigapan](https://www.gigapan.com/). These external services may process data outside the EU. Statistics settings control Google Analytics only; they do not control a panorama viewer that you open.
 
 YouTube videos and other external offers are provided as links. Displaying the links does not embed a YouTube player. Your browser connects to the respective service when you follow a link.
 
