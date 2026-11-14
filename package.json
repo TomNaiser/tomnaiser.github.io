@@ -16,7 +16,7 @@
     "check:editorial": "node scripts/check-editorial-update.mjs"
   },
   "dependencies": {
-    "astro": "^6.0.0"
+    "astro": "^7.4.11"
   },
   "devDependencies": {
     "mermaid": "^12.2.0"
